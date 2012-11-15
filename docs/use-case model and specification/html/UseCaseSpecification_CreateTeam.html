@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <link rel="stylesheet" href="Clearness.css" type="text/css" />
+</head>
+<body>
+<h1 id="easycourse---用例说明---创建群组">EasyCourse - 用例说明 - 创建群组</h1>
+<h2 id="定义">定义</h2>
+<p>本文定义了用户创建群组的用例。用例的对象可以是同学、老师或管理员，根据对象的不同，创建的群组的类型不一样。群组的基本信息可以在创建时设置。 ## 入口条件和出口条件 ### 入口条件 用户状态为已登入。</p>
+<h3 id="出口条件">出口条件</h3>
+<p>群组的必要信息填写正确，成功生成该群组。</p>
+<h2 id="情景">情景</h2>
+<ol style="list-style-type: decimal">
+<li>在工作台页面，用户点击侧边栏的群组板块标题，进入群组显示页面。</li>
+<li>在群组显示页面，用户点击侧边栏创建群组按钮，进入群组创建页面。</li>
+<li>在群组创建页面，有必填项目如：群组名称等；和选填项目如：所属课程等需要该用户填写。</li>
+<li>填写完成后用户提交该表单，服务器创建群组，提示用户群组成功创建。</li>
+<li>自动跳转到成员管理页面，用户编辑新创建的群组的成员（参见成员管理用例）。</li>
+<li>编辑完成后用户提交该表单，服务器编辑群组的成员列表，提示用户群组成功更新，用例结束。</li>
+</ol>
+<h2 id="异常和分支">异常和分支</h2>
+<h3 id="若用户未登入">1. 若用户未登入。</h3>
+<p>提示用户登入并跳转到登入页面。 ### 2. 若用户输入基本信息有误，如群组名称为空等。 阻止表单提交，并在错误的输入信息的标签旁，详细说明错误原因。 ### 3. 用户输入信息后，没有提交给服务器时，点击了其他链接或关闭页面。 弹出提示框告诉用户有信息输入了但没有提交，询问其是要放弃修改还是继续修改。</p>
+<h2 id="备注">备注</h2>
+<p>无</p>
+</body>
+</html>

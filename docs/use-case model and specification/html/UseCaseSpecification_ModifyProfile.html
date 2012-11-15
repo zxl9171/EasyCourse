@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <link rel="stylesheet" href="Clearness.css" type="text/css" />
+</head>
+<body>
+<h1 id="easycourse---用例说明---修改个人信息">EasyCourse - 用例说明 - 修改个人信息</h1>
+<h2 id="定义">定义</h2>
+<p>本用例允许用户修改其本人的个人信息，其对象是已登入的用户。当用户需要加强自己的密码，完善个人信息时，他们就可以在本用例中修改自己的密码，名字，联系方式等个人信息。 ## 入口条件和出口条件 ### 入口条件 1. 用户状态为已登入。 2. 待修改的个人信息属于该用户。</p>
+<h3 id="出口条件">出口条件</h3>
+<p>无</p>
+<h2 id="情景">情景</h2>
+<ol style="list-style-type: decimal">
+<li>用户点击页面右上角的姓名链接进入“个人信息页面”。</li>
+<li>在个人信息页面，用户点击“修改个人信息”。</li>
+<li>在修改个人信息页面，用户可以在侧边栏选择修改基本信息或账户信息，默认为修改基本信息页面。</li>
+<li>修改信息：
+<ul>
+<li>若修改基本信息，可以直接在相应的输入框做改动即可。</li>
+<li>若修改账户信息，在该页面会出现三个输入框，要求用户输入：原密码，新密码，确认新密码。输入信息显示为星号以保护密码安全。</li>
+</ul></li>
+<li>服务器验证输入信息无误后，更新该用户个人信息，并返回修改成功提示。</li>
+</ol>
+<h2 id="异常和分支">异常和分支</h2>
+<h3 id="若待修改个人信息不属于该用户">1. 若待修改个人信息不属于该用户。</h3>
+<p>提示用户权限不够。若用户已经登入，将页面跳转到其个人页面；否则，将页面跳转到登入页面。 ### 2. 若用户输入基本信息有误，如姓名为空、电话号码不是数字等。 阻止表单提交，并在错误的输入信息的标签旁，详细说明错误原因。 ### 3. 用户修改信息后，没有提交给服务器时，点击了其他链接或关闭页面。 弹出提示框告诉用户有信息修改了没有提交，询问其是要放弃修改还是继续修改。</p>
+<ul>
+<li>若用户选择放弃修改，则执行用户先前的操作。</li>
+<li>若用户选择继续修改，则关闭提示框，保持当前页面不变。</li>
+</ul>
+<h2 id="备注">备注</h2>
+<p>无</p>
+</body>
+</html>
