@@ -1,6 +1,8 @@
 #encoding: utf-8
 require 'mustache'
 require 'json'
+require 'tempfile'
+require 'pathname'
 require 'active_support/core_ext/hash'
 
 class Renderer
@@ -36,6 +38,7 @@ class MDParser
                 @raw_content = file.read.split('<!-- MetaEnd -->')
             end
         rescue => ex
+            puts ex
         end
         @frontpage_path = frontpage_path
     end
@@ -50,7 +53,71 @@ class MDParser
     end
 end
 
-o = MDParser.new('test.md')
-r = Renderer.load_template('frontpage.html', o.meta)
+def same_dir_path(filename)
+    File.expand_path(File.dirname(__FILE__), filename)
+end
 
-puts r.to_s
+def corename(filepath)
+    File.basename(filepath).split('.').first
+end
+
+def md2html(options)
+    opts = {
+        template: same_dir_path('default.html'),
+        style: same_dir_path('clearness.css')
+    }.merge(options)
+
+    `pandoc --include-before=#{opts[:frontpage]} --toc --template=#{opts[:template]} -s -S -c #{opts[:style]} #{opts[:content]} -o #{opts[:output_file]}`
+    
+end
+
+def html2pdf(options)
+    opts = {
+        "page-left" => 70,
+        "page-right"=> 70,
+        "page-top"=> 70,
+        "page-bottom"=> 70
+    }.merge(options).stringify_keys!
+
+    if opts['output_file'].nil? then
+        opts['output_file'] = corename(opts['input_file'])
+    end
+
+    opts_string = opts.reject {|e| e[0] == "input_file" }.inject("") {|str, h| str += " -o #{h[0]}=#{h[1]} " }
+
+    `cupsfilter #{opts_string} #{opts['input_file']} > #{opts['output_file']}`
+end
+
+
+if ARGV.length <= 2 then
+    puts 'USAGE: ruby Renderer input_file output_file template_file'
+else
+    input_file =ARGV[0]
+    output_file = ARGV[1]
+    frontpage_file = ARGV[2]
+
+    o = MDParser.new(input_file)
+    r = Renderer.load_template(frontpage_file, o.meta)
+
+    begin
+
+        content_tmpfile = Tempfile.new(["content", '.md'])
+        content_tmpfile.write(o.content)
+        content_tmpfile.close
+
+        frontpage_tmpfile = Tempfile.new(["frontpage", '.html'])
+        frontpage_tmpfile.write(r.to_s)
+        frontpage_tmpfile.close
+
+        html_tmpfile = Tempfile.new(["intermedia", '.html'])
+        html_tmpfile.close
+
+        md2html({content: content_tmpfile.path, frontpage: frontpage_tmpfile.path, output_file: html_tmpfile.path})
+
+        puts html2pdf({input_file: html_tmpfile.path, output_file: output_file})
+    rescue => ex
+        puts ex
+    ensure
+        # [content_tmpfile, frontpage_tmpfile, html_tmpfile].each(&:unlink)
+    end
+end
