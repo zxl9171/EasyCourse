@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <link rel="stylesheet" href="Clearness.css" type="text/css" />
+</head>
+<body>
+<h1 id="easycourse---用例说明---修改文件列表">EasyCourse - 用例说明 - 修改文件列表</h1>
+<h2 id="定义">定义</h2>
+<p>本文定义了描述修改文件列表的用例。登入用户可以根据权限对用户的文件列表进行修改，比如删除文件。</p>
+<h2 id="入口条件和出口条件">入口条件和出口条件</h2>
+<h3 id="入口条件">入口条件</h3>
+<p>待处理列表内文件属于用户或用户是管理员。</p>
+<h3 id="出口条件">出口条件</h3>
+<p>文件的删除或更新被成功执行。</p>
+<h2 id="情景">情景</h2>
+<ol style="list-style-type: decimal">
+<li>用户点击侧边栏文件列表标题。</li>
+<li>在文件列表页面，列表每一行代表一个文件，行末有查看和删除按钮。</li>
+<li>点击删除按钮，按钮变成不可点状态，并显示为正在删除。请求被提交给服务器。</li>
+<li>服务器端成功删除文件，文件列消失，提示文件删除成功。</li>
+</ol>
+<h2 id="异常和分支">异常和分支</h2>
+<h3 id="若待修改文件列表不属于该用户">1. 若待修改文件列表不属于该用户。</h3>
+<p>提示用户权限不够。若用户已经登入，将页面跳转到其文件列表页面；否则，将页面跳转到登入页面。</p>
+<h3 id="若用户修改的文件信息有误如文件名为空等">2. 若用户修改的文件信息有误，如文件名为空等。</h3>
+<p>阻止表单提交，并详细说明错误原因。</p>
+<h3 id="用户修改信息后没有提交给服务器时点击了其他链接或关闭页面">3. 用户修改信息后，没有提交给服务器时，点击了其他链接或关闭页面。</h3>
+<p>弹出提示框告诉用户有信息修改了没有提交，询问其是要放弃修改还是继续修改。</p>
+<ul>
+<li>若用户选择放弃修改，则执行用户先前的操作。</li>
+<li>若用户选择继续修改，则关闭提示框，保持当前页面不变。</li>
+</ul>
+<h2 id="备注">备注</h2>
+<p>无</p>
+</body>
+</html>
