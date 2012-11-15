@@ -1,0 +1,51 @@
+<div id="frontpage">
+  <div id="metainfo-container">
+
+    <p>文档编号: {{no}}</p>
+    <h2 id="easycourse">EasyCourse</h2>
+    <h1 id="需求分析文档">{{title}}</h1>
+    <h2 id="version-1.0">Version {{version}}</h2>
+    <h4 id="by">By:</h4>
+    <p>ChicCode 2012/11</p>
+    <h4 id="小组成员">小组成员:</h4>
+    <p>黄伟岳<br />朱元飞<br />白羽萌<br />甄晓磊</p>
+    <h4 id="文档语言">文档语言:</h4>
+    <p>中文</p>
+  </div>
+  <h4 id="version-table-caption">修订历史</h4>
+  <table id="version-table">
+  <thead>
+  <tr class="header">
+  <th align="left">Date</th>
+  <th align="left">Version</th>
+  <th align="left">Description</th>
+  <th align="center">Author</th>
+  </tr>
+  </thead>
+  <tbody>
+  {{#changed_historys}}
+  <tr class="odd">
+  <td align="left">{{date}}</td>
+  <td align="left">{{version}}</td>
+  <td align="left">{{description}}</td>
+  <td align="center">{{author}}</td>
+  </tr>
+  {{/changed_historys}}
+  </tbody>
+  </table>
+</div>
+
+<div class="page-breaker"></div>
+
+<div id="second-page">
+<h2>关键字</h2>
+{{#keywords}}
+<p>{{.}}</p>
+{{/keywords}}
+
+<h2>摘要</h2>
+<p>{{abstract}}
+</p>
+</div>
+
+<div class="page-breaker"></div>
