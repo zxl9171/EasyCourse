@@ -4,6 +4,8 @@ require 'json'
 require 'tempfile'
 require 'pathname'
 require 'active_support/core_ext/hash'
+require 'cocaine'
+require 'logger'
 
 class Renderer
     attr_accessor :template, :hash
@@ -71,17 +73,19 @@ def md2html(options)
     
 end
 
-def html2pdf(options)
-    opts = {
-        "page-left" => 70,
-        "page-right"=> 70,
-        "page-top"=> 70,
-        "page-bottom"=> 70
-    }.merge(options).stringify_keys!
+def html2pdf(params)
+    params = {
+        :'page-left' => '70',
+        :'page-right' => '70',
+        :'page-top' => '70',
+        :'page-bottom' => '70'
+    }.merge(params).symbolize_keys
 
-    opts_string = opts.reject {|e| e[0] == "input_file" }.inject("") {|str, h| str += " -o #{h[0]}=#{h[1]} " }
+    pattern = params.reject {|key| key == :in }.inject('') {|str, hash| str + "-o #{hash[0]}=:#{hash[0]} "}
+    pattern << ':in > :out'
 
-    `cupsfilter #{opts_string} #{opts['input_file']} > #{opts['output_file']} 2> /dev/null`
+    line = Cocaine::CommandLine.new('cupsfilter', pattern, :swallow_stderr => true)
+    line.run(params)
 end
 
 
@@ -111,7 +115,7 @@ else
         md2html({content: content_tmpfile.path, frontpage: frontpage_tmpfile.path, output_file: html_tmpfile.path})
         puts "md2html done!"
 
-        html2pdf({input_file: html_tmpfile.path, output_file: output_file})
+        html2pdf({:in => html_tmpfile.path, :out => output_file})
         puts "html2pdf done! Generated #{output_file}"
     rescue => ex
         puts ex
