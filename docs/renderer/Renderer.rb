@@ -4,6 +4,8 @@ require 'json'
 require 'tempfile'
 require 'pathname'
 require 'active_support/core_ext/hash'
+require 'cocaine'
+require 'logger'
 
 class Renderer
     attr_accessor :template, :hash
@@ -61,27 +63,31 @@ def corename(filepath)
     File.basename(filepath).split('.').first
 end
 
-def md2html(options)
-    opts = {
-        template: same_dir_path('default.html'),
-        style: same_dir_path('clearness.css')
-    }.merge(options)
+def md2html(params)
+    params = {
+        :template => same_dir_path('default.html'),
+        :style => same_dir_path('clearness.css')
+    }.merge(params).symbolize_keys
 
-    `pandoc --include-before=#{opts[:frontpage]} --toc --template=#{opts[:template]} -s -S -c #{opts[:style]} #{opts[:content]} -o #{opts[:output_file]}`
-    
+    pattern = '-s -S --toc --include-before=:frontpage --template=:template -c :style :in -o :out'
+
+    line = Cocaine::CommandLine.new('pandoc', pattern, :swallow_stderr => true)
+    line.run(params)
 end
 
-def html2pdf(options)
-    opts = {
-        "page-left" => 70,
-        "page-right"=> 70,
-        "page-top"=> 70,
-        "page-bottom"=> 70
-    }.merge(options).stringify_keys!
+def html2pdf(params)
+    params = {
+        :'page-left' => '70',
+        :'page-right' => '70',
+        :'page-top' => '70',
+        :'page-bottom' => '70'
+    }.merge(params).symbolize_keys
 
-    opts_string = opts.reject {|e| e[0] == "input_file" }.inject("") {|str, h| str += " -o #{h[0]}=#{h[1]} " }
+    pattern = params.reject {|key| key == :in }.inject('') {|str, hash| str + "-o #{hash[0]}=:#{hash[0]} "}
+    pattern << ':in > :out'
 
-    `cupsfilter #{opts_string} #{opts['input_file']} > #{opts['output_file']} 2> /dev/null`
+    line = Cocaine::CommandLine.new('cupsfilter', pattern, :swallow_stderr => true)
+    line.run(params)
 end
 
 
@@ -108,10 +114,10 @@ else
         html_tmpfile = Tempfile.new(["intermedia", '.html'])
         html_tmpfile.close
 
-        md2html({content: content_tmpfile.path, frontpage: frontpage_tmpfile.path, output_file: html_tmpfile.path})
+        md2html({:in => content_tmpfile.path, :frontpage => frontpage_tmpfile.path, :out => html_tmpfile.path})
         puts "md2html done!"
 
-        html2pdf({input_file: html_tmpfile.path, output_file: output_file})
+        html2pdf({:in => html_tmpfile.path, :out => output_file})
         puts "html2pdf done! Generated #{output_file}"
     rescue => ex
         puts ex
