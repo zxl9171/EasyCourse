@@ -63,14 +63,16 @@ def corename(filepath)
     File.basename(filepath).split('.').first
 end
 
-def md2html(options)
-    opts = {
-        template: same_dir_path('default.html'),
-        style: same_dir_path('clearness.css')
-    }.merge(options)
+def md2html(params)
+    params = {
+        :template => same_dir_path('default.html'),
+        :style => same_dir_path('clearness.css')
+    }.merge(params).symbolize_keys
 
-    `pandoc --include-before=#{opts[:frontpage]} --toc --template=#{opts[:template]} -s -S -c #{opts[:style]} #{opts[:content]} -o #{opts[:output_file]}`
-    
+    pattern = '-s -S --toc --include-before=:frontpage --template=:template -c :style :in -o :out'
+
+    line = Cocaine::CommandLine.new('pandoc', pattern, :swallow_stderr => true)
+    line.run(params)
 end
 
 def html2pdf(params)
@@ -112,7 +114,7 @@ else
         html_tmpfile = Tempfile.new(["intermedia", '.html'])
         html_tmpfile.close
 
-        md2html({content: content_tmpfile.path, frontpage: frontpage_tmpfile.path, output_file: html_tmpfile.path})
+        md2html({:in => content_tmpfile.path, :frontpage => frontpage_tmpfile.path, :out => html_tmpfile.path})
         puts "md2html done!"
 
         html2pdf({:in => html_tmpfile.path, :out => output_file})
