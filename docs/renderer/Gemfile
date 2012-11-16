@@ -1,4 +1,8 @@
 source "http://ruby.taobao.org"
 
+# for template rendering
 gem "mustache"
+# for invoke command line things
+gem 'cocaine'
+# for handy helpers
 gem "activesupport"
