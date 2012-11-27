@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="31254cbe-8988-4090-b75a-d66f466ec406" name="Activity1" linkedPackageId="85f2c8ea-e0b4-4ef5-b256-58cc57044504" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="6f1e84f3-f84f-4950-ae95-2e85f54444d7">
+      <profileInstance Id="8bd89188-9d77-4a5d-b751-2b3c13bac22b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="8e8db7ca-a7fc-4406-a3fc-196e7ffe416c">
+      <profileInstance Id="64882827-6146-475c-83a9-a43dafe7bf2e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="724fb8ca-0bf7-48d3-b515-235ee9c10739" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="f07bdd0b-697f-4fde-92c2-197b8e1be545" />
+        <nodes>
+          <initialNode Id="3c37b2e5-27ff-4a1e-bc92-3b8b36451c44" name="Initial1" isLeaf="false">
+            <elementDefinition Id="92f5f78f-5ba6-4a5f-9516-c269920d19da" />
+            <flowNodeTargets>
+              <controlFlow Id="fddfe63d-c56e-4a7b-b186-4173720d1184" isLeaf="false">
+                <opaqueActionMoniker Id="0d714c90-ca2f-42ed-bab0-4cc8cf876f16" LastKnownName="进入上传页面" />
+                <elementDefinition Id="249b576a-7b7d-4931-b09d-91647b209526" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode Id="37984a3d-e2ad-4863-8d8f-b07549269c5f" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="436dc8b7-d04e-42c2-b813-b1059bc57f48" />
+          </activityFinalNode>
+          <forkNode Id="657153eb-c987-4a9c-a7b1-6b06166f36bb" name="Fork1" isLeaf="false">
+            <elementDefinition Id="975ffaee-8f21-408f-b977-0832d28cf809" />
+            <flowNodeTargets>
+              <controlFlow Id="373a2b46-3394-42b2-adf2-0cbbd0383293" isLeaf="false">
+                <opaqueActionMoniker Id="32dc312d-b05a-4e63-a2e1-b32d699ba14d" LastKnownName="选择上传的文件" />
+                <elementDefinition Id="2de3e531-dcc5-4593-b835-6c3daf4aa0e6" />
+              </controlFlow>
+              <controlFlow Id="4aa8eb56-17a2-4203-87fb-64200dc032cd" isLeaf="false">
+                <opaqueActionMoniker Id="910717b4-7528-4926-8c91-9f23ac140ab4" LastKnownName="填写文件信息" />
+                <elementDefinition Id="db03320e-0fba-42ba-8499-de7dd6048bc7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction Id="0d714c90-ca2f-42ed-bab0-4cc8cf876f16" name="进入上传页面" isLeaf="false">
+            <elementDefinition Id="683d5456-6c92-4f31-b512-020beb24fb08" />
+            <flowNodeTargets>
+              <controlFlow Id="822afcc9-e45d-42c9-9e03-6ae3c2830153" isLeaf="false">
+                <forkNodeMoniker Id="657153eb-c987-4a9c-a7b1-6b06166f36bb" LastKnownName="Fork1" />
+                <elementDefinition Id="cae66e4d-ca6c-41f3-969f-59ca3f271595" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="32dc312d-b05a-4e63-a2e1-b32d699ba14d" name="选择上传的文件" isLeaf="false">
+            <elementDefinition Id="7883522a-e310-4e82-8bdc-8254b0059344" />
+            <flowNodeTargets>
+              <controlFlow Id="495b3b52-5bed-4ceb-8b87-ee440c140288" isLeaf="false">
+                <joinNodeMoniker Id="8353492b-8be3-4702-a005-54a67ed9ef7e" LastKnownName="Join1" />
+                <elementDefinition Id="bb135339-81c1-401e-a534-5084d724ee1f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="910717b4-7528-4926-8c91-9f23ac140ab4" name="填写文件信息" isLeaf="false">
+            <elementDefinition Id="5ce19628-c3d8-4577-8229-17aa41cf3724" />
+            <flowNodeTargets>
+              <controlFlow Id="70e838e4-38aa-4457-88f0-6c7e904d526b" isLeaf="false">
+                <joinNodeMoniker Id="8353492b-8be3-4702-a005-54a67ed9ef7e" LastKnownName="Join1" />
+                <elementDefinition Id="9205483e-4f22-43fb-9296-394a9fc0f272" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode Id="8353492b-8be3-4702-a005-54a67ed9ef7e" name="Join1" isLeaf="false">
+            <elementDefinition Id="3921e019-b92d-46b8-8e1d-d280871275c2" />
+            <flowNodeTargets>
+              <controlFlow Id="164995a0-927a-416c-bf86-0935169b75b0" isLeaf="false">
+                <opaqueActionMoniker Id="6556ce4c-61c7-4224-8d80-e670a0608bca" LastKnownName="提交到服务器" />
+                <elementDefinition Id="2a6c5ef3-9d2a-4509-bee7-709f62550e40" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction Id="6556ce4c-61c7-4224-8d80-e670a0608bca" name="提交到服务器" isLeaf="false">
+            <elementDefinition Id="fc935d9a-b61a-4579-ad20-5d444bee47ba" />
+            <flowNodeTargets>
+              <controlFlow Id="93606326-5477-4608-bc56-a4075a412ebd" isLeaf="false">
+                <forkNodeMoniker Id="7d4d790a-649e-4b09-821a-aef09c161001" LastKnownName="Fork2" />
+                <elementDefinition Id="501f426f-89d5-40fe-9eae-61b046321786" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode Id="7d4d790a-649e-4b09-821a-aef09c161001" name="Fork2" isLeaf="false">
+            <elementDefinition Id="5e9d6fe8-c8df-4355-8982-6235e185a723" />
+            <flowNodeTargets>
+              <controlFlow Id="a967fd2a-7bcb-4820-a3d4-2eaec2c8ebdb" isLeaf="false">
+                <opaqueActionMoniker Id="036dc66c-baa3-44c9-b813-91d0901b80b6" LastKnownName="分配存储空间" />
+                <elementDefinition Id="e7c37c26-e417-49e6-9826-b6576a764444" />
+              </controlFlow>
+              <controlFlow Id="8cf7b732-0f3d-4f64-8115-f312c57318fb" isLeaf="false">
+                <opaqueActionMoniker Id="78d99345-4900-435a-b298-1b3d74a40c14" LastKnownName="接收并保存文件" />
+                <elementDefinition Id="23206ff7-4a62-423f-848e-b437d7e16f84" />
+              </controlFlow>
+              <controlFlow Id="588fe42c-b7d2-4bf3-8cb5-0f6bc35253f3" isLeaf="false">
+                <opaqueActionMoniker Id="4eee3577-0424-4d08-a25d-d4bfdfe7b142" LastKnownName="为文件添加索引" />
+                <elementDefinition Id="3025f773-94b3-42ec-a89e-7f7dd79cbb76" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <joinNode Id="b7adb453-2c05-4425-85fa-ad10263589ab" name="Join2" isLeaf="false">
+            <elementDefinition Id="e795b001-0673-4d77-97ec-665d514eeda4" />
+            <flowNodeTargets>
+              <controlFlow Id="0003e064-3983-4da6-aab4-35540cec4598" isLeaf="false">
+                <activityFinalNodeMoniker Id="37984a3d-e2ad-4863-8d8f-b07549269c5f" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="91b282c3-0f22-4dd1-95ac-9abeabc2212d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction Id="036dc66c-baa3-44c9-b813-91d0901b80b6" name="分配存储空间" isLeaf="false">
+            <elementDefinition Id="d2ca8a2b-ca07-43c0-adf0-83de86faa116" />
+            <flowNodeTargets>
+              <controlFlow Id="13bc3b91-9ac8-497f-85fc-4656d5914c5a" isLeaf="false">
+                <joinNodeMoniker Id="b7adb453-2c05-4425-85fa-ad10263589ab" LastKnownName="Join2" />
+                <elementDefinition Id="22f60ac1-f867-4331-85d7-5632765c2b25" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="78d99345-4900-435a-b298-1b3d74a40c14" name="接收并保存文件" isLeaf="false">
+            <elementDefinition Id="4333935b-9542-4ad0-acd2-91e69d49cc52" />
+            <flowNodeTargets>
+              <controlFlow Id="9552f98c-cc09-4445-86f9-e77d43c7885e" isLeaf="false">
+                <joinNodeMoniker Id="b7adb453-2c05-4425-85fa-ad10263589ab" LastKnownName="Join2" />
+                <elementDefinition Id="787e7c61-18e3-4ac1-9efa-1c568ecd6449" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4eee3577-0424-4d08-a25d-d4bfdfe7b142" name="为文件添加索引" isLeaf="false">
+            <elementDefinition Id="783ca5bd-6648-40c4-94f8-ca9d3597e077" />
+            <flowNodeTargets>
+              <controlFlow Id="4ead0ab6-5984-4ce8-9f15-df477e430d24" isLeaf="false">
+                <joinNodeMoniker Id="b7adb453-2c05-4425-85fa-ad10263589ab" LastKnownName="Join2" />
+                <elementDefinition Id="1979357c-2588-466c-80cd-37afa424371a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="85f2c8ea-e0b4-4ef5-b256-58cc57044504" name="ModelingProject1">
+    <elementDefinition Id="57344112-da0c-49fa-a7d2-5fc62838ca07" />
+  </package>
+</activityRootModel>

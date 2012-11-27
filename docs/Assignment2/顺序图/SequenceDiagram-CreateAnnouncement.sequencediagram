@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" dslVersion="1.0.0.0" Id="b7666b61-5b44-421c-a93d-542ef67ca826" name="SequenceDiagram5" mode="DotNet" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="f57f741f-acdb-47d6-abca-7590273864af" name="SequenceDiagram5" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification Id="a2b10708-fdc3-4df2-aee6-5fa2765faf4c" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="9abb62e2-2fa6-4cde-9e30-8e922c23b628" LastKnownName="发布公告按钮" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="0a100b23-2b8f-4be7-9062-0e6d865974c1" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="f177490e-a26c-4630-8f9e-4a374a69b6ef" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="309cb54c-39ea-4efd-b66c-bf1ef3fd3912" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="02df424f-5f90-4fcc-99e5-a6e1c2d00df5" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="0859e906-1376-4f0f-9199-d18d01b18b7d" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="f177490e-a26c-4630-8f9e-4a374a69b6ef" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="437f0ef1-3d6c-4567-94a9-626f5de4f467" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="9abb62e2-2fa6-4cde-9e30-8e922c23b628" LastKnownName="发布公告按钮" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="24600bcf-1819-4560-9100-f84a3e93cad5" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="fa66a6dd-b2a1-4d1f-a48f-68486a9bc5d7" LastKnownName="User" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="309cb54c-39ea-4efd-b66c-bf1ef3fd3912" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="9abb62e2-2fa6-4cde-9e30-8e922c23b628" LastKnownName="发布公告按钮" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="12bfb6f3-4cf7-4516-be4f-6a0f44e8f957" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="8f38d601-66c3-42e5-9733-484462e990e5" LastKnownName="发布公告页面" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="b50353f7-e98a-443d-88aa-4c68aa8a0661" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="8c866b5d-c8c2-471b-a06f-dba53666b475" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="92ea7f0a-dae7-4e21-859c-adbfc0f558e7" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="d69ac554-14a5-42a7-969f-9ded0f329329" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="8c866b5d-c8c2-471b-a06f-dba53666b475" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="aeafbb27-bbb5-416d-a5ab-352ba59be6ed" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="8f38d601-66c3-42e5-9733-484462e990e5" LastKnownName="发布公告页面" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="92ea7f0a-dae7-4e21-859c-adbfc0f558e7" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="8f38d601-66c3-42e5-9733-484462e990e5" LastKnownName="发布公告页面" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="02df424f-5f90-4fcc-99e5-a6e1c2d00df5" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="9abb62e2-2fa6-4cde-9e30-8e922c23b628" LastKnownName="发布公告按钮" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="d69ac554-14a5-42a7-969f-9ded0f329329" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="8f38d601-66c3-42e5-9733-484462e990e5" LastKnownName="发布公告页面" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="0859e906-1376-4f0f-9199-d18d01b18b7d" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="9abb62e2-2fa6-4cde-9e30-8e922c23b628" LastKnownName="发布公告按钮" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="b50353f7-e98a-443d-88aa-4c68aa8a0661" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="0d24a0d5-0879-41f3-9b42-6e2f317cdcd2" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="8f38d601-66c3-42e5-9733-484462e990e5" LastKnownName="发布公告页面" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="ccc00389-eb88-45f3-b47d-9db2f44241bc" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="8f38d601-66c3-42e5-9733-484462e990e5" LastKnownName="发布公告页面" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="0766924e-fdce-4270-9953-ab267d92b18d" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="b6e9e9d3-7a3e-441e-a28c-4ec145653c56" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="68814ffd-0f47-4307-ba83-6e8917038ab9" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="0a100b23-2b8f-4be7-9062-0e6d865974c1" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="dc499709-c024-4995-bc30-dda9d94c78c3" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="9abb62e2-2fa6-4cde-9e30-8e922c23b628" LastKnownName="发布公告按钮" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="b6e9e9d3-7a3e-441e-a28c-4ec145653c56" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="9d69dde2-b906-4280-998c-e84bd86ff2ce" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="8f38d601-66c3-42e5-9733-484462e990e5" LastKnownName="发布公告页面" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="68814ffd-0f47-4307-ba83-6e8917038ab9" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="8f38d601-66c3-42e5-9733-484462e990e5" LastKnownName="发布公告页面" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="471f7bfc-6cf1-4785-acd3-0d2b7bd2f76d" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="fa66a6dd-b2a1-4d1f-a48f-68486a9bc5d7" LastKnownName="User" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="0766924e-fdce-4270-9953-ab267d92b18d" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="ce8f99ea-8cb4-4de3-b533-096372e631c9" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="8f38d601-66c3-42e5-9733-484462e990e5" LastKnownName="发布公告页面" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="89dd779c-e532-4f66-bce3-f376f771dc52" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="8f38d601-66c3-42e5-9733-484462e990e5" LastKnownName="发布公告页面" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="3ee0d58d-713a-48fb-9fbb-7a14610c17d5" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="afb7d6e1-0155-41aa-929c-8edf723f8516" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="d3ed4d0b-e8b0-4ccf-8e37-5f97bb482f28" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="b119b031-b05d-4d42-9ff3-33941606a8bb" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="d2de5e05-e4da-4b02-a995-b9c2b2b10bd0" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="90e21bcc-43d6-437e-9a5a-cd8b773f3dc1" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="afb7d6e1-0155-41aa-929c-8edf723f8516" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="6672f9d7-adf6-4f7e-a8b8-019470e536b2" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="8f38d601-66c3-42e5-9733-484462e990e5" LastKnownName="发布公告页面" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="1e3bbfee-c42e-4eff-897a-fa8fdc7e223a" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="fa66a6dd-b2a1-4d1f-a48f-68486a9bc5d7" LastKnownName="User" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="d3ed4d0b-e8b0-4ccf-8e37-5f97bb482f28" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="8f38d601-66c3-42e5-9733-484462e990e5" LastKnownName="发布公告页面" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="1d3aed00-9931-4914-a50b-f5181ac634b2" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="ca48dd23-1875-4658-b43f-99e419817101" LastKnownName="AnnouncementController" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="a293d489-a578-4a3c-8752-cee0ca448f45" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="3e5909e6-e9cd-4c4c-a99f-a04151a84713" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="3c06a12f-7308-4c85-b2d0-014a8838c8fc" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="b888ea0a-1f65-47c0-8a26-46e02aaea1bd" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="c62d4b89-c427-4236-87c1-756e53a64b25" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="23104d0a-bb7f-4087-8490-a7ffe95c34cb" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="3e5909e6-e9cd-4c4c-a99f-a04151a84713" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="8f7302bc-c13e-4cea-aa13-67a7baefc0fb" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="ca48dd23-1875-4658-b43f-99e419817101" LastKnownName="AnnouncementController" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="3c06a12f-7308-4c85-b2d0-014a8838c8fc" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="ca48dd23-1875-4658-b43f-99e419817101" LastKnownName="AnnouncementController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="b119b031-b05d-4d42-9ff3-33941606a8bb" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="8f38d601-66c3-42e5-9733-484462e990e5" LastKnownName="发布公告页面" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="567c9f54-9bc7-4d6f-be42-230e9163bcb3" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="c81a76c1-f5b2-47ba-a831-9e5be9e0ad79" LastKnownName="AnnouncementModel" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="a3d1b15c-a3c5-4206-8852-8d22a600e226" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="af43c8bc-c031-427b-8eb1-e9c8a79be5cc" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="e71d1e3f-3278-454f-bd9c-54a08a111ca8" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="c31bc4f1-0a30-4db8-9d7e-f66b8e841f81" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="af43c8bc-c031-427b-8eb1-e9c8a79be5cc" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="d90d149b-8a3a-4ef6-b3d9-43c58c32e321" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="c81a76c1-f5b2-47ba-a831-9e5be9e0ad79" LastKnownName="AnnouncementModel" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="b888ea0a-1f65-47c0-8a26-46e02aaea1bd" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="ca48dd23-1875-4658-b43f-99e419817101" LastKnownName="AnnouncementController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="e71d1e3f-3278-454f-bd9c-54a08a111ca8" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="c81a76c1-f5b2-47ba-a831-9e5be9e0ad79" LastKnownName="AnnouncementModel" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="c31bc4f1-0a30-4db8-9d7e-f66b8e841f81" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="c81a76c1-f5b2-47ba-a831-9e5be9e0ad79" LastKnownName="AnnouncementModel" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="c62d4b89-c427-4236-87c1-756e53a64b25" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="ca48dd23-1875-4658-b43f-99e419817101" LastKnownName="AnnouncementController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="a3d1b15c-a3c5-4206-8852-8d22a600e226" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="371b1e79-f2ff-4c01-9a1a-403c920f5bdd" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="c81a76c1-f5b2-47ba-a831-9e5be9e0ad79" LastKnownName="AnnouncementModel" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="d2de5e05-e4da-4b02-a995-b9c2b2b10bd0" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="8f38d601-66c3-42e5-9733-484462e990e5" LastKnownName="发布公告页面" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="23104d0a-bb7f-4087-8490-a7ffe95c34cb" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="ca48dd23-1875-4658-b43f-99e419817101" LastKnownName="AnnouncementController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="a293d489-a578-4a3c-8752-cee0ca448f45" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="5c5e39a6-2bb5-4341-8b8d-12e857e0a1c6" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="ca48dd23-1875-4658-b43f-99e419817101" LastKnownName="AnnouncementController" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="1823399e-f6dd-41ac-aadc-0266e56536e1" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="fa66a6dd-b2a1-4d1f-a48f-68486a9bc5d7" LastKnownName="User" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="5efa8d94-e5a1-4090-a733-39598f6966d2" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="f9e171cc-810c-46b6-82ac-8ec1b3a827cb" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="8f97ed72-a21f-464f-877e-ab22741b91b5" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="f9e171cc-810c-46b6-82ac-8ec1b3a827cb" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="f191d4a1-c44e-4e65-8089-9a75bb1f25d0" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="fa66a6dd-b2a1-4d1f-a48f-68486a9bc5d7" LastKnownName="User" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="90e21bcc-43d6-437e-9a5a-cd8b773f3dc1" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="8f38d601-66c3-42e5-9733-484462e990e5" LastKnownName="发布公告页面" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="8f97ed72-a21f-464f-877e-ab22741b91b5" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="fa66a6dd-b2a1-4d1f-a48f-68486a9bc5d7" LastKnownName="User" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="3ee0d58d-713a-48fb-9fbb-7a14610c17d5" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="a29bd046-8926-4808-9724-ceea3b25e033" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="8f38d601-66c3-42e5-9733-484462e990e5" LastKnownName="发布公告页面" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="5efa8d94-e5a1-4090-a733-39598f6966d2" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="28993eb1-824c-49c5-afbf-86bb8e57fc51" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="fa66a6dd-b2a1-4d1f-a48f-68486a9bc5d7" LastKnownName="User" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline Id="fa66a6dd-b2a1-4d1f-a48f-68486a9bc5d7" name="User" isActor="true" lifelineDisplayName="User">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="24600bcf-1819-4560-9100-f84a3e93cad5" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="471f7bfc-6cf1-4785-acd3-0d2b7bd2f76d" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="1e3bbfee-c42e-4eff-897a-fa8fdc7e223a" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="f9e171cc-810c-46b6-82ac-8ec1b3a827cb" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="5efa8d94-e5a1-4090-a733-39598f6966d2" LastKnownName="ExecutionOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="9abb62e2-2fa6-4cde-9e30-8e922c23b628" name="发布公告按钮" isActor="false" lifelineDisplayName="‎发布公告按钮‎">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="f177490e-a26c-4630-8f9e-4a374a69b6ef" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="0a100b23-2b8f-4be7-9062-0e6d865974c1" LastKnownName="ExecutionOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="8f38d601-66c3-42e5-9733-484462e990e5" name="发布公告页面" isActor="false" lifelineDisplayName="‎发布公告页面‎">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="8c866b5d-c8c2-471b-a06f-dba53666b475" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="b50353f7-e98a-443d-88aa-4c68aa8a0661" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="b6e9e9d3-7a3e-441e-a28c-4ec145653c56" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="0766924e-fdce-4270-9953-ab267d92b18d" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="afb7d6e1-0155-41aa-929c-8edf723f8516" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="3ee0d58d-713a-48fb-9fbb-7a14610c17d5" LastKnownName="ExecutionOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="ca48dd23-1875-4658-b43f-99e419817101" name="AnnouncementController" isActor="false" lifelineDisplayName="AnnouncementController">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="3e5909e6-e9cd-4c4c-a99f-a04151a84713" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="a293d489-a578-4a3c-8752-cee0ca448f45" LastKnownName="ExecutionOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="c81a76c1-f5b2-47ba-a831-9e5be9e0ad79" name="AnnouncementModel" isActor="false" lifelineDisplayName="AnnouncementModel">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="af43c8bc-c031-427b-8eb1-e9c8a79be5cc" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="a3d1b15c-a3c5-4206-8852-8d22a600e226" LastKnownName="ExecutionOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message Id="87ea87e8-9c65-4b27-bb4e-1596784213f2" name="Press" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="24600bcf-1819-4560-9100-f84a3e93cad5" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="309cb54c-39ea-4efd-b66c-bf1ef3fd3912" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="9e97bfd2-b546-4968-97b4-36fc7d2f66c8" name="&lt;&lt;create&gt;&gt;" messageKind="Complete" messageSort="CreateMessage" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="02df424f-5f90-4fcc-99e5-a6e1c2d00df5" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="92ea7f0a-dae7-4e21-859c-adbfc0f558e7" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="51257907-1dc7-4338-9097-00c1d539ac21" name="填写公告信息" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="471f7bfc-6cf1-4785-acd3-0d2b7bd2f76d" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="68814ffd-0f47-4307-ba83-6e8917038ab9" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="597a90e5-aaa0-429a-8b04-67212ec66cc2" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="d69ac554-14a5-42a7-969f-9ded0f329329" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="0859e906-1376-4f0f-9199-d18d01b18b7d" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="4fd007c1-66a3-4573-b63b-24456f2d34d5" name="提交" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="1e3bbfee-c42e-4eff-897a-fa8fdc7e223a" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="d3ed4d0b-e8b0-4ccf-8e37-5f97bb482f28" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="ce8a16ce-12ee-4f07-8a3e-6465365f4b72" name="提交" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="b119b031-b05d-4d42-9ff3-33941606a8bb" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="3c06a12f-7308-4c85-b2d0-014a8838c8fc" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="10241562-dc3a-4080-820a-8728848b9743" name="添加公告" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="b888ea0a-1f65-47c0-8a26-46e02aaea1bd" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="e71d1e3f-3278-454f-bd9c-54a08a111ca8" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="0e5286d1-dd06-4090-b2e7-a91772d18696" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="c31bc4f1-0a30-4db8-9d7e-f66b8e841f81" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="c62d4b89-c427-4236-87c1-756e53a64b25" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="3a473f16-410b-43d6-97b3-b529fd765dcc" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="23104d0a-bb7f-4087-8490-a7ffe95c34cb" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="d2de5e05-e4da-4b02-a995-b9c2b2b10bd0" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="34fcb49f-ca82-4619-85cd-8d3927bd075a" name="发布成功" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="90e21bcc-43d6-437e-9a5a-cd8b773f3dc1" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="8f97ed72-a21f-464f-877e-ab22741b91b5" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="437f0ef1-3d6c-4567-94a9-626f5de4f467" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="dc499709-c024-4995-bc30-dda9d94c78c3" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="aeafbb27-bbb5-416d-a5ab-352ba59be6ed" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="0d24a0d5-0879-41f3-9b42-6e2f317cdcd2" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="8f7302bc-c13e-4cea-aa13-67a7baefc0fb" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="5c5e39a6-2bb5-4341-8b8d-12e857e0a1c6" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="d90d149b-8a3a-4ef6-b3d9-43c58c32e321" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="371b1e79-f2ff-4c01-9a1a-403c920f5bdd" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="9d69dde2-b906-4280-998c-e84bd86ff2ce" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="ce8f99ea-8cb4-4de3-b533-096372e631c9" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="6672f9d7-adf6-4f7e-a8b8-019470e536b2" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="a29bd046-8926-4808-9724-ceea3b25e033" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="f191d4a1-c44e-4e65-8089-9a75bb1f25d0" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="28993eb1-824c-49c5-afbf-86bb8e57fc51" name="ExecutionEvent" />
+    </packageHasNamedElement>
+  </packagedElements>
+</SequenceDesignerModel>
