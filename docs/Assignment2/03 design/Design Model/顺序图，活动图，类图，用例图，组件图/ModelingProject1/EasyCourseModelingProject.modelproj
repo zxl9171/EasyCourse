@@ -17,12 +17,12 @@
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
   <ItemGroup>
-    <Content Include="构件图\UMLComponentDiagram1.componentdiagram">
+    <Content Include="组件图\UMLComponentDiagram1.componentdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="构件图\UMLComponentDiagram1.componentdiagram.layout">
+    <Content Include="组件图\UMLComponentDiagram1.componentdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>构件图\UMLComponentDiagram1.componentdiagram</DependentUpon>
+      <DependentUpon>组件图\UMLComponentDiagram1.componentdiagram</DependentUpon>
     </Content>
     <Content Include="活动图\UMLActivityDiagram1.activitydiagram">
       <SubType>Content</SubType>
@@ -90,7 +90,7 @@
     <Content Include="ModelDefinition\ModelingProject1.uml">
       <SubType>Content</SubType>
     </Content>
-    <Folder Include="构件图" />
+    <Folder Include="组件图" />
     <Folder Include="类图" />
     <Folder Include="活动图\" />
     <Folder Include="顺序图" />

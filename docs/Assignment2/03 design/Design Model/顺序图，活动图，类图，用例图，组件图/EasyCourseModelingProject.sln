@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingProject1", "ModelingProject1\ModelingProject1.modelproj", "{146F27FE-A6F6-4840-A3E4-5E46CA2243CD}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "EasyCourseModelingProject", "ModelingProject1\EasyCourseModelingProject.modelproj", "{146F27FE-A6F6-4840-A3E4-5E46CA2243CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
