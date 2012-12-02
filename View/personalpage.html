@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">  
+  <title>Easy Course</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<script type="text/javascript" src="jquery-1.8.2.js"></script>
+    <script src="./bootstrap/js/bootstrap.js"></script>
+
+    <!-- Le styles -->
+    <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      brand{
+        padding-left: 5px;
+      }
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+
+      }
+      div.hero-unit
+      {
+      	background-image: url(2967735_233948004900_2.jpg);
+      }
+      #searchField
+      {
+          padding-top: 5px;
+          padding-left:200px;
+          float: right;
+      }
+
+      #signIn
+      {
+        padding-top:10px;
+        padding-right: 10px;
+        float: right;
+      }
+      #mymodal
+      {
+        width: 500px;
+      }
+      #reminder
+      {
+        height: 400px;
+      }
+      #username
+      {
+        padding-top:10px;
+        padding-right: 10px;
+        float: right;
+      }
+
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-float">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">EasyCourse</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">我的主页</a></li>
+              <li ><a href="#">我的课程</a></li>
+              <li ><a href="#">我的群组</a></li>
+              <li><a href="#">消息列表</a></li>
+              
+            </ul>
+            <form class="navbar-search pull-right">
+              <input type="text" class="search-query" placeholder="Search"><a><i class="icon-search"></i></a>
+            </form>
+
+            <!--<div id="searchField"><input ></div>-->
+            <a id="signIn" href="#mymodal" data-toggle="modal" data-target="#mymodal">登出</a>
+            <a id="username" herf="gerenzhuye.html">甄晓磊</a>
+
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-float">
+      <div>
+      </div>
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="row">
+        <div class="alert fade in">
+          <a class="close" data-dismiss="alert" href="#">&times;</a>
+          <strong>通知！</strong> 黄伟岳 请求添加您为好友
+        </div>
+      </div>
+      <div class="row">
+        <div class="span6">
+            <div class="well" id="reminder">
+              <a href="#">
+                <h4>
+                  软件工程实践assignment2需在11月21日提交
+                </h4>
+              </a>
+              <a href="#">
+                <h4>
+                  电院科技创新3C需在11月22日检查
+                </h4>
+              </a>
+              <a href="#">
+                <h4>
+                  软工tmd就是个悲剧
+                </h4>
+              </a>
+
+            </div>
+        </div>
+        <div class="span3 columns">
+          <div class="well">
+            <h1>this is a calendar</h1>
+          </div>
+
+          <div class="well">
+            <h4>这是群组列表</h4>
+          </div>
+          <div class="well">
+            <h4>这是班级列表</h4>
+          </div>
+
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <div class="container">
+          <p class="muted credit">&copy; EasyCouse by EricCode</p>
+        </div>
+      </footer>
+      <div class="modal fade" id="mymodal">
+         <form class="form-signin">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal">x</button>
+          <h3>退出系统</h3>
+        </div>
+        <div class="modal-body">
+         <div class="container-float">
+          <h1>现在就要走了么？</h1>
+         </div> <!-- /container -->
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-large" data-dismiss="modal">我再看看</a>
+          <button class="btn btn-large btn-primary" type="submit">现在就走</button>
+        </div>  
+      </div> 
+      </form> 
+    </div> <!-- /container -->
+    
+
+  
+  
+  </body>
+</html>

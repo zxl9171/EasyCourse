@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">  
+  <title>Easy Course</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<script type="text/javascript" src="jquery-1.8.2.js"></script>
+    <script src="./bootstrap/js/bootstrap.js"></script>
+
+    <!-- Le styles -->
+    <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      brand{
+        padding-left: 5px;
+      }
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+
+      }
+      div.hero-unit
+      {
+      	background-image: url(2967735_233948004900_2.jpg);
+      }
+      #searchField
+      {
+          padding-top: 5px;
+          padding-left:200px;
+          float: right;
+      }
+      #signIn
+      {
+        padding-top:10px;
+        padding-right: 10px;
+        float: right;
+      }
+      #mymodal
+      {
+        width: 500px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-float">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">EasyCourse</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li ><a href="about.html">主要功能</a></li>
+              <li ><a href="#">关于我们</a></li>
+              <li ><a href="about.html">加入我们</a></li>
+              
+            </ul>
+
+            <!--<div id="searchField"><input ></div>-->
+            <a id="signIn" href="#mymodal" data-toggle="modal" data-target="#mymodal">登入</a>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-float">
+      <div>
+      </div>
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="row">
+        <div class="span9 columns">
+          <div id="myCarousel" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="index.png" alt="">
+                <div class="carousel-caption">
+                 <div class="span6">
+                    <h4>欢迎光临EasyCourse</h4>
+                    <p>
+                      这是个人主页
+                    </p>
+                  </div>
+                  <div class="span2">
+                    <a class="btn-large btn" href="#mymodal" data-toggle="modal" data-target="#mymodal">现在登入</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="class.png" alt="">
+                <div class="carousel-caption">
+                  <div class="span6">
+                    <h4>欢迎光临EasyCourse</h4>
+                    <p>
+                      这是课程首页
+                    </p>
+                  </div>
+                  <div class="span2">
+                    <a class="btn-large btn" href="#mymodal" data-toggle="modal" data-target="#mymodal">现在登入</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="group.png" alt="">
+                <div class="carousel-caption">
+                  <h4>这是一个交大课程网站</h4>
+                  <p>
+                    这是群组首页      
+                  </p>
+                </div>
+              </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <div class="container">
+          <p class="muted credit">&copy; EasyCouse by EricCode</p>
+        </div>
+      </footer>
+      <div class="modal fade" id="mymodal">
+         <form class="form-signin">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal">x</button>
+          <h3>请登入</h3>
+        </div>
+        <div class="modal-body">
+         <div class="container-float">
+            <p>
+             <input type="text" class="input-block-level" placeholder="告诉我你的用户名哦">
+            </p>
+            <p>
+             <input type="password" class="input-block-level" placeholder="这里输密码哦">
+            </p>
+             <label class="checkbox">
+               <input type="checkbox" value="remember-me"> 我会记住你的~
+             </label>
+         </div> <!-- /container -->
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-large" data-dismiss="modal">不高兴，不登了</a>
+          <button class="btn btn-large btn-primary" type="submit">现在就登入</button>
+        </div>  
+      </div> 
+      </form> 
+    </div> <!-- /container -->
+    
+
+  
+  
+  </body>
+</html>
