@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>关联模型 - ThinkPHP完全开发手册 - 3.1</title><meta name="keywords" content="ThinkPHP,文档中心,在线手册,phpthink,类库参考,视频教程,book,3.0,api,开发框架,web框架,PHP开发框架,ThinkPHP手册"/><meta name="description" content="中文最佳实践框架  JUST THINK IT ThinkPHP 大道至简 开发由我|php快速开发|just think it|php开源框架|php网站开发|上海顶想|ORM|Framework|PHP企业开发"/><link href="../Public/favicon.ico" rel="shortcut icon"><link rel="stylesheet" type="text/css" href="../Public/css/layout.css" /><link rel="stylesheet" type="text/css" href="../Public/css/book.css" /><link rel="stylesheet" type="text/css" href="../Public/prettify/prettify.css" /><link rel="stylesheet" type="text/css" href="../Public/ThinkBox/ThinkBox.css" /><script type="text/javascript" src="../Public/js/jquery-1.7.1.min.js"></script><script type="text/javascript" src="../Public/js/common.js"></script><script type="text/javascript" src="../Public/prettify/prettify.js"></script><script type="text/javascript" src="../Public/ThinkBox/jquery.ThinkBox.js"></script><link rel="stylesheet" type="text/css" href="../Plugin/remark/remark.css" /><script type="text/javascript" src="../Plugin/remark/remark.js"></script></head><body><div id="header"><div id="innerHeader"><div class="book-top cf"><div class="book-logo fl"><a href="../manual.html" book="1">ThinkPHP完全开发手册</a><sup>3.1</sup></div><div class="right fr"><div class="user-current"></div></div></div></div></div><div id="sortList"><div class="inner"><div class="menu-title">目录Directory</div></div></div><div id="selector"><div class="inner"><div class="book-menu"><div class="list"><ul><li class=" child"><a class="title " href="preface.html" title="序言">序言</a></li><li class=" child"><a class="title " href="start.html" title="入门">第1章&nbsp;入门</a><ul><li><a class="" href="introduction.html">1.1&nbsp;简介</a></li><li><a class="" href="basic_concept.html">1.2&nbsp;基础概念</a></li><li><a class="" href="get_thinkphp.html">1.3&nbsp;获取ThinkPHP</a></li><li><a class="" href="environment.html">1.4&nbsp;环境要求</a></li><li><a class="" href="licence.html">1.5&nbsp;许可协议</a></li><li><a class="" href="directory.html">1.6&nbsp;目录结构</a></li><li><a class="" href="naming_conventions.html">1.7&nbsp;命名规范</a></li><li><a class="" href="mvc.html">1.8&nbsp;MVC分层</a></li><li><a class="" href="cbd.html">1.9&nbsp;CBD架构</a></li><li><a class="" href="features.html">1.10&nbsp;特性概述</a></li><li><a class="" href="system_process.html">1.11&nbsp;系统流程</a></li><li><a class="" href="development_process.html">1.12&nbsp;开发流程</a></li></ul></li><li class=" child"><a class="title " href="entry.html" title="入口">第2章&nbsp;入口</a><ul><li><a class="" href="entrance.html">2.1&nbsp;入口文件</a></li><li><a class="" href="app_directory.html">2.2&nbsp;项目目录</a></li><li><a class="" href="deploy_directory.html">2.3&nbsp;部署目录</a></li><li><a class="" href="app_compile.html">2.4&nbsp;项目编译</a></li><li><a class="" href="debug_mode.html">2.5&nbsp;调试模式</a></li></ul></li><li class=" child"><a class="title " href="config.html" title="配置">第3章&nbsp;配置</a><ul><li><a class="" href="config_type.html">3.1&nbsp;配置格式</a></li><li><a class="" href="convention_config.html">3.2&nbsp;惯例配置</a></li><li><a class="" href="app_config.html">3.3&nbsp;项目配置</a></li><li><a class="" href="debug_config.html">3.4&nbsp;调试配置</a></li><li><a class="" href="group_config.html">3.5&nbsp;分组配置</a></li><li><a class="" href="read_config.html">3.6&nbsp;读取配置</a></li><li><a class="" href="dynamic_config.html">3.7&nbsp;动态配置</a></li><li><a class="" href="extend_config.html">3.8&nbsp;扩展配置</a></li></ul></li><li class=" child"><a class="title " href="function_class.html" title="函数和类库">第4章&nbsp;函数和类库</a><ul><li><a class="" href="functions.html">4.1&nbsp;函数库</a></li><li><a class="" href="class.html">4.2&nbsp;类库</a></li></ul></li><li class=" child"><a class="title " href="controller.html" title="控制器">第5章&nbsp;控制器</a><ul><li><a class="" href="url_mode.html">5.1&nbsp;URL模式</a></li><li><a class="" href="module_action.html">5.2&nbsp;模块和操作</a></li><li><a class="" href="define_controller.html">5.3&nbsp;定义控制器</a></li><li><a class="" href="empty_action.html">5.4&nbsp;空操作</a></li><li><a class="" href="empty_module.html">5.5&nbsp;空模块</a></li><li><a class="" href="module_group.html">5.6&nbsp;模块分组</a></li><li><a class="" href="url_suffix.html">5.7&nbsp;URL伪静态</a></li><li><a class="" href="url_route.html">5.8&nbsp;URL路由</a></li><li><a class="" href="url_rewrite.html">5.9&nbsp;URL重写</a></li><li><a class="" href="url_build.html">5.10&nbsp;URL生成</a></li><li><a class="" href="url_case.html">5.11&nbsp;URL大小写</a></li><li><a class="" href="before_after.html">5.12&nbsp;前置和后置操作</a></li><li><a class="" href="cross_module.html">5.13&nbsp;跨模块调用</a></li><li><a class="" href="page_dispatch.html">5.14&nbsp;页面跳转</a></li><li><a class="" href="redirect.html">5.15&nbsp;重定向</a></li><li><a class="" href="get_system_var.html">5.16&nbsp;获取系统变量</a></li><li><a class="" href="request_method.html">5.17&nbsp;判断请求类型</a></li><li><a class="" href="get_url_params.html">5.18&nbsp;获取URL参数</a></li><li><a class="" href="ajax_return.html">5.19&nbsp;AJAX返回</a></li><li><a class="" href="action_param_bind.html">5.20&nbsp;Action参数绑定</a></li><li><a class="" href="multi_action_layer.html">5.21&nbsp;多层控制器支持</a></li></ul></li><li class="show child"><a class="title " href="model.html" title="模型">第6章&nbsp;模型</a><ul><li><a class="" href="model_define.html">6.1&nbsp;模型定义</a></li><li><a class="" href="model_instance.html">6.2&nbsp;模型实例化</a></li><li><a class="" href="field_define.html">6.3&nbsp;字段定义</a></li><li><a class="" href="primary_key.html">6.4&nbsp;数据主键</a></li><li><a class="" href="get_fields.html">6.5&nbsp;属性访问</a></li><li><a class="" href="cross_database.html">6.6&nbsp;跨库操作</a></li><li><a class="" href="connect_database.html">6.7&nbsp;连接数据库</a></li><li><a class="" href="switch_database.html">6.8&nbsp;切换数据库</a></li><li><a class="" href="distributed_database.html">6.9&nbsp;分布式数据库</a></li><li><a class="" href="create.html">6.10&nbsp;创建数据</a></li><li><a class="" href="field_map.html">6.11&nbsp;字段映射</a></li><li><a class="" href="continuous_operation.html">6.12&nbsp;连贯操作</a></li><li><a class="" href="curd.html">6.13&nbsp;CURD操作</a></li><li><a class="" href="active_record.html">6.14&nbsp;ActiveRecord</a></li><li><a class="" href="auto_validate.html">6.15&nbsp;自动验证</a></li><li><a class="" href="name_range.html">6.16&nbsp;命名范围</a></li><li><a class="" href="auto_operate.html">6.17&nbsp;自动完成</a></li><li><a class="" href="query.html">6.18&nbsp;查询语言</a></li><li><a class="" href="query_lock.html">6.19&nbsp;查询锁定</a></li><li><a class="" href="field_except.html">6.20&nbsp;字段排除</a></li><li><a class="" href="trans_support.html">6.21&nbsp;事务支持</a></li><li><a class="" href="adv_model.html">6.22&nbsp;高级模型</a></li><li><a class="" href="view_model.html">6.23&nbsp;视图模型</a></li><li><a class="selected" href="relation_model.html">6.24&nbsp;关联模型</a></li><li><a class="" href="mongo_model.html">6.25&nbsp;Mongo模型</a></li><li><a class="" href="dynamic_model.html">6.26&nbsp;动态模型</a></li><li><a class="" href="virtual_model.html">6.27&nbsp;虚拟模型</a></li><li><a class="" href="multi_model_layer.html">6.28&nbsp;多层模型支持</a></li></ul></li><li class=" child"><a class="title " href="view.html" title="视图">第7章&nbsp;视图</a><ul><li><a class="" href="template_define.html">7.1&nbsp;模板定义</a></li><li><a class="" href="template_assign.html">7.2&nbsp;模板赋值</a></li><li><a class="" href="template_output.html">7.3&nbsp;模板输出</a></li><li><a class="" href="template_replace.html">7.4&nbsp;模板替换</a></li><li><a class="" href="fetch_content.html">7.5&nbsp;获取内容</a></li><li><a class="" href="template_engine.html">7.6&nbsp;模板引擎</a></li><li><a class="" href="layout.html">7.7&nbsp;布局模板</a></li></ul></li><li class=" child"><a class="title " href="template.html" title="模板引擎">第8章&nbsp;模板引擎</a><ul><li><a class="" href="var_output.html">8.1&nbsp;变量输出</a></li><li><a class="" href="system_var.html">8.2&nbsp;系统变量</a></li><li><a class="" href="use_function.html">8.3&nbsp;使用函数</a></li><li><a class="" href="default_val.html">8.4&nbsp;默认值输出</a></li><li><a class="" href="use_operate.html">8.5&nbsp;使用运算符</a></li><li><a class="" href="buildin_tag.html">8.6&nbsp;内置标签</a></li><li><a class="" href="include_file.html">8.7&nbsp;包含文件</a></li><li><a class="" href="load_file.html">8.8&nbsp;导入文件</a></li><li><a class="" href="volist.html">8.9&nbsp;Volist标签</a></li><li><a class="" href="foreach.html">8.10&nbsp;Foreach标签</a></li><li><a class="" href="for.html">8.11&nbsp;For标签</a></li><li><a class="" href="switch.html">8.12&nbsp;Switch标签</a></li><li><a class="" href="compare.html">8.13&nbsp;比较标签</a></li><li><a class="" href="three_operators.html">8.14&nbsp;三元运算</a></li><li><a class="" href="range.html">8.15&nbsp;范围判断标签</a></li><li><a class="" href="present.html">8.16&nbsp;Present标签</a></li><li><a class="" href="empty.html">8.17&nbsp;Empty标签</a></li><li><a class="" href="defined.html">8.18&nbsp;Defined标签</a></li><li><a class="" href="define.html">8.19&nbsp;Define标签</a></li><li><a class="" href="assign.html">8.20&nbsp;Assign标签</a></li><li><a class="" href="if.html">8.21&nbsp;IF标签</a></li><li><a class="" href="tag_nest.html">8.22&nbsp;标签嵌套</a></li><li><a class="" href="use_php.html">8.23&nbsp;使用PHP代码</a></li><li><a class="" href="layout_template.html">8.24&nbsp;模板布局</a></li><li><a class="" href="extend_template.html">8.25&nbsp;模板继承</a></li><li><a class="" href="literal.html">8.26&nbsp;原样输出</a></li><li><a class="" href="comment.html">8.27&nbsp;模板注释</a></li><li><a class="" href="taglib.html">8.28&nbsp;引入标签库</a></li><li><a class="" href="modify_edlim.html">8.29&nbsp;修改定界符</a></li><li><a class="" href="js_confusion.html">8.30&nbsp;避免JS混淆</a></li></ul></li><li class=" child"><a class="title " href="log.html" title="日志">第9章&nbsp;日志</a><ul><li><a class="" href="log_level.html">9.1&nbsp;日志级别</a></li><li><a class="" href="log_type.html">9.2&nbsp;记录方式</a></li><li><a class="" href="log_record.html">9.3&nbsp;手动记录</a></li></ul></li><li class=" child"><a class="title " href="error.html" title="错误">第10章&nbsp;错误</a><ul><li><a class="" href="exception.html">10.1&nbsp;异常处理</a></li><li><a class="" href="exception_tmpl.html">10.2&nbsp;异常模板</a></li><li><a class="" href="exception_info.html">10.3&nbsp;异常显示</a></li></ul></li><li class=" child"><a class="title " href="debug.html" title="调试">第11章&nbsp;调试</a><ul><li><a class="" href="app_status.html">11.1&nbsp;运行状态</a></li><li><a class="" href="page_trace.html">11.2&nbsp;页面Trace</a></li><li><a class="" href="debug_mothod.html">11.3&nbsp;调试方法</a></li></ul></li><li class=" child"><a class="title " href="cache.html" title="缓存">第12章&nbsp;缓存</a><ul><li><a class="" href="cache_type.html">12.1&nbsp;缓存方式</a></li><li><a class="" href="dynamic_cache.html">12.2&nbsp;动态缓存</a></li><li><a class="" href="cache_queue.html">12.3&nbsp;缓存队列</a></li><li><a class="" href="express_cache.html">12.4&nbsp;快捷缓存</a></li><li><a class="" href="fast_save.html">12.5&nbsp;快速缓存</a></li><li><a class="" href="query_cache.html">12.6&nbsp;查询缓存</a></li><li><a class="" href="sql_cache.html">12.7&nbsp;SQL解析缓存</a></li><li><a class="" href="html_cache.html">12.8&nbsp;静态缓存</a></li></ul></li><li class=" child"><a class="title " href="extend.html" title="扩展">第13章&nbsp;扩展</a><ul><li><a class="" href="behavior_extend.html">13.1&nbsp;行为扩展</a></li><li><a class="" href="library_extend.html">13.2&nbsp;类库扩展</a></li><li><a class="" href="action_extend.html">13.3&nbsp;控制器扩展</a></li><li><a class="" href="model_extend.html">13.4&nbsp;模型扩展</a></li><li><a class="" href="driver_extend.html">13.5&nbsp;驱动扩展</a></li><li><a class="" href="widget_extend.html">13.6&nbsp;Widget扩展</a></li><li><a class="" href="mode_extend.html">13.7&nbsp;模式扩展</a></li><li><a class="" href="engine_extend.html">13.8&nbsp;引擎扩展</a></li></ul></li><li class=" child"><a class="title " href="safety.html" title="安全">第14章&nbsp;安全</a><ul><li><a class="" href="form_token.html">14.1&nbsp;表单令牌</a></li><li><a class="" href="field_type_validate.html">14.2&nbsp;字段类型验证</a></li><li><a class="" href="sql_injection.html">14.3&nbsp;防止SQL注入</a></li><li><a class="" href="input_filter.html">14.4&nbsp;输入过滤</a></li><li><a class="" href="upload_safe.html">14.5&nbsp;上传安全</a></li><li><a class="" href="prevent_xss.html">14.6&nbsp;防止XSS攻击</a></li><li><a class="" href="other_suggestion.html">14.7&nbsp;其他安全建议</a></li><li><a class="" href="dir_secure.html">14.8&nbsp;目录安全文件</a></li><li><a class="" href="protected_template.html">14.9&nbsp;保护模板文件</a></li></ul></li><li class=" child"><a class="title " href="performance.html" title="性能">第15章&nbsp;性能</a><ul><li><a class="" href="close_debug.html">15.1&nbsp;关闭调试模式</a></li><li><a class="" href="cache_on.html">15.2&nbsp;开启缓存</a></li><li><a class="" href="merge_fields.html">15.3&nbsp;合并字段缓存</a></li><li><a class="" href="sql_optimization.html">15.4&nbsp;优化SQL</a></li><li><a class="" href="replace_entrance.html">15.5&nbsp;替换入口</a></li><li><a class="" href="front_optimization.html">15.6&nbsp;前端优化</a></li></ul></li><li class=" child"><a class="title " href="deploy.html" title="部署">第16章&nbsp;部署</a><ul><li><a class="" href="path_info_support.html">16.1&nbsp;PATH_INFO支持</a></li><li><a class="" href="hidden_index.html">16.2&nbsp;隐藏index.php</a></li><li><a class="" href="sub_domain_deploy.html">16.3&nbsp;二级域名部署</a></li><li><a class="" href="error_page.html">16.4&nbsp;定制错误页面</a></li><li><a class="" href="set_zone.html">16.5&nbsp;设置时区</a></li></ul></li><li class=" child"><a class="title " href="sae.html" title="SAE支持">第17章&nbsp;SAE支持</a><ul><li><a class="" href="sae_intro.html">17.1&nbsp;SAE介绍</a></li><li><a class="" href="get_sae.html">17.2&nbsp;获取SAE</a></li><li><a class="" href="sae_develop.html">17.3&nbsp;SAE开发</a></li></ul></li><li class=" child"><a class="title " href="rest.html" title="REST支持">第18章&nbsp;REST支持</a><ul><li><a class="" href="rest_intro.html">18.1&nbsp;REST介绍</a></li><li><a class="" href="rest_mode.html">18.2&nbsp;REST模式</a></li><li><a class="" href="rest_config.html">18.3&nbsp;REST配置</a></li><li><a class="" href="rest_route.html">18.4&nbsp;REST路由</a></li><li><a class="" href="rest_method.html">18.5&nbsp;REST方法</a></li></ul></li><li class=" child"><a class="title " href="sundry.html" title="杂项">第19章&nbsp;杂项</a><ul><li><a class="" href="session.html">19.1&nbsp;Session支持</a></li><li><a class="" href="cookie.html">19.2&nbsp;Cookie支持</a></li><li><a class="" href="date.html">19.3&nbsp;日期和时间</a></li><li><a class="" href="wml.html">19.4&nbsp;WML开发</a></li><li><a class="" href="multi_lang.html">19.5&nbsp;多语言</a></li><li><a class="" href="data_page.html">19.6&nbsp;数据分页</a></li><li><a class="" href="upload.html">19.7&nbsp;文件上传</a></li><li><a class="" href="verify.html">19.8&nbsp;验证码</a></li><li><a class="" href="watermark.html">19.9&nbsp;图片添加水印</a></li><li><a class="" href="ip_location.html">19.10&nbsp;IP获取和定位</a></li></ul></li><li class=" child"><a class="title " href="appendix.html" title="附录">第20章&nbsp;附录</a><ul><li><a class="" href="constant_reference.html">20.1&nbsp;常量参考</a></li><li><a class="" href="config_reference.html">20.2&nbsp;配置参考</a></li><li><a class="" href="version_update.html">20.3&nbsp;关于升级</a></li><li><a class="" href="memorabilia.html">20.4&nbsp;大事记</a></li></ul></li><li class=" child"><a class="title " href="thanks.html" title="鸣谢">第21章&nbsp;鸣谢</a></li></ul></div></div></div></div><div id="tools"><div class="inner"><div class="book-tool"><div class="content cf"><div class="search fl"><form action="/manual/_search.html" method="post" class="cf"><label for="search-key">输入搜索关键字...</label><input id="search-key" class="text fl" type="text" name="keywords" /><input class="button fl" type="submit" value="&nbsp;" title="搜索" /></form></div><a class="next fr" href="javascript:void(0)" title="下一章"><i>&nbsp;</i></a><a class="prev fr" href="javascript:void(0)" title="上一章"><i>&nbsp;</i></a><a class="share fr" href="javascript:void(0)" title="分享">分享<i>&nbsp;</i></a></div></div></div></div><div id="gird"><div class="inner"><div class="book-title" menu="76"><h1>6.24&nbsp;关联模型</h1></div><div id="117" class="book-content"><h3>关联关系</h3>
+通常我们所说的关联关系包括下面三种：<br />一对一关联  ：ONE_TO_ONE，包括HAS_ONE 和 BELONGS_TO <br />一对多关联  ：ONE_TO_MANY，包括HAS_MANY 和 BELONGS_TO<br />多对多关联  ：MANY_TO_MANY<br />关联关系必然有一个参照表，例如：<br />有一个员工档案管理系统项目，这个项目要包括下面的一些数据表：基本信息表、员工档案表、部门表、项目组表、银行卡表（用来记录员工的银行卡资料）。<br />这些数据表之间存在一定的关联关系，我们以员工基本信息表为参照来分析和其他表之间的关联：<br />每个员工必然有对应的员工档案资料，所以属于HAS_ONE关联；<br />每个员工必须属于某个部门，所以属于BELONGS_TO关联；<br />每个员工可以有多个银行卡，但是每张银行卡只可能属于一个员工，因此属于HAS_MANY关联；<br />每个员工可以同时在多个项目组，每个项目组同时有多个员工，因此属于MANY_TO_MANY关联；<br />分析清楚数据表之前的关联关系后，我们才可以进行关联定义和关联操作。</div><div id="118" class="book-content"><h3>关联定义</h3>
+ThinkPHP可以很轻松的完成数据表的关联CURD操作，目前支持的关联关系包括下面四种：<b>HAS_ONE、BELONGS_TO、HAS_MANY和MANY_TO_MANY</b>。<br />一个模型根据业务模型的复杂程度可以同时定义多个关联，不受限制，所有的关联定义都统一在模型类的 $_link 成员变量里面定义，并且可以支持动态定义。要支持关联操作，模型类必须继承RelationModel类，关联定义的格式是：
+<pre class="code" lang="php">protected&nbsp;$_link&nbsp;=&nbsp;array(
+&nbsp;&nbsp;&nbsp;&nbsp;'关联1'&nbsp;&nbsp;=&gt;&nbsp;&nbsp;array(
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'关联属性1'&nbsp;=&gt;&nbsp;'定义',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'关联属性N'&nbsp;=&gt;&nbsp;'定义',
+&nbsp;&nbsp;&nbsp;&nbsp;),
+&nbsp;&nbsp;&nbsp;&nbsp;'关联2'&nbsp;&nbsp;=&gt;&nbsp;&nbsp;array(
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'关联属性1'&nbsp;=&gt;&nbsp;'定义',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'关联属性N'&nbsp;=&gt;&nbsp;'定义',
+&nbsp;&nbsp;&nbsp;&nbsp;),
+&nbsp;&nbsp;&nbsp;&nbsp;'关联3'&nbsp;&nbsp;=&gt;&nbsp;&nbsp;HAS_ONE,&nbsp;//&nbsp;快捷定义
+&nbsp;&nbsp;&nbsp;&nbsp;...
+);</pre></div><div id="494" class="book-content">下面我们首先来分析下各个关联方式的定义：<br /><b>HAS_ONE</b><br />HAS_ONE关联表示当前模型拥有一个子对象，例如，每个员工都有一个人事档案。我们可以建立一个用户模型UserModel，并且添加如下关联定义：
+<pre class="code" lang="php">class&nbsp;UserModel&nbsp;extends&nbsp;RelationModel{
+&nbsp;&nbsp;&nbsp;&nbsp;protected&nbsp;$_link&nbsp;=&nbsp;array(
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Profile'=&gt;&nbsp;HAS_ONE,
+&nbsp;&nbsp;&nbsp;&nbsp;);
+}</pre>上面是最简单的方式，表示其遵循了系统内置的数据库规范，完整的定义方式是：
+<pre class="code" lang="php">class&nbsp;UserModel&nbsp;extends&nbsp;RelationModel{
+&nbsp;&nbsp;&nbsp;&nbsp;protected&nbsp;$_link&nbsp;=&nbsp;array(
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Profile'=&gt;array(
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'mapping_type'&nbsp;&nbsp;&nbsp;&nbsp;=&gt;HAS_ONE,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'class_name'&nbsp;&nbsp;&nbsp;&nbsp;=&gt;'Profile',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;定义更多的关联属性
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;……
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;),
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
+}</pre>关联HAS_ONE支持的关联属性有：
+<table border="0" cellspacing="1" cellpadding="0">
+<tr><td><b>mapping_type</b> </td><td width="450">关联类型，这个在HAS_ONE 关联里面必须使用HAS_ONE 常量定义。</td></tr>
+<tr><td><b>class_name</b> </td><td>要关联的模型类名<br />例如，class_name 定义为Profile的话则表示和另外的Profile模型类关联，这个Profile模型类是无需定义的，系统会自动定位到相关的数据表进行关联。</td></tr>
+<tr><td><b>mapping_name</b> </td><td>关联的映射名称，用于获取数据用<br />该名称不要和当前模型的字段有重复，否则会导致关联数据获取的冲突。如果mapping_name没有定义的话，会取class_name的定义作为mapping_name。如果class_name也没有定义，则以数组的索引作为mapping_name。</td></tr>
+<tr><td><b>foreign_key</b> </td><td>关联的外键名称<br />外键的默认规则是当前数据对象名称_id，例如：<br />UserModel对应的可能是表think_user （注意：think只是一个表前缀，可以随意配置）<br />那么think_user表的外键默认为 user_id，如果不是，就必须在定义关联的时候显式定义 foreign_key 。</td></tr>
+<tr><td><b>condition</b> </td><td>关联条件<br />关联查询的时候会自动带上外键的值，如果有额外的查询条件，可以通过定义关联的condition属性。</td></tr>
+<tr><td><b>mapping_fields</b> </td><td>关联要查询的字段<br />默认情况下，关联查询的关联数据是关联表的全部字段，如果只是需要查询个别字段，可以定义关联的mapping_fields属性。</td></tr>
+<tr><td><b>as_fields</b></td><td>直接把关联的字段值映射成数据对象中的某个字段<br />这个特性是ONE_TO_ONE 关联特有的，可以直接把关联数据映射到数据对象中，而不是作为一个关联数据。当关联数据的字段名和当前数据对象的字段名称有冲突时，还可以使用映射定义。</td></tr>
+</table></div><div id="495" class="book-content"><b>BELONGS_TO</b><br />Belongs_to 关联表示当前模型从属于另外一个父对象，例如每个用户都属于一个部门。我们可以做如下关联定义。       
+<pre class="code" lang="php">&nbsp;'Dept'=&gt;&nbsp;BELONGS_TO</pre>完整方式定义为：<br /> <pre class="code" lang="php">'Dept'=&gt;&nbsp;array(&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'mapping_type'=&gt;BELONGS_TO,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'class_name'=&gt;'Dept',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'foreign_key'=&gt;'userId',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'mapping_name'=&gt;'dept',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;定义更多的关联属性
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;……
+),</pre>
+
+关联BELONGS_TO定义支持的关联属性有：
+<table border="0" cellspacing="1" cellpadding="0">
+<tr><td>class_name</td><td> 要关联的模型类名</td></tr>
+<tr><td>mapping_name </td><td>关联的映射名称，用于获取数据用<br />该名称不要和当前模型的字段有重复，否则会导致关联数据获取的冲突。</td></tr>
+<tr><td>foreign_key </td><td>关联的外键名称</td></tr>
+<tr><td>mapping_fields</td><td> 关联要查询的字段</td></tr>
+<tr><td>condition</td><td> 关联条件</td></tr>
+<tr><td>parent_key</td><td> 自引用关联的关联字段<br />默认为parent_id 
+自引用关联是一种比较特殊的关联，也就是关联表就是当前表。</td></tr>
+<tr><td>as_fields</td><td>直接把关联的字段值映射成数据对象中的某个字段</td></tr>
+</table></div><div id="496" class="book-content"><b>HAS_MANY</b><br />HAS_MANY 关联表示当前模型拥有多个子对象，例如每个用户有多篇文章，我们可以这样来定义：<pre class="code" lang="php">'Article'=&gt;&nbsp;HAS_MANY</pre>完整定义方式为：<br /> <pre class="code" lang="php">'Article'=&gt;&nbsp;array(&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;'mapping_type'=&gt;HAS_MANY,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'class_name'=&gt;'Article',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'foreign_key'=&gt;'userId',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'mapping_name'=&gt;'articles',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'mapping_order'=&gt;'create_time&nbsp;desc',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;定义更多的关联属性
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;……
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;),</pre>
+关联HAS_MANY定义支持的关联属性有：
+<table border="0" cellspacing="1" cellpadding="0">
+<tr><td>class_name</td><td>要关联的模型类名</td></tr>
+<tr><td>mapping_name</td><td> 关联的映射名称，用于获取数据用<br />该名称不要和当前模型的字段有重复，否则会导致关联数据获取的冲突。</td></tr>
+<tr><td>foreign_key</td><td>  关联的外键名称<br />外键的默认规则是当前数据对象名称_id，例如：<br />UserModel对应的可能是表think_user （注意：think只是一个表前缀，可以随意配置）<br />那么think_user表的外键默认为 user_id，如果不是，就必须在定义关联的时候定义 foreign_key 。</td></tr>
+<tr><td>parent_key</td><td>  自引用关联的关联字段<br />默认为parent_id </td></tr>
+<tr><td>condition</td><td>  关联条件<br />关联查询的时候会自动带上外键的值，如果有额外的查询条件，可以通过定义关联的condition属性。</td></tr>
+<tr><td>mapping_fields</td><td>  关联要查询的字段<br />默认情况下，关联查询的关联数据是关联表的全部字段，如果只是需要查询个别字段，可以定义关联的mapping_fields属性。</td></tr>
+<tr><td>mapping_limit</td><td>  关联要返回的记录数目</td></tr>
+<tr><td>mapping_order</td><td>  关联查询的排序</td></tr>
+</table></div><div id="497" class="book-content"><b>MANY_TO_MANY</b><br />MANY_TO_MANY 关联表示当前模型可以属于多个对象，而父对象则可能包含有多个子对象，通常两者之间需要一个中间表类约束和关联。例如每个用户可以属于多个组，每个组可以有多个用户：<br /> <pre class="code" lang="php">'Group'=&gt;MANY_TO_MANY</pre>完整定义方式为：<br /> <pre class="code" lang="php"> array(    'mapping_type'=&gt;MANY_TO_MANY,
+                    'class_name'=&gt;'Group',
+                    'mapping_name'=&gt;'groups',
+                    'foreign_key'=&gt;'userId',
+                    'relation_foreign_key'=&gt;'goupId',
+                    'relation_table'=&gt;'think_gourpUser'
+)
+</pre>
+
+MANY_TO_MANY支持的关联属性定义有：
+<table border="0" cellspacing="1" cellpadding="0">
+<tr><td>class_name</td><td>要关联的模型类名</td></tr>
+<tr><td>mapping_name</td><td> 关联的映射名称，用于获取数据用<br />该名称不要和当前模型的字段有重复，否则会导致关联数据获取的冲突。</td></tr>
+<tr><td>foreign_key</td><td> 关联的外键名称<br />外键的默认规则是当前数据对象名称_id</td></tr>
+<tr><td>relation_foreign_key</td><td> 关联表的外键名称<br />默认的关联表的外键名称是表名_id</td></tr>
+<tr><td>mapping_limit</td><td> 关联要返回的记录数目</td></tr>
+<tr><td>mapping_order</td><td> 关联查询的排序</td></tr>
+<tr><td>relation_table</td><td>多对多的中间关联表名称</td></tr>
+</table>
+多对多的中间表默认表规则是：数据表前缀_关联操作的主表名_关联表名<br />如果think_user 和 think_group 存在一个对应的中间表，默认的表名应该是<br />如果是由group来操作关联表，中间表应该是 think_group_user，如果是从user表来操作，那么应该是think_user_group，也就是说，多对多关联的设置，必须有一个Model类里面需要显式定义中间表，否则双向操作会出错。<br />中间表无需另外的id主键（但是这并不影响中间表的操作），通常只是由 user_id 和 group_id 构成。<br />默认会通过当前模型的getRelationTableName方法来自动获取，如果当前模型是User，关联模型是Group，那么关联表的名称也就是使用 user_group这样的格式，如果不是默认规则，需要指定relation_table属性。</div><div id="119" class="book-content"><h3>关联查询</h3>
+由于性能问题，新版取消了自动关联查询机制，而统一使用relation方法进行关联操作，relation方法不但可以启用关联还可以控制局部关联操作，实现了关联操作一切尽在掌握之中。
+<pre class="code" lang="php">$User&nbsp;=&nbsp;D("User");
+$user&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;$User-&gt;relation(true)-&gt;find(1);</pre>输出$user结果可能是类似于下面的数据：
+<pre class="code" lang="php">array(
+'id'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;&nbsp;&nbsp;&nbsp;1,
+'account'&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;&nbsp;&nbsp;&nbsp;'ThinkPHP',
+'password'&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;&nbsp;&nbsp;&nbsp;'123456',
+'Profile'&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;array(
+'email'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&gt;'liu21st@gmail.com',
+'nickname'&nbsp;&nbsp;&nbsp;&nbsp;=&gt;'流年',
+&nbsp;&nbsp;&nbsp;),
+&nbsp;)</pre>我们可以看到，用户的关联数据已经被映射到数据对象的属性里面了。其中Profile就是关联定义的mapping_name属性。<br />如果我们按照下面的方式定义了as_fields属性的话，
+<pre class="code" lang="php">&nbsp;&nbsp;&nbsp;&nbsp;protected&nbsp;$_link&nbsp;=&nbsp;array(
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'profile'=&gt;array(
+&nbsp;&nbsp;&nbsp;&nbsp;'mapping_type'&nbsp;&nbsp;&nbsp;&nbsp;=&gt;HAS_ONE,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'class_name'&nbsp;&nbsp;&nbsp;&nbsp;=&gt;'Profile',
+&nbsp;&nbsp;&nbsp;&nbsp;'foreign_key'=&gt;'userId',
+&nbsp;&nbsp;&nbsp;&nbsp;'as_fields'=&gt;'email,nickname',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;),
+);</pre>查询的结果就变成了下面的结果
+<pre class="code" lang="php">array(
+'id'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;&nbsp;&nbsp;&nbsp;1,
+'account'&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;&nbsp;&nbsp;&nbsp;'ThinkPHP',
+'password'&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;&nbsp;&nbsp;&nbsp;'name',
+'email'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&gt;'liu21st@gmail.com',
+'nickname'&nbsp;&nbsp;&nbsp;&nbsp;=&gt;'流年',
+&nbsp;)</pre>email和nickname两个字段已经作为user数据对象的字段来显示了。<br />如果关联数据的字段名和当前数据对象的字段有冲突的话，怎么解决呢？<br />我们可以用下面的方式来变化下定义：<br />'as_fields'=&gt;'email,nickname:username',<br />表示关联表的nickname字段映射成当前数据对象的username字段。<br />默认会把所有定义的关联数据都查询出来，有时候我们并不希望这样，就可以给relation方法传入参数来控制要关联查询的。
+<pre class="code" lang="php">$User&nbsp;=&nbsp;D("User");
+$user&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;$User-&gt;relation('Profile')-&gt;find(1);</pre>关联查询一样可以支持select方法，如果要查询多个数据，并同时获取相应的关联数据，可以改成：
+<pre class="code" lang="php">$User&nbsp;=&nbsp;D("User");
+$list&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;$User-&gt;relation(true)-&gt;Select();</pre>如果希望在完成的查询基础之上 再进行关联数据的查询，可以使用
+<pre class="code" lang="php">$User&nbsp;=&nbsp;D("User");
+$user&nbsp;=&nbsp;$User-&gt;find(1);
+//&nbsp;表示对当前查询的数据对象进行关联数据获取
+$profile&nbsp;=&nbsp;$User-&gt;relationGet("Profile");</pre>事实上，除了当前的参考模型User外，其他的关联模型是不需要创建的。</div><div id="120" class="book-content"><h3>关联操作</h3>
+除了关联查询外，系统也支持关联数据的自动写入、更新和删除<br /><b>关联写入</b><br /><pre class="code" lang="php">$User&nbsp;=&nbsp;D("User");
+$data&nbsp;=&nbsp;array();
+$data["account"]&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;"ThinkPHP";
+$data["password"]&nbsp;=&nbsp;"123456";
+$data["Profile"]&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;array(
+&nbsp;&nbsp;&nbsp;&nbsp;'email'&nbsp;&nbsp;&nbsp;&nbsp;=&gt;'liu21st@gmail.com',
+&nbsp;&nbsp;&nbsp;&nbsp;'nickname'&nbsp;&nbsp;&nbsp;&nbsp;=&gt;'流年',
+);
+$result&nbsp;=$User-&gt;relation(true)-&gt;add($data);</pre>这样就会自动写入关联的Profile数据。<br />同样，可以使用参数来控制要关联写入的数据：
+<pre class="code" lang="php">$result&nbsp;=&nbsp;$User-&gt;relation("Profile")-&gt;add($data);</pre></div><div id="498" class="book-content"><b>关联更新</b><br />数据的关联更新和关联写入类似
+<pre class="code" lang="php">$User&nbsp;=&nbsp;D("User");
+$data["account"]&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;"ThinkPHP";
+$data["password"]&nbsp;=&nbsp;"123456";
+$data["Profile"]&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;array(
+&nbsp;&nbsp;&nbsp;&nbsp;'email'&nbsp;&nbsp;&nbsp;&nbsp;=&gt;'liu21st@gmail.com',
+&nbsp;&nbsp;&nbsp;&nbsp;'nickname'&nbsp;&nbsp;&nbsp;&nbsp;=&gt;'流年',
+);
+$result&nbsp;=&nbsp;$User-&gt;&nbsp;relation(true)-&gt;where('id=3')-&gt;save($data);</pre>
+Relation(true)会关联保存User模型定义的所有关联数据，如果只需要关联保存部分数据，可以使用：
+<pre class="code" lang="php">$result&nbsp;=&nbsp;$User-&gt;relation("Profile")-&gt;save($data);</pre>
+这样就只会同时更新关联的Profile数据。<br />关联保存的规则：<br />HAS_ONE： 关联数据的更新直接赋值<br />HAS_MANY： 的关联数据如果传入主键的值 则表示更新 否则就表示新增<br />MANY_TO_MANY： 的数据更新是删除之前的数据后重新写入</div><div id="499" class="book-content"><b>关联删除</b><br />删除用户ID为3的记录的同时删除关联数据
+<pre class="code" lang="php">$result&nbsp;=&nbsp;$User-&gt;relation(true)-&gt;delete("3");</pre>如果只需要关联删除部分数据，可以使用
+<pre class="code" lang="php">$result&nbsp;=&nbsp;$User-&gt;relation("Profile")-&gt;delete("3");</pre></div></div></div><script type="text/javascript">remark();</script><div id="footer" class="book-footer"><p>&copy;2012 ThinkPHP文档中心 由<a target="_blank" href="http://www.thinkphp.cn">&nbsp;</a>强力驱动</p><script type="text/javascript" src="http://tajs.qq.com/stats?sId=8891584" charset="UTF-8"></script></div></body></html>
+<!-- Localized -->

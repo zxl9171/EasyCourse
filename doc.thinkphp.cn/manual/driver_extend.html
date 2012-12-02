@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>驱动扩展 - ThinkPHP完全开发手册 - 3.1</title><meta name="keywords" content="ThinkPHP,文档中心,在线手册,phpthink,类库参考,视频教程,book,3.0,api,开发框架,web框架,PHP开发框架,ThinkPHP手册"/><meta name="description" content="中文最佳实践框架  JUST THINK IT ThinkPHP 大道至简 开发由我|php快速开发|just think it|php开源框架|php网站开发|上海顶想|ORM|Framework|PHP企业开发"/><link href="../Public/favicon.ico" rel="shortcut icon"><link rel="stylesheet" type="text/css" href="../Public/css/layout.css" /><link rel="stylesheet" type="text/css" href="../Public/css/book.css" /><link rel="stylesheet" type="text/css" href="../Public/prettify/prettify.css" /><link rel="stylesheet" type="text/css" href="../Public/ThinkBox/ThinkBox.css" /><script type="text/javascript" src="../Public/js/jquery-1.7.1.min.js"></script><script type="text/javascript" src="../Public/js/common.js"></script><script type="text/javascript" src="../Public/prettify/prettify.js"></script><script type="text/javascript" src="../Public/ThinkBox/jquery.ThinkBox.js"></script><link rel="stylesheet" type="text/css" href="../Plugin/remark/remark.css" /><script type="text/javascript" src="../Plugin/remark/remark.js"></script></head><body><div id="header"><div id="innerHeader"><div class="book-top cf"><div class="book-logo fl"><a href="../manual.html" book="1">ThinkPHP完全开发手册</a><sup>3.1</sup></div><div class="right fr"><div class="user-current"></div></div></div></div></div><div id="sortList"><div class="inner"><div class="menu-title">目录Directory</div></div></div><div id="selector"><div class="inner"><div class="book-menu"><div class="list"><ul><li class=" child"><a class="title " href="preface.html" title="序言">序言</a></li><li class=" child"><a class="title " href="start.html" title="入门">第1章&nbsp;入门</a><ul><li><a class="" href="introduction.html">1.1&nbsp;简介</a></li><li><a class="" href="basic_concept.html">1.2&nbsp;基础概念</a></li><li><a class="" href="get_thinkphp.html">1.3&nbsp;获取ThinkPHP</a></li><li><a class="" href="environment.html">1.4&nbsp;环境要求</a></li><li><a class="" href="licence.html">1.5&nbsp;许可协议</a></li><li><a class="" href="directory.html">1.6&nbsp;目录结构</a></li><li><a class="" href="naming_conventions.html">1.7&nbsp;命名规范</a></li><li><a class="" href="mvc.html">1.8&nbsp;MVC分层</a></li><li><a class="" href="cbd.html">1.9&nbsp;CBD架构</a></li><li><a class="" href="features.html">1.10&nbsp;特性概述</a></li><li><a class="" href="system_process.html">1.11&nbsp;系统流程</a></li><li><a class="" href="development_process.html">1.12&nbsp;开发流程</a></li></ul></li><li class=" child"><a class="title " href="entry.html" title="入口">第2章&nbsp;入口</a><ul><li><a class="" href="entrance.html">2.1&nbsp;入口文件</a></li><li><a class="" href="app_directory.html">2.2&nbsp;项目目录</a></li><li><a class="" href="deploy_directory.html">2.3&nbsp;部署目录</a></li><li><a class="" href="app_compile.html">2.4&nbsp;项目编译</a></li><li><a class="" href="debug_mode.html">2.5&nbsp;调试模式</a></li></ul></li><li class=" child"><a class="title " href="config.html" title="配置">第3章&nbsp;配置</a><ul><li><a class="" href="config_type.html">3.1&nbsp;配置格式</a></li><li><a class="" href="convention_config.html">3.2&nbsp;惯例配置</a></li><li><a class="" href="app_config.html">3.3&nbsp;项目配置</a></li><li><a class="" href="debug_config.html">3.4&nbsp;调试配置</a></li><li><a class="" href="group_config.html">3.5&nbsp;分组配置</a></li><li><a class="" href="read_config.html">3.6&nbsp;读取配置</a></li><li><a class="" href="dynamic_config.html">3.7&nbsp;动态配置</a></li><li><a class="" href="extend_config.html">3.8&nbsp;扩展配置</a></li></ul></li><li class=" child"><a class="title " href="function_class.html" title="函数和类库">第4章&nbsp;函数和类库</a><ul><li><a class="" href="functions.html">4.1&nbsp;函数库</a></li><li><a class="" href="class.html">4.2&nbsp;类库</a></li></ul></li><li class=" child"><a class="title " href="controller.html" title="控制器">第5章&nbsp;控制器</a><ul><li><a class="" href="url_mode.html">5.1&nbsp;URL模式</a></li><li><a class="" href="module_action.html">5.2&nbsp;模块和操作</a></li><li><a class="" href="define_controller.html">5.3&nbsp;定义控制器</a></li><li><a class="" href="empty_action.html">5.4&nbsp;空操作</a></li><li><a class="" href="empty_module.html">5.5&nbsp;空模块</a></li><li><a class="" href="module_group.html">5.6&nbsp;模块分组</a></li><li><a class="" href="url_suffix.html">5.7&nbsp;URL伪静态</a></li><li><a class="" href="url_route.html">5.8&nbsp;URL路由</a></li><li><a class="" href="url_rewrite.html">5.9&nbsp;URL重写</a></li><li><a class="" href="url_build.html">5.10&nbsp;URL生成</a></li><li><a class="" href="url_case.html">5.11&nbsp;URL大小写</a></li><li><a class="" href="before_after.html">5.12&nbsp;前置和后置操作</a></li><li><a class="" href="cross_module.html">5.13&nbsp;跨模块调用</a></li><li><a class="" href="page_dispatch.html">5.14&nbsp;页面跳转</a></li><li><a class="" href="redirect.html">5.15&nbsp;重定向</a></li><li><a class="" href="get_system_var.html">5.16&nbsp;获取系统变量</a></li><li><a class="" href="request_method.html">5.17&nbsp;判断请求类型</a></li><li><a class="" href="get_url_params.html">5.18&nbsp;获取URL参数</a></li><li><a class="" href="ajax_return.html">5.19&nbsp;AJAX返回</a></li><li><a class="" href="action_param_bind.html">5.20&nbsp;Action参数绑定</a></li><li><a class="" href="multi_action_layer.html">5.21&nbsp;多层控制器支持</a></li></ul></li><li class=" child"><a class="title " href="model.html" title="模型">第6章&nbsp;模型</a><ul><li><a class="" href="model_define.html">6.1&nbsp;模型定义</a></li><li><a class="" href="model_instance.html">6.2&nbsp;模型实例化</a></li><li><a class="" href="field_define.html">6.3&nbsp;字段定义</a></li><li><a class="" href="primary_key.html">6.4&nbsp;数据主键</a></li><li><a class="" href="get_fields.html">6.5&nbsp;属性访问</a></li><li><a class="" href="cross_database.html">6.6&nbsp;跨库操作</a></li><li><a class="" href="connect_database.html">6.7&nbsp;连接数据库</a></li><li><a class="" href="switch_database.html">6.8&nbsp;切换数据库</a></li><li><a class="" href="distributed_database.html">6.9&nbsp;分布式数据库</a></li><li><a class="" href="create.html">6.10&nbsp;创建数据</a></li><li><a class="" href="field_map.html">6.11&nbsp;字段映射</a></li><li><a class="" href="continuous_operation.html">6.12&nbsp;连贯操作</a></li><li><a class="" href="curd.html">6.13&nbsp;CURD操作</a></li><li><a class="" href="active_record.html">6.14&nbsp;ActiveRecord</a></li><li><a class="" href="auto_validate.html">6.15&nbsp;自动验证</a></li><li><a class="" href="name_range.html">6.16&nbsp;命名范围</a></li><li><a class="" href="auto_operate.html">6.17&nbsp;自动完成</a></li><li><a class="" href="query.html">6.18&nbsp;查询语言</a></li><li><a class="" href="query_lock.html">6.19&nbsp;查询锁定</a></li><li><a class="" href="field_except.html">6.20&nbsp;字段排除</a></li><li><a class="" href="trans_support.html">6.21&nbsp;事务支持</a></li><li><a class="" href="adv_model.html">6.22&nbsp;高级模型</a></li><li><a class="" href="view_model.html">6.23&nbsp;视图模型</a></li><li><a class="" href="relation_model.html">6.24&nbsp;关联模型</a></li><li><a class="" href="mongo_model.html">6.25&nbsp;Mongo模型</a></li><li><a class="" href="dynamic_model.html">6.26&nbsp;动态模型</a></li><li><a class="" href="virtual_model.html">6.27&nbsp;虚拟模型</a></li><li><a class="" href="multi_model_layer.html">6.28&nbsp;多层模型支持</a></li></ul></li><li class=" child"><a class="title " href="view.html" title="视图">第7章&nbsp;视图</a><ul><li><a class="" href="template_define.html">7.1&nbsp;模板定义</a></li><li><a class="" href="template_assign.html">7.2&nbsp;模板赋值</a></li><li><a class="" href="template_output.html">7.3&nbsp;模板输出</a></li><li><a class="" href="template_replace.html">7.4&nbsp;模板替换</a></li><li><a class="" href="fetch_content.html">7.5&nbsp;获取内容</a></li><li><a class="" href="template_engine.html">7.6&nbsp;模板引擎</a></li><li><a class="" href="layout.html">7.7&nbsp;布局模板</a></li></ul></li><li class=" child"><a class="title " href="template.html" title="模板引擎">第8章&nbsp;模板引擎</a><ul><li><a class="" href="var_output.html">8.1&nbsp;变量输出</a></li><li><a class="" href="system_var.html">8.2&nbsp;系统变量</a></li><li><a class="" href="use_function.html">8.3&nbsp;使用函数</a></li><li><a class="" href="default_val.html">8.4&nbsp;默认值输出</a></li><li><a class="" href="use_operate.html">8.5&nbsp;使用运算符</a></li><li><a class="" href="buildin_tag.html">8.6&nbsp;内置标签</a></li><li><a class="" href="include_file.html">8.7&nbsp;包含文件</a></li><li><a class="" href="load_file.html">8.8&nbsp;导入文件</a></li><li><a class="" href="volist.html">8.9&nbsp;Volist标签</a></li><li><a class="" href="foreach.html">8.10&nbsp;Foreach标签</a></li><li><a class="" href="for.html">8.11&nbsp;For标签</a></li><li><a class="" href="switch.html">8.12&nbsp;Switch标签</a></li><li><a class="" href="compare.html">8.13&nbsp;比较标签</a></li><li><a class="" href="three_operators.html">8.14&nbsp;三元运算</a></li><li><a class="" href="range.html">8.15&nbsp;范围判断标签</a></li><li><a class="" href="present.html">8.16&nbsp;Present标签</a></li><li><a class="" href="empty.html">8.17&nbsp;Empty标签</a></li><li><a class="" href="defined.html">8.18&nbsp;Defined标签</a></li><li><a class="" href="define.html">8.19&nbsp;Define标签</a></li><li><a class="" href="assign.html">8.20&nbsp;Assign标签</a></li><li><a class="" href="if.html">8.21&nbsp;IF标签</a></li><li><a class="" href="tag_nest.html">8.22&nbsp;标签嵌套</a></li><li><a class="" href="use_php.html">8.23&nbsp;使用PHP代码</a></li><li><a class="" href="layout_template.html">8.24&nbsp;模板布局</a></li><li><a class="" href="extend_template.html">8.25&nbsp;模板继承</a></li><li><a class="" href="literal.html">8.26&nbsp;原样输出</a></li><li><a class="" href="comment.html">8.27&nbsp;模板注释</a></li><li><a class="" href="taglib.html">8.28&nbsp;引入标签库</a></li><li><a class="" href="modify_edlim.html">8.29&nbsp;修改定界符</a></li><li><a class="" href="js_confusion.html">8.30&nbsp;避免JS混淆</a></li></ul></li><li class=" child"><a class="title " href="log.html" title="日志">第9章&nbsp;日志</a><ul><li><a class="" href="log_level.html">9.1&nbsp;日志级别</a></li><li><a class="" href="log_type.html">9.2&nbsp;记录方式</a></li><li><a class="" href="log_record.html">9.3&nbsp;手动记录</a></li></ul></li><li class=" child"><a class="title " href="error.html" title="错误">第10章&nbsp;错误</a><ul><li><a class="" href="exception.html">10.1&nbsp;异常处理</a></li><li><a class="" href="exception_tmpl.html">10.2&nbsp;异常模板</a></li><li><a class="" href="exception_info.html">10.3&nbsp;异常显示</a></li></ul></li><li class=" child"><a class="title " href="debug.html" title="调试">第11章&nbsp;调试</a><ul><li><a class="" href="app_status.html">11.1&nbsp;运行状态</a></li><li><a class="" href="page_trace.html">11.2&nbsp;页面Trace</a></li><li><a class="" href="debug_mothod.html">11.3&nbsp;调试方法</a></li></ul></li><li class=" child"><a class="title " href="cache.html" title="缓存">第12章&nbsp;缓存</a><ul><li><a class="" href="cache_type.html">12.1&nbsp;缓存方式</a></li><li><a class="" href="dynamic_cache.html">12.2&nbsp;动态缓存</a></li><li><a class="" href="cache_queue.html">12.3&nbsp;缓存队列</a></li><li><a class="" href="express_cache.html">12.4&nbsp;快捷缓存</a></li><li><a class="" href="fast_save.html">12.5&nbsp;快速缓存</a></li><li><a class="" href="query_cache.html">12.6&nbsp;查询缓存</a></li><li><a class="" href="sql_cache.html">12.7&nbsp;SQL解析缓存</a></li><li><a class="" href="html_cache.html">12.8&nbsp;静态缓存</a></li></ul></li><li class="show child"><a class="title " href="extend.html" title="扩展">第13章&nbsp;扩展</a><ul><li><a class="" href="behavior_extend.html">13.1&nbsp;行为扩展</a></li><li><a class="" href="library_extend.html">13.2&nbsp;类库扩展</a></li><li><a class="" href="action_extend.html">13.3&nbsp;控制器扩展</a></li><li><a class="" href="model_extend.html">13.4&nbsp;模型扩展</a></li><li><a class="selected" href="driver_extend.html">13.5&nbsp;驱动扩展</a></li><li><a class="" href="widget_extend.html">13.6&nbsp;Widget扩展</a></li><li><a class="" href="mode_extend.html">13.7&nbsp;模式扩展</a></li><li><a class="" href="engine_extend.html">13.8&nbsp;引擎扩展</a></li></ul></li><li class=" child"><a class="title " href="safety.html" title="安全">第14章&nbsp;安全</a><ul><li><a class="" href="form_token.html">14.1&nbsp;表单令牌</a></li><li><a class="" href="field_type_validate.html">14.2&nbsp;字段类型验证</a></li><li><a class="" href="sql_injection.html">14.3&nbsp;防止SQL注入</a></li><li><a class="" href="input_filter.html">14.4&nbsp;输入过滤</a></li><li><a class="" href="upload_safe.html">14.5&nbsp;上传安全</a></li><li><a class="" href="prevent_xss.html">14.6&nbsp;防止XSS攻击</a></li><li><a class="" href="other_suggestion.html">14.7&nbsp;其他安全建议</a></li><li><a class="" href="dir_secure.html">14.8&nbsp;目录安全文件</a></li><li><a class="" href="protected_template.html">14.9&nbsp;保护模板文件</a></li></ul></li><li class=" child"><a class="title " href="performance.html" title="性能">第15章&nbsp;性能</a><ul><li><a class="" href="close_debug.html">15.1&nbsp;关闭调试模式</a></li><li><a class="" href="cache_on.html">15.2&nbsp;开启缓存</a></li><li><a class="" href="merge_fields.html">15.3&nbsp;合并字段缓存</a></li><li><a class="" href="sql_optimization.html">15.4&nbsp;优化SQL</a></li><li><a class="" href="replace_entrance.html">15.5&nbsp;替换入口</a></li><li><a class="" href="front_optimization.html">15.6&nbsp;前端优化</a></li></ul></li><li class=" child"><a class="title " href="deploy.html" title="部署">第16章&nbsp;部署</a><ul><li><a class="" href="path_info_support.html">16.1&nbsp;PATH_INFO支持</a></li><li><a class="" href="hidden_index.html">16.2&nbsp;隐藏index.php</a></li><li><a class="" href="sub_domain_deploy.html">16.3&nbsp;二级域名部署</a></li><li><a class="" href="error_page.html">16.4&nbsp;定制错误页面</a></li><li><a class="" href="set_zone.html">16.5&nbsp;设置时区</a></li></ul></li><li class=" child"><a class="title " href="sae.html" title="SAE支持">第17章&nbsp;SAE支持</a><ul><li><a class="" href="sae_intro.html">17.1&nbsp;SAE介绍</a></li><li><a class="" href="get_sae.html">17.2&nbsp;获取SAE</a></li><li><a class="" href="sae_develop.html">17.3&nbsp;SAE开发</a></li></ul></li><li class=" child"><a class="title " href="rest.html" title="REST支持">第18章&nbsp;REST支持</a><ul><li><a class="" href="rest_intro.html">18.1&nbsp;REST介绍</a></li><li><a class="" href="rest_mode.html">18.2&nbsp;REST模式</a></li><li><a class="" href="rest_config.html">18.3&nbsp;REST配置</a></li><li><a class="" href="rest_route.html">18.4&nbsp;REST路由</a></li><li><a class="" href="rest_method.html">18.5&nbsp;REST方法</a></li></ul></li><li class=" child"><a class="title " href="sundry.html" title="杂项">第19章&nbsp;杂项</a><ul><li><a class="" href="session.html">19.1&nbsp;Session支持</a></li><li><a class="" href="cookie.html">19.2&nbsp;Cookie支持</a></li><li><a class="" href="date.html">19.3&nbsp;日期和时间</a></li><li><a class="" href="wml.html">19.4&nbsp;WML开发</a></li><li><a class="" href="multi_lang.html">19.5&nbsp;多语言</a></li><li><a class="" href="data_page.html">19.6&nbsp;数据分页</a></li><li><a class="" href="upload.html">19.7&nbsp;文件上传</a></li><li><a class="" href="verify.html">19.8&nbsp;验证码</a></li><li><a class="" href="watermark.html">19.9&nbsp;图片添加水印</a></li><li><a class="" href="ip_location.html">19.10&nbsp;IP获取和定位</a></li></ul></li><li class=" child"><a class="title " href="appendix.html" title="附录">第20章&nbsp;附录</a><ul><li><a class="" href="constant_reference.html">20.1&nbsp;常量参考</a></li><li><a class="" href="config_reference.html">20.2&nbsp;配置参考</a></li><li><a class="" href="version_update.html">20.3&nbsp;关于升级</a></li><li><a class="" href="memorabilia.html">20.4&nbsp;大事记</a></li></ul></li><li class=" child"><a class="title " href="thanks.html" title="鸣谢">第21章&nbsp;鸣谢</a></li></ul></div></div></div></div><div id="tools"><div class="inner"><div class="book-tool"><div class="content cf"><div class="search fl"><form action="/manual/_search.html" method="post" class="cf"><label for="search-key">输入搜索关键字...</label><input id="search-key" class="text fl" type="text" name="keywords" /><input class="button fl" type="submit" value="&nbsp;" title="搜索" /></form></div><a class="next fr" href="javascript:void(0)" title="下一章"><i>&nbsp;</i></a><a class="prev fr" href="javascript:void(0)" title="上一章"><i>&nbsp;</i></a><a class="share fr" href="javascript:void(0)" title="分享">分享<i>&nbsp;</i></a></div></div></div></div><div id="gird"><div class="inner"><div class="book-title" menu="143"><h1>13.5&nbsp;驱动扩展</h1></div><div id="190" class="book-content">这里说的驱动扩展是一种泛指，驱动扩展的目录位于扩展目录Extend/Driver，包括数据库驱动、缓存驱动、标签库驱动和模板引擎驱动。</div><div id="191" class="book-content"><h3>数据库驱动</h3>
+数据库抽象层的设计是由抽象数据库类（Db）和数据库驱动类组成的，内置的数据库驱动是MySQL和MySQLi驱动类，官方的扩展还提供了MsSQL、PgSQL、Sqlite、Oracle、Ibase、Mongo以及PDO驱动类，可以满足常用的数据库操作的需要。<br />数据库驱动扩展目录位于系统扩展目录Extend/Driver/Db，如果需要扩展其他的数据库驱动类，只需要继承Db类，驱动类的命名规范是：<br />Db+驱动类名称（首字母大写）<br />例如，假如你需要扩展一个ODBC的数据库驱动，应该命名为：DbOdbc.class.php，并放到系统扩展目录 Extend/Driver/Db目录下面。
+<pre class="code" lang="php">Class&nbsp;DbOdbc&nbsp;&nbsp;extends&nbsp;Db{
+}</pre>
+每个数据库驱动必须要实现的方法包括（具体参数可以参考现有的数据库驱动类库）：
+<table border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <th>驱动方法</th>
+    <th>方法说明</th>
+  </tr>
+  <tr>
+    <td>架构方法</td>
+    <td>__construct($config='')</td>
+  </tr>
+  <tr>
+    <td>数据库连接方法</td>
+    <td>connect($config='',$linkNum=0,$force=false)</td>
+  </tr>
+  <tr>
+    <td>释放查询方法</td>
+    <td>free()</td>
+  </tr>
+  <tr>
+    <td>查询操作方法</td>
+    <td>query($str)</td>
+  </tr>
+  <tr>
+    <td>执行操作方法</td>
+    <td>execute($str)</td>
+  </tr>
+  <tr>
+    <td>开启事务方法</td>
+    <td>startTrans()</td>
+  </tr>
+  <tr>
+    <td>事务提交方法</td>
+    <td>commit()</td>
+  </tr>
+  <tr>
+    <td>事务回滚方法</td>
+    <td>rollback()</td>
+  </tr>
+  <tr>
+    <td>获取查询数据方法</td>
+    <td>getAll()</td>
+  </tr>
+  <tr>
+    <td>获取字段信息方法</td>
+    <td>getFields($tableName)</td>
+  </tr>
+  <tr>
+    <td>获取数据库的表</td>
+    <td>getTables($dbName='')</td>
+  </tr>
+  <tr>
+    <td>关闭数据库方法</td>
+    <td>close()</td>
+  </tr>
+  <tr>
+    <td>获取错误信息方法</td>
+    <td>error()</td>
+  </tr>
+  <tr>
+    <td>SQL安全过滤方法</td>
+    <td>escapeString($str)</td>
+  </tr>
+</table>
+数据库的CURD接口方法（通常这些方法无需重新定义）
+<table border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <th>方法</th>
+    <th>说明</th>
+  </tr>
+  <tr>
+    <td>写入</td>
+    <td>insert($data,$options=array(),$replace=false)</td>
+  </tr>
+  <tr>
+    <td>更新</td>
+    <td>update($data,$options)</td>
+  </tr>
+  <tr>
+    <td>删除</td>
+    <td>delete($options=array())</td>
+  </tr>
+  <tr>
+    <td>查询</td>
+    <td>select($options=array())</td>
+  </tr>
+</table>
+介于不同数据库的查询方法存在区别，所以经常需要对查询的语句进行重新定义，这就需要修改针对查询的selectSql属性。该属性定义了当前数据库驱动的查询表达式，默认的定义是：<br />'SELECT%DISTINCT% %FIELD% FROM %TABLE%%JOIN%%WHERE%%GROUP%%HAVING%%ORDER%%LIMIT% %UNION%'<br />驱动可以更改或者删除个别查询定义，或者更改某个替换字符串的解析方法，这些方法包括：
+   <table border="0" cellspacing="1" cellpadding="0">
+    <tr>
+      <th>方法名</th>
+      <th>说明</th>
+      <th>对应</th>
+    </tr>
+    <tr>
+      <td>parseTable</td>
+      <td>数据库表名解析</td>
+      <td>%TABLE%</td>
+    </tr>
+    <tr>
+      <td>parseWhere</td>
+      <td>数据库查询条件解析</td>
+      <td>%WHERE%</td>
+    </tr>
+    <tr>
+      <td>parseLimit</td>
+      <td>数据库查询Limit解析</td>
+      <td>%LIMIT%</td>
+    </tr>
+    <tr>
+      <td>parseJoin</td>
+      <td>数据库JOIN查询解析</td>
+      <td>%JOIN%</td>
+    </tr>
+    <tr>
+      <td>parseOrder</td>
+      <td>数据库查询排序解析</td>
+      <td>%ORDER%</td>
+    </tr>
+    <tr>
+      <td>parseGroup</td>
+      <td>数据库group查询解析</td>
+      <td>%GROUP%</td>
+    </tr>
+    <tr>
+      <td>parseHaving</td>
+      <td>数据库having解析</td>
+      <td>%HAVING%</td>
+    </tr>
+    <tr>
+      <td>parseDistinct</td>
+      <td>数据库distinct解析</td>
+      <td>%DISTINCT%</td>
+    </tr>
+    <tr>
+      <td>parseUnion</td>
+      <td>数据库union解析</td>
+      <td>%UNION%</td>
+    </tr>
+    <tr>
+      <td>parseField</td>
+      <td>数据库字段解析</td>
+      <td>%FIELD%</td>
+    </tr>
+  </table>
+驱动的其他方法根据自身驱动需要和特性进行添加，例如，有些数据库的特殊性，需要覆盖父类Db类中的解析和过滤方法，包括：
+<table border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <td>parseKey</td>
+    <td>数据库字段名解析</td>
+  </tr>
+  <tr>
+    <td>parseValue</td>
+    <td>数据库字段值解析</td>
+  </tr>
+  <tr>
+    <td>parseSet</td>
+    <td>数据库set分析</td>
+  </tr>
+  <tr>
+    <td>parseLock</td>
+    <td>数据库锁机制</td>
+  </tr>
+</table>
+定义了驱动扩展后，需要使用的时候，设置相应的数据库类型即可：
+<pre class="code" lang="php">'DB_TYPE'=&gt;'odbc',&nbsp;//&nbsp;数据库类型配置不区分大小写</pre></div><div id="410" class="book-content"><h3>缓存驱动</h3>
+系统的缓存实现是由缓存类和缓存驱动组成，缓存驱动扩展位于Extend/Driver/Cache目录下面，目前已经提供了包括APC、Db、Memcache、Shmop、Sqlite、Redis、Eaccelerator和Xcache缓存方式的驱动扩展，缓存驱动必须继承Cache类，缓存驱动类的命名规范是：<br />Cache+驱动类名称（首字母大写）<br />并实现下面的驱动接口：
+  <table border="0" cellspacing="1" cellpadding="0">
+    <tr>
+      <th>方法说明</th>
+      <th>接口方法</th>
+    </tr>
+    <tr>
+      <td>架构方法</td>
+      <td>__construct($options='')</td>
+    </tr>
+    <tr>
+      <td>读取缓存</td>
+      <td>get($name)</td>
+    </tr>
+    <tr>
+      <td>写入缓存</td>
+      <td>set($name,$value,$expire=null)</td>
+    </tr>
+    <tr>
+      <td>删除缓存</td>
+      <td>rm($name)</td>
+    </tr>
+    <tr>
+      <td>清空缓存</td>
+      <td>clear()</td>
+    </tr>
+  </table>
+注意：有些缓存方式并未提供清空缓存接口，可以无需定义。<br />所有缓存驱动的有效期参数约定，如果设置为0 则表示永久缓存。如果要让缓存驱动支持缓存队列功能，需要在缓存接口的set操作方法设置成功后添加如下代码：
+<pre class="code" lang="php">if($this-&gt;options['length']&gt;0)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;记录缓存队列
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;queue($name);
+}</pre></div><div id="412" class="book-content"><h3>Session驱动</h3>
+新版支持对session 的hander驱动，可以通过驱动更改session的管理机制。Session驱动扩展目录位于Extend/Driver/Session下面，命名规范是：<br />Session+驱动类名称（首字母大写）<br />并实现下面的驱动接口：
+<table border="0" cellspacing="1" cellpadding="0">
+    <tr>
+        <th>方法说明</th>
+        <th>接口方法</th>
+    </tr>
+    <tr>
+        <td>执行入口</td>
+        <td>execute () 并且在方法中调用session_set_save_handler函数指定hander操作机制</td>
+    </tr>
+    <tr>
+        <td colspan="2">并建议添加下面的接口方法</td>
+    </tr>
+    <tr>
+        <td>打开Session</td>
+        <td>open($savePath, $sessionName)</td>
+    </tr>
+    <tr>
+        <td>关闭Session</td>
+        <td>close()</td>
+    </tr>
+    <tr>
+        <td>读取Session</td>
+        <td>read($id)</td>
+    </tr>
+    <tr>
+        <td>写入Session</td>
+        <td>write($id, $data)</td>
+    </tr>
+    <tr>
+        <td>删除Session</td>
+        <td>destory($id)</td>
+    </tr>
+    <tr>
+        <td>Session 过期回收</td>
+        <td>gc($maxlifetime)</td>
+    </tr>
+  </table></div><div id="411" class="book-content"><h3>标签库驱动</h3>
+任何一个模板引擎的功能都不可能是为你量身定制的，具有一个良好的可扩展机制也是模板引擎的另外一个考量，Smarty采用的是插件方法来实现扩展，ThinkTemplate由于采用了标签库技术，比Smarty提供了更为强大的定制功能，和Java的TagLibs一样可以支持自定义标签库和标签，每个标签都有独立的解析方法，所以可以根据标签库的定义规则来增加和修改标签解析规则。在ThinkTemplate中标签库的体现是采用XML命名空间的方式。<br />每个标签库对应一个标签库驱动类，每个驱动类负责对标签库中的所有标签的解析。标签库驱动类的作用其实就是把某个标签定义解析成为有效的模版文件（可以包括PHP语句或者HTML标签）。<br />系统的标签库驱动扩展目录位于Extend/Driver/TagLib目录下面，命名规范是：<br />TagLib+标签库名称（首字母大写）<br />目前已经提供了Html标签库驱动支持，标签库驱动扩展必须继承TagLib类，例如我们扩展一个Test标签库：
+<pre class="code" lang="php">Class&nbsp;TagLibTest&nbsp;extends&nbsp;TagLib{}</pre>
+首先需要定义标签库的标签定义，标签定义包含了所有标签库中支持的所有标签，定义方式如下：
+<pre class="code" lang="php">protected&nbsp;$tags&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;array(
+&nbsp;&nbsp;//&nbsp;定义标签
+'input'=&gt;array('attr'=&gt;'type,name,id,value','close'=&gt;0),&nbsp;//&nbsp;input标签
+);</pre>
+标签库的所有支持标签都在tags属性中进行定义，tags属性是一个二维数组，每个元素就是一个标签定义，索引名就是标签名，采用小写定义，调用的时候不区分大小写。<br />每个标签定义支持的属性包括：
+<table border="0" cellspacing="1" cellpadding="0">
+    <tr>
+        <th>属性名</th>
+        <th>说明</th>
+    </tr>
+    <tr>
+        <td>attr</td>
+        <td>标签支持的属性列表，用逗号分隔</td>
+    </tr>
+    <tr>
+        <td>close</td>
+        <td>标签是否为闭合方式&nbsp;（0闭合&nbsp;1不闭合），默认为不闭合</td>
+    </tr>
+    <tr>
+        <td>level</td>
+        <td>标签的嵌套层次（只有不闭合的标签才有嵌套层次）</td>
+    </tr>
+    <tr>
+        <td>alias</td>
+        <td>标签别名</td>
+    </tr>
+</table>
+定义了标签属性后，就需要定义每个标签的解析方法了，每个标签的解析方法在定义的时候需要添加“_”前缀，可以传入两个参数，属性字符串和内容字符串（针对非闭合标签）。必须通过return 返回标签的字符串解析输出，在标签解析类中可以调用模板类的实例。下面是一个input解析方法的定义：
+    <pre class="code" lang="php">public&nbsp;function&nbsp;_input($attr,$content)&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$tag&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;$this-&gt;parseXmlAttr($attr,'input');
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$name&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;$tag['name'];
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$id&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;$tag['id'];
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$type&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;$tag['type'];
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$value&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;$this-&gt;autoBuildVar($tag['value']);
+&nbsp;&nbsp;&nbsp;&nbsp;$str&nbsp;=&nbsp;'';
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;$str;
+&nbsp;&nbsp;&nbsp;&nbsp;}</pre>
+在每个标签的解析方法中，首先需要调用
+<pre class="code" lang="php">&nbsp;$this-&gt;parseXmlAttr($attr,'input');</pre>
+表示分析input标签的标签定义，并返回input的所有标签属性。接下来就是根据具体的属性值来返回实际的解析内容了。由于是示例，我们没有对标签中的全部变量进行解析，只是支持了value属性的变量传入。<br />定义好标签库扩展之后，我们就可以在模板中使用了，首先我们必须要告诉模板申明Test标签库，用taglib标签，例如：
+<pre class="code" lang="php">&lt;taglib&nbsp;name='Test'&nbsp;/&gt;</pre>
+name属性支持申明多个标签库，用逗号分隔即可。申明Test标签库之后，就可以使用Test标签库中的所有标签库了，调用方式如下：
+<pre class="code" lang="php">&lt;test:input&nbsp;type='radio'&nbsp;id='test'&nbsp;name='mail'value='value'&nbsp;/&gt;</pre>
+注意：调用扩展标签库的标签的时候，必须加上标签库的XML命名空间前缀。<br />由于我们定义的input标签是闭合标签，如果是非闭合方式的话，应该是写成：
+<pre class="code" lang="php">&lt;test:input&nbsp;type='radio'&nbsp;id='test'&nbsp;name='mail'&nbsp;value='value'&gt;&lt;/test:input&gt;</pre>
+Input标签定义value属性可以支持变量传入，所以value被认为是一个变量名，如果在Action中已经给value模板变量赋值，例如：
+<pre class="code" lang="php">$this-&gt;assign('value','my&nbsp;test&nbsp;value');</pre>
+最后标签被模板引擎编译后，就会输出：
+<pre class="code" lang="php">&lt;input&nbsp;type='radio'&nbsp;id='test'&nbsp;name='mail'&nbsp;value='my&nbsp;test&nbsp;value'/&gt;</pre></div><div id="192" class="book-content"><h3>模板引擎驱动</h3>
+系统支持模板引擎的扩展机制，模板引擎驱动的扩展目录位于Extend/Driver/Template下面，并且命名规范为：<br />Template+模板引擎名（首字母大写）<br />模板引擎驱动不需要继承任何类库，并且只需要实现一个接口方法：
+<table border="0" cellspacing="1" cellpadding="0">
+    <tr>
+        <th>接口说明</th>
+        <th>使用说明</th>
+    </tr>
+    <tr>
+        <td>渲染模板输出</td>
+        <td>fecth($tempateFie,$var)<br />tempateFie表示要解析的模板文件名<br />var表示要传入的模板变量数组</td>
+    </tr>
+</table>
+官方目前已经提供了包括Smarty、EaseTemplate、TemplateLite和Smart在内的第三方模板引擎扩展。<br />模板引擎扩展必须要配合第三方类库一起使用，我们以Smarty模板引擎为例，来说明下如何使用第三方模板引擎。首先，下载最新的Smarty模板引擎文件放到系统目录的Vendor第三方类库目录下面，建立Smarty子目录。<br />然后，修改项目配置文件，把模板引擎改为扩展的模板引擎名：
+<pre class="code" lang="php">'TMPL_ENGINE_TYPE'&nbsp;=&gt;'Smarty'</pre>
+就可以用smarty标签来定义你的模板文件了，改变模板引擎驱动并不会影响系统内部的模板变量输出和模板文件定位，例如我们在上面提到的用assign赋值模板变量、display和fetch方法的使用、模板文件的定位规则、模板替换功能仍然都可以使用。<br />对于某些第三方的模板引擎，还可以用TMPL_ENGINE_CONFIG参数进行自定义的配置。<br />例如对于Smarty模板引擎而言，我们可以进行下面的配置参数定义：
+<pre class="code" lang="php">'TMPL_ENGINE_CONFIG' =&gt;array(
+ &nbsp;&nbsp;&nbsp;&nbsp;'caching' =&gt; true,
+&nbsp;&nbsp;&nbsp;&nbsp;'template_dir' =&gt; TMPL_PATH,
+&nbsp;&nbsp;&nbsp;&nbsp;'cache_dir' =&gt; TEMP_PATH,
+)</pre>
+一般情况下，无需设置TMPL_ENGINE_CONFIG参数，模板引擎驱动已经有最适合的默认值了。</div></div></div><script type="text/javascript">remark();</script><div id="footer" class="book-footer"><p>&copy;2012 ThinkPHP文档中心 由<a target="_blank" href="http://www.thinkphp.cn">&nbsp;</a>强力驱动</p><script type="text/javascript" src="http://tajs.qq.com/stats?sId=8891584" charset="UTF-8"></script></div></body></html>
+<!-- Localized -->

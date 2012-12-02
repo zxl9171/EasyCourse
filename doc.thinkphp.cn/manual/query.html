@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>查询语言 - ThinkPHP完全开发手册 - 3.1</title><meta name="keywords" content="ThinkPHP,文档中心,在线手册,phpthink,类库参考,视频教程,book,3.0,api,开发框架,web框架,PHP开发框架,ThinkPHP手册"/><meta name="description" content="中文最佳实践框架  JUST THINK IT ThinkPHP 大道至简 开发由我|php快速开发|just think it|php开源框架|php网站开发|上海顶想|ORM|Framework|PHP企业开发"/><link href="../Public/favicon.ico" rel="shortcut icon"><link rel="stylesheet" type="text/css" href="../Public/css/layout.css" /><link rel="stylesheet" type="text/css" href="../Public/css/book.css" /><link rel="stylesheet" type="text/css" href="../Public/prettify/prettify.css" /><link rel="stylesheet" type="text/css" href="../Public/ThinkBox/ThinkBox.css" /><script type="text/javascript" src="../Public/js/jquery-1.7.1.min.js"></script><script type="text/javascript" src="../Public/js/common.js"></script><script type="text/javascript" src="../Public/prettify/prettify.js"></script><script type="text/javascript" src="../Public/ThinkBox/jquery.ThinkBox.js"></script><link rel="stylesheet" type="text/css" href="../Plugin/remark/remark.css" /><script type="text/javascript" src="../Plugin/remark/remark.js"></script></head><body><div id="header"><div id="innerHeader"><div class="book-top cf"><div class="book-logo fl"><a href="../manual.html" book="1">ThinkPHP完全开发手册</a><sup>3.1</sup></div><div class="right fr"><div class="user-current"></div></div></div></div></div><div id="sortList"><div class="inner"><div class="menu-title">目录Directory</div></div></div><div id="selector"><div class="inner"><div class="book-menu"><div class="list"><ul><li class=" child"><a class="title " href="preface.html" title="序言">序言</a></li><li class=" child"><a class="title " href="start.html" title="入门">第1章&nbsp;入门</a><ul><li><a class="" href="introduction.html">1.1&nbsp;简介</a></li><li><a class="" href="basic_concept.html">1.2&nbsp;基础概念</a></li><li><a class="" href="get_thinkphp.html">1.3&nbsp;获取ThinkPHP</a></li><li><a class="" href="environment.html">1.4&nbsp;环境要求</a></li><li><a class="" href="licence.html">1.5&nbsp;许可协议</a></li><li><a class="" href="directory.html">1.6&nbsp;目录结构</a></li><li><a class="" href="naming_conventions.html">1.7&nbsp;命名规范</a></li><li><a class="" href="mvc.html">1.8&nbsp;MVC分层</a></li><li><a class="" href="cbd.html">1.9&nbsp;CBD架构</a></li><li><a class="" href="features.html">1.10&nbsp;特性概述</a></li><li><a class="" href="system_process.html">1.11&nbsp;系统流程</a></li><li><a class="" href="development_process.html">1.12&nbsp;开发流程</a></li></ul></li><li class=" child"><a class="title " href="entry.html" title="入口">第2章&nbsp;入口</a><ul><li><a class="" href="entrance.html">2.1&nbsp;入口文件</a></li><li><a class="" href="app_directory.html">2.2&nbsp;项目目录</a></li><li><a class="" href="deploy_directory.html">2.3&nbsp;部署目录</a></li><li><a class="" href="app_compile.html">2.4&nbsp;项目编译</a></li><li><a class="" href="debug_mode.html">2.5&nbsp;调试模式</a></li></ul></li><li class=" child"><a class="title " href="config.html" title="配置">第3章&nbsp;配置</a><ul><li><a class="" href="config_type.html">3.1&nbsp;配置格式</a></li><li><a class="" href="convention_config.html">3.2&nbsp;惯例配置</a></li><li><a class="" href="app_config.html">3.3&nbsp;项目配置</a></li><li><a class="" href="debug_config.html">3.4&nbsp;调试配置</a></li><li><a class="" href="group_config.html">3.5&nbsp;分组配置</a></li><li><a class="" href="read_config.html">3.6&nbsp;读取配置</a></li><li><a class="" href="dynamic_config.html">3.7&nbsp;动态配置</a></li><li><a class="" href="extend_config.html">3.8&nbsp;扩展配置</a></li></ul></li><li class=" child"><a class="title " href="function_class.html" title="函数和类库">第4章&nbsp;函数和类库</a><ul><li><a class="" href="functions.html">4.1&nbsp;函数库</a></li><li><a class="" href="class.html">4.2&nbsp;类库</a></li></ul></li><li class=" child"><a class="title " href="controller.html" title="控制器">第5章&nbsp;控制器</a><ul><li><a class="" href="url_mode.html">5.1&nbsp;URL模式</a></li><li><a class="" href="module_action.html">5.2&nbsp;模块和操作</a></li><li><a class="" href="define_controller.html">5.3&nbsp;定义控制器</a></li><li><a class="" href="empty_action.html">5.4&nbsp;空操作</a></li><li><a class="" href="empty_module.html">5.5&nbsp;空模块</a></li><li><a class="" href="module_group.html">5.6&nbsp;模块分组</a></li><li><a class="" href="url_suffix.html">5.7&nbsp;URL伪静态</a></li><li><a class="" href="url_route.html">5.8&nbsp;URL路由</a></li><li><a class="" href="url_rewrite.html">5.9&nbsp;URL重写</a></li><li><a class="" href="url_build.html">5.10&nbsp;URL生成</a></li><li><a class="" href="url_case.html">5.11&nbsp;URL大小写</a></li><li><a class="" href="before_after.html">5.12&nbsp;前置和后置操作</a></li><li><a class="" href="cross_module.html">5.13&nbsp;跨模块调用</a></li><li><a class="" href="page_dispatch.html">5.14&nbsp;页面跳转</a></li><li><a class="" href="redirect.html">5.15&nbsp;重定向</a></li><li><a class="" href="get_system_var.html">5.16&nbsp;获取系统变量</a></li><li><a class="" href="request_method.html">5.17&nbsp;判断请求类型</a></li><li><a class="" href="get_url_params.html">5.18&nbsp;获取URL参数</a></li><li><a class="" href="ajax_return.html">5.19&nbsp;AJAX返回</a></li><li><a class="" href="action_param_bind.html">5.20&nbsp;Action参数绑定</a></li><li><a class="" href="multi_action_layer.html">5.21&nbsp;多层控制器支持</a></li></ul></li><li class="show child"><a class="title " href="model.html" title="模型">第6章&nbsp;模型</a><ul><li><a class="" href="model_define.html">6.1&nbsp;模型定义</a></li><li><a class="" href="model_instance.html">6.2&nbsp;模型实例化</a></li><li><a class="" href="field_define.html">6.3&nbsp;字段定义</a></li><li><a class="" href="primary_key.html">6.4&nbsp;数据主键</a></li><li><a class="" href="get_fields.html">6.5&nbsp;属性访问</a></li><li><a class="" href="cross_database.html">6.6&nbsp;跨库操作</a></li><li><a class="" href="connect_database.html">6.7&nbsp;连接数据库</a></li><li><a class="" href="switch_database.html">6.8&nbsp;切换数据库</a></li><li><a class="" href="distributed_database.html">6.9&nbsp;分布式数据库</a></li><li><a class="" href="create.html">6.10&nbsp;创建数据</a></li><li><a class="" href="field_map.html">6.11&nbsp;字段映射</a></li><li><a class="" href="continuous_operation.html">6.12&nbsp;连贯操作</a></li><li><a class="" href="curd.html">6.13&nbsp;CURD操作</a></li><li><a class="" href="active_record.html">6.14&nbsp;ActiveRecord</a></li><li><a class="" href="auto_validate.html">6.15&nbsp;自动验证</a></li><li><a class="" href="name_range.html">6.16&nbsp;命名范围</a></li><li><a class="" href="auto_operate.html">6.17&nbsp;自动完成</a></li><li><a class="selected" href="query.html">6.18&nbsp;查询语言</a></li><li><a class="" href="query_lock.html">6.19&nbsp;查询锁定</a></li><li><a class="" href="field_except.html">6.20&nbsp;字段排除</a></li><li><a class="" href="trans_support.html">6.21&nbsp;事务支持</a></li><li><a class="" href="adv_model.html">6.22&nbsp;高级模型</a></li><li><a class="" href="view_model.html">6.23&nbsp;视图模型</a></li><li><a class="" href="relation_model.html">6.24&nbsp;关联模型</a></li><li><a class="" href="mongo_model.html">6.25&nbsp;Mongo模型</a></li><li><a class="" href="dynamic_model.html">6.26&nbsp;动态模型</a></li><li><a class="" href="virtual_model.html">6.27&nbsp;虚拟模型</a></li><li><a class="" href="multi_model_layer.html">6.28&nbsp;多层模型支持</a></li></ul></li><li class=" child"><a class="title " href="view.html" title="视图">第7章&nbsp;视图</a><ul><li><a class="" href="template_define.html">7.1&nbsp;模板定义</a></li><li><a class="" href="template_assign.html">7.2&nbsp;模板赋值</a></li><li><a class="" href="template_output.html">7.3&nbsp;模板输出</a></li><li><a class="" href="template_replace.html">7.4&nbsp;模板替换</a></li><li><a class="" href="fetch_content.html">7.5&nbsp;获取内容</a></li><li><a class="" href="template_engine.html">7.6&nbsp;模板引擎</a></li><li><a class="" href="layout.html">7.7&nbsp;布局模板</a></li></ul></li><li class=" child"><a class="title " href="template.html" title="模板引擎">第8章&nbsp;模板引擎</a><ul><li><a class="" href="var_output.html">8.1&nbsp;变量输出</a></li><li><a class="" href="system_var.html">8.2&nbsp;系统变量</a></li><li><a class="" href="use_function.html">8.3&nbsp;使用函数</a></li><li><a class="" href="default_val.html">8.4&nbsp;默认值输出</a></li><li><a class="" href="use_operate.html">8.5&nbsp;使用运算符</a></li><li><a class="" href="buildin_tag.html">8.6&nbsp;内置标签</a></li><li><a class="" href="include_file.html">8.7&nbsp;包含文件</a></li><li><a class="" href="load_file.html">8.8&nbsp;导入文件</a></li><li><a class="" href="volist.html">8.9&nbsp;Volist标签</a></li><li><a class="" href="foreach.html">8.10&nbsp;Foreach标签</a></li><li><a class="" href="for.html">8.11&nbsp;For标签</a></li><li><a class="" href="switch.html">8.12&nbsp;Switch标签</a></li><li><a class="" href="compare.html">8.13&nbsp;比较标签</a></li><li><a class="" href="three_operators.html">8.14&nbsp;三元运算</a></li><li><a class="" href="range.html">8.15&nbsp;范围判断标签</a></li><li><a class="" href="present.html">8.16&nbsp;Present标签</a></li><li><a class="" href="empty.html">8.17&nbsp;Empty标签</a></li><li><a class="" href="defined.html">8.18&nbsp;Defined标签</a></li><li><a class="" href="define.html">8.19&nbsp;Define标签</a></li><li><a class="" href="assign.html">8.20&nbsp;Assign标签</a></li><li><a class="" href="if.html">8.21&nbsp;IF标签</a></li><li><a class="" href="tag_nest.html">8.22&nbsp;标签嵌套</a></li><li><a class="" href="use_php.html">8.23&nbsp;使用PHP代码</a></li><li><a class="" href="layout_template.html">8.24&nbsp;模板布局</a></li><li><a class="" href="extend_template.html">8.25&nbsp;模板继承</a></li><li><a class="" href="literal.html">8.26&nbsp;原样输出</a></li><li><a class="" href="comment.html">8.27&nbsp;模板注释</a></li><li><a class="" href="taglib.html">8.28&nbsp;引入标签库</a></li><li><a class="" href="modify_edlim.html">8.29&nbsp;修改定界符</a></li><li><a class="" href="js_confusion.html">8.30&nbsp;避免JS混淆</a></li></ul></li><li class=" child"><a class="title " href="log.html" title="日志">第9章&nbsp;日志</a><ul><li><a class="" href="log_level.html">9.1&nbsp;日志级别</a></li><li><a class="" href="log_type.html">9.2&nbsp;记录方式</a></li><li><a class="" href="log_record.html">9.3&nbsp;手动记录</a></li></ul></li><li class=" child"><a class="title " href="error.html" title="错误">第10章&nbsp;错误</a><ul><li><a class="" href="exception.html">10.1&nbsp;异常处理</a></li><li><a class="" href="exception_tmpl.html">10.2&nbsp;异常模板</a></li><li><a class="" href="exception_info.html">10.3&nbsp;异常显示</a></li></ul></li><li class=" child"><a class="title " href="debug.html" title="调试">第11章&nbsp;调试</a><ul><li><a class="" href="app_status.html">11.1&nbsp;运行状态</a></li><li><a class="" href="page_trace.html">11.2&nbsp;页面Trace</a></li><li><a class="" href="debug_mothod.html">11.3&nbsp;调试方法</a></li></ul></li><li class=" child"><a class="title " href="cache.html" title="缓存">第12章&nbsp;缓存</a><ul><li><a class="" href="cache_type.html">12.1&nbsp;缓存方式</a></li><li><a class="" href="dynamic_cache.html">12.2&nbsp;动态缓存</a></li><li><a class="" href="cache_queue.html">12.3&nbsp;缓存队列</a></li><li><a class="" href="express_cache.html">12.4&nbsp;快捷缓存</a></li><li><a class="" href="fast_save.html">12.5&nbsp;快速缓存</a></li><li><a class="" href="query_cache.html">12.6&nbsp;查询缓存</a></li><li><a class="" href="sql_cache.html">12.7&nbsp;SQL解析缓存</a></li><li><a class="" href="html_cache.html">12.8&nbsp;静态缓存</a></li></ul></li><li class=" child"><a class="title " href="extend.html" title="扩展">第13章&nbsp;扩展</a><ul><li><a class="" href="behavior_extend.html">13.1&nbsp;行为扩展</a></li><li><a class="" href="library_extend.html">13.2&nbsp;类库扩展</a></li><li><a class="" href="action_extend.html">13.3&nbsp;控制器扩展</a></li><li><a class="" href="model_extend.html">13.4&nbsp;模型扩展</a></li><li><a class="" href="driver_extend.html">13.5&nbsp;驱动扩展</a></li><li><a class="" href="widget_extend.html">13.6&nbsp;Widget扩展</a></li><li><a class="" href="mode_extend.html">13.7&nbsp;模式扩展</a></li><li><a class="" href="engine_extend.html">13.8&nbsp;引擎扩展</a></li></ul></li><li class=" child"><a class="title " href="safety.html" title="安全">第14章&nbsp;安全</a><ul><li><a class="" href="form_token.html">14.1&nbsp;表单令牌</a></li><li><a class="" href="field_type_validate.html">14.2&nbsp;字段类型验证</a></li><li><a class="" href="sql_injection.html">14.3&nbsp;防止SQL注入</a></li><li><a class="" href="input_filter.html">14.4&nbsp;输入过滤</a></li><li><a class="" href="upload_safe.html">14.5&nbsp;上传安全</a></li><li><a class="" href="prevent_xss.html">14.6&nbsp;防止XSS攻击</a></li><li><a class="" href="other_suggestion.html">14.7&nbsp;其他安全建议</a></li><li><a class="" href="dir_secure.html">14.8&nbsp;目录安全文件</a></li><li><a class="" href="protected_template.html">14.9&nbsp;保护模板文件</a></li></ul></li><li class=" child"><a class="title " href="performance.html" title="性能">第15章&nbsp;性能</a><ul><li><a class="" href="close_debug.html">15.1&nbsp;关闭调试模式</a></li><li><a class="" href="cache_on.html">15.2&nbsp;开启缓存</a></li><li><a class="" href="merge_fields.html">15.3&nbsp;合并字段缓存</a></li><li><a class="" href="sql_optimization.html">15.4&nbsp;优化SQL</a></li><li><a class="" href="replace_entrance.html">15.5&nbsp;替换入口</a></li><li><a class="" href="front_optimization.html">15.6&nbsp;前端优化</a></li></ul></li><li class=" child"><a class="title " href="deploy.html" title="部署">第16章&nbsp;部署</a><ul><li><a class="" href="path_info_support.html">16.1&nbsp;PATH_INFO支持</a></li><li><a class="" href="hidden_index.html">16.2&nbsp;隐藏index.php</a></li><li><a class="" href="sub_domain_deploy.html">16.3&nbsp;二级域名部署</a></li><li><a class="" href="error_page.html">16.4&nbsp;定制错误页面</a></li><li><a class="" href="set_zone.html">16.5&nbsp;设置时区</a></li></ul></li><li class=" child"><a class="title " href="sae.html" title="SAE支持">第17章&nbsp;SAE支持</a><ul><li><a class="" href="sae_intro.html">17.1&nbsp;SAE介绍</a></li><li><a class="" href="get_sae.html">17.2&nbsp;获取SAE</a></li><li><a class="" href="sae_develop.html">17.3&nbsp;SAE开发</a></li></ul></li><li class=" child"><a class="title " href="rest.html" title="REST支持">第18章&nbsp;REST支持</a><ul><li><a class="" href="rest_intro.html">18.1&nbsp;REST介绍</a></li><li><a class="" href="rest_mode.html">18.2&nbsp;REST模式</a></li><li><a class="" href="rest_config.html">18.3&nbsp;REST配置</a></li><li><a class="" href="rest_route.html">18.4&nbsp;REST路由</a></li><li><a class="" href="rest_method.html">18.5&nbsp;REST方法</a></li></ul></li><li class=" child"><a class="title " href="sundry.html" title="杂项">第19章&nbsp;杂项</a><ul><li><a class="" href="session.html">19.1&nbsp;Session支持</a></li><li><a class="" href="cookie.html">19.2&nbsp;Cookie支持</a></li><li><a class="" href="date.html">19.3&nbsp;日期和时间</a></li><li><a class="" href="wml.html">19.4&nbsp;WML开发</a></li><li><a class="" href="multi_lang.html">19.5&nbsp;多语言</a></li><li><a class="" href="data_page.html">19.6&nbsp;数据分页</a></li><li><a class="" href="upload.html">19.7&nbsp;文件上传</a></li><li><a class="" href="verify.html">19.8&nbsp;验证码</a></li><li><a class="" href="watermark.html">19.9&nbsp;图片添加水印</a></li><li><a class="" href="ip_location.html">19.10&nbsp;IP获取和定位</a></li></ul></li><li class=" child"><a class="title " href="appendix.html" title="附录">第20章&nbsp;附录</a><ul><li><a class="" href="constant_reference.html">20.1&nbsp;常量参考</a></li><li><a class="" href="config_reference.html">20.2&nbsp;配置参考</a></li><li><a class="" href="version_update.html">20.3&nbsp;关于升级</a></li><li><a class="" href="memorabilia.html">20.4&nbsp;大事记</a></li></ul></li><li class=" child"><a class="title " href="thanks.html" title="鸣谢">第21章&nbsp;鸣谢</a></li></ul></div></div></div></div><div id="tools"><div class="inner"><div class="book-tool"><div class="content cf"><div class="search fl"><form action="/manual/_search.html" method="post" class="cf"><label for="search-key">输入搜索关键字...</label><input id="search-key" class="text fl" type="text" name="keywords" /><input class="button fl" type="submit" value="&nbsp;" title="搜索" /></form></div><a class="next fr" href="javascript:void(0)" title="下一章"><i>&nbsp;</i></a><a class="prev fr" href="javascript:void(0)" title="上一章"><i>&nbsp;</i></a><a class="share fr" href="javascript:void(0)" title="分享">分享<i>&nbsp;</i></a></div></div></div></div><div id="gird"><div class="inner"><div class="book-title" menu="70"><h1>6.18&nbsp;查询语言</h1></div><div id="96" class="book-content">ThinkPHP内置了非常灵活的查询方法，可以快速的进行数据查询操作，查询条件可以用于CURD等任何操作，作为where方法的参数传入即可，下面来一一讲解查询语言的内涵。</div><div id="97" class="book-content"><h3>查询方式</h3>ThinkPHP可以支持直接使用字符串作为查询条件，但是大多数情况推荐使用索引数组或者对象来作为查询条件，因为会更加安全。<br /><b>一、使用字符串作为查询条件</b><br />这是最传统的方式，但是安全性不高，例如：
+<pre class="code" lang="php">$User&nbsp;=&nbsp;M("User");&nbsp;//&nbsp;实例化User对象
+$User-&gt;where('type=1&nbsp;AND&nbsp;status=1')-&gt;select();&nbsp;</pre>
+
+最后生成的SQL语句是<br />SELECT * FROM think_user WHERE type=1 AND status=1</div><div id="492" class="book-content"><b>二、使用数组作为查询条件</b><br /><pre class="code" lang="php">$User&nbsp;=&nbsp;M("User");&nbsp;//&nbsp;实例化User对象
+$condition['name']&nbsp;=&nbsp;'thinkphp';
+$condition['status']&nbsp;=&nbsp;1;
+//&nbsp;把查询条件传入查询方法
+$User-&gt;where($condition)-&gt;select();&nbsp;</pre>
+
+最后生成的SQL语句是<br />SELECT * FROM think_user WHERE `name`='thinkphp' AND status=1<br />如果进行多字段查询，那么字段之间的默认逻辑关系是 逻辑与 AND，但是用下面的规则可以更改默认的逻辑判断，通过使用 _logic 定义查询逻辑：
+<pre class="code" lang="php">$User&nbsp;=&nbsp;M("User");&nbsp;//&nbsp;实例化User对象
+$condition['name']&nbsp;=&nbsp;'thinkphp';
+$condition['account']&nbsp;=&nbsp;'thinkphp';
+$condition['_logic']&nbsp;=&nbsp;'OR';
+//&nbsp;把查询条件传入查询方法
+$User-&gt;where($condition)-&gt;select();&nbsp;</pre>最后生成的SQL语句是<br />SELECT * FROM think_user WHERE `name`='thinkphp'  OR  `account`='thinkphp'</div><div id="493" class="book-content"><b>三、使用对象方式来查询</b> （这里以stdClass内置对象为例）
+<pre class="code" lang="php">$User&nbsp;=&nbsp;M("User");&nbsp;//&nbsp;实例化User对象
+//&nbsp;定义查询条件
+$condition&nbsp;=&nbsp;new&nbsp;stdClass();&nbsp;
+$condition-&gt;name&nbsp;=&nbsp;'thinkphp';&nbsp;
+$condition-&gt;status=&nbsp;1;&nbsp;
+$User-&gt;where($condition)-&gt;select();&nbsp;</pre>
+
+最后生成的SQL语句和上面一样<br />SELECT * FROM think_user WHERE `name`='thinkphp' AND status=1<br />使用对象方式查询和使用数组查询的效果是相同的，并且是可以互换的，大多数情况下，我们建议采用数组方式更加高效，后面我们会以数组方式为例来讲解具体的查询语言用法。</div><div id="364" class="book-content"><h3>表达式查询</h3>上面的查询条件仅仅是一个简单的相等判断，可以使用查询表达式支持更多的SQL查询语法，并且可以用于数组或者对象方式的查询（下面仅以数组方式为例说明），查询表达式的使用格式：<br />$map['字段名']  = array('表达式','查询条件');<br />表达式不分大小写，支持的查询表达式有下面几种，分别表示的含义是：
+<table border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <th>表达式</th>
+    <th>含义</th>
+  </tr>
+  <tr>
+    <td>EQ</td>
+    <td>等于（=）</td>
+  </tr>
+  <tr>
+    <td>NEQ</td>
+    <td>不等于（&lt;&gt;）</td>
+  </tr>
+  <tr>
+    <td>GT</td>
+    <td>大于（&gt;）</td>
+  </tr>
+  <tr>
+    <td>EGT</td>
+    <td>大于等于（&gt;=）</td>
+  </tr>
+  <tr>
+    <td>LT</td>
+    <td>小于（&lt;）</td>
+  </tr>
+  <tr>
+    <td>ELT</td>
+    <td>小于等于（&lt;=）</td>
+  </tr>
+  <tr>
+    <td>LIKE</td>
+    <td>模糊查询</td>
+  </tr>
+  <tr>
+    <td>[NOT]&nbsp;BETWEEN</td>
+    <td>（不在）区间查询</td>
+  </tr>
+  <tr>
+    <td>[NOT]&nbsp;IN</td>
+    <td>（不在）IN&nbsp;查询</td>
+  </tr>
+  <tr>
+    <td>EXP</td>
+    <td>表达式查询，支持SQL语法</td>
+  </tr>
+</table>示例如下：<br /><b>EQ</b> ：等于（=）<br />例如：<pre class="code" lang="php">$map['id']&nbsp;&nbsp;=&nbsp;array('eq',100);</pre>和下面的查询等效
+<pre class="code" lang="php">$map['id']&nbsp;&nbsp;=&nbsp;100;</pre>表示的查询条件就是 id = 100<br /><b>NEQ</b>： 不等于（&lt;&gt;）<br />例如：<pre class="code" lang="php">$map['id']&nbsp;&nbsp;=&nbsp;array('neq',100);</pre>表示的查询条件就是 id &lt;&gt; 100<br /><b>GT</b>：大于（&gt;）<br />例如：<pre class="code" lang="php">$map['id']&nbsp;&nbsp;=&nbsp;array('gt',100);</pre>表示的查询条件就是 id &gt; 100<br /><b>EGT</b>：大于等于（&gt;=）<br />例如：<pre class="code" lang="php">$map['id']&nbsp;&nbsp;=&nbsp;array('egt',100);</pre>表示的查询条件就是 id &gt;= 100<br /><b>LT</b>：小于（&lt;）<br />例如：<pre class="code" lang="php">$map['id']&nbsp;&nbsp;=&nbsp;array('lt',100);</pre>表示的查询条件就是 id &lt; 100<br /><b>ELT</b>： 小于等于（&lt;=）<br />例如：<pre class="code" lang="php">$map['id']&nbsp;&nbsp;=&nbsp;array('elt',100);</pre>表示的查询条件就是 id &lt;= 100<br /><b>[NOT] LIKE</b>： 同sql的LIKE<br />例如：<pre class="code" lang="php">$map['name']&nbsp;=&nbsp;array('like','thinkphp%');</pre>查询条件就变成 name like 'thinkphp%'<br />如果配置了DB_LIKE_FIELDS参数的话，某些字段也会自动进行模糊查询。例如设置了：
+<pre class="code" lang="php">'DB_LIKE_FIELDS'=&gt;'title|content'</pre>的话，使用
+<pre class="code" lang="php">$map['title']&nbsp;=&nbsp;'thinkphp';</pre>查询条件就会变成 name like '%thinkphp%'<br />支持数组方式，例如
+<pre class="code" lang="php">$map['a']&nbsp;=array('like',array('%thinkphp%','%tp'),'OR');
+$map['b']&nbsp;=array('notlike',array('%thinkphp%','%tp'),'AND');</pre>
+生成的查询条件就是：<br />(a like '%thinkphp%' OR a like '%tp') AND (b not like '%thinkphp%' AND b not like '%tp')<br /><b>[NOT] BETWEEN</b> ：同sql的[not] between， 查询条件支持字符串或者数组，例如：
+<pre class="code" lang="php">$map['id']&nbsp;&nbsp;=&nbsp;array('between','1,8');</pre>和下面的等效：
+<pre class="code" lang="php">$map['id']&nbsp;&nbsp;=&nbsp;array('between',array('1','8'));</pre>查询条件就变成 id BETWEEN 1 AND 8<br /><b>[NOT]  IN</b>： 同sql的[not] in ，查询条件支持字符串或者数组，例如：
+<pre class="code" lang="php">$map['id']&nbsp;&nbsp;=&nbsp;array('not&nbsp;in','1,5,8');</pre>和下面的等效：
+<pre class="code" lang="php">$map['id']&nbsp;&nbsp;=&nbsp;array('not&nbsp;in',array('1','5','8'));</pre>查询条件就变成 id NOT IN (1,5, 8)<br /><b>EXP</b>：表达式，支持更复杂的查询情况<br />例如：
+<pre class="code" lang="php">$map['id']&nbsp;&nbsp;=&nbsp;array('in','1,3,8');</pre>可以改成：
+<pre class="code" lang="php">$map['id']&nbsp;&nbsp;=&nbsp;array('exp','&nbsp;IN&nbsp;(1,3,8)&nbsp;');</pre>exp查询的条件不会被当成字符串，所以后面的查询条件可以使用任何SQL支持的语法，包括使用函数和字段名称。查询表达式不仅可用于查询条件，也可以用于数据更新，例如：
+<pre class="code" lang="php">$User&nbsp;=&nbsp;M("User");&nbsp;//&nbsp;实例化User对象
+//&nbsp;要修改的数据对象属性赋值
+$data['name']&nbsp;=&nbsp;'ThinkPHP';
+$data['score']&nbsp;=&nbsp;array('exp','score+1');//&nbsp;用户的积分加1
+$User-&gt;where('id=5')-&gt;save($data);&nbsp;//&nbsp;根据条件保存修改的数据</pre></div><div id="98" class="book-content"><h3>快捷查询</h3>新版增加了快捷查询方式，可以进一步简化查询条件的写法，例如：<br /><b>一、实现不同字段相同的查询条件</b><br /><pre class="code" lang="php">$User&nbsp;=&nbsp;M("User");&nbsp;//&nbsp;实例化User对象
+$map['name|title']&nbsp;=&nbsp;'thinkphp';
+//&nbsp;把查询条件传入查询方法
+$User-&gt;where($map)-&gt;select();&nbsp;</pre>查询条件就变成 name= 'thinkphp' OR title = 'thinkphp'<br /><b>二、实现不同字段不同的查询条件</b><br /><pre class="code" lang="php">$User&nbsp;=&nbsp;M("User");&nbsp;//&nbsp;实例化User对象
+$map['status&title']&nbsp;=array('1','thinkphp','_multi'=&gt;true);
+//&nbsp;把查询条件传入查询方法
+$User-&gt;where($map)-&gt;select();&nbsp;</pre>
+'_multi'=&gt;true必须加在数组的最后，表示当前是多条件匹配，这样查询条件就变成 status= 1 AND title = 'thinkphp' ，查询字段支持更多的，例如：<br />$map['status&score&title'] =array('1',array('gt','0'),'thinkphp','_multi'=&gt;true);<br />查询条件就变成 status= 1 AND score &gt;0 AND  title = 'thinkphp'<br />注意：快捷查询方式中“|”和“&”不能同时使用。</div><div id="99" class="book-content"><h3>区间查询</h3>ThinkPHP支持对某个字段的区间查询，例如： 
+<pre class="code" lang="php">$map['id']&nbsp;=&nbsp;array(array('gt',1),array('lt',10))&nbsp;;</pre>得到的查询条件是： (`id` &gt; 1) AND (`id` &lt; 10)
+
+<pre class="code" lang="php">$map['id']&nbsp;=&nbsp;array(array('gt',3),array('lt',10),&nbsp;'or')&nbsp;;</pre>得到的查询条件是： (`id` &gt; 3) OR (`id` &lt; 10)
+
+<pre class="code" lang="php">$map['id']&nbsp;&nbsp;=&nbsp;array(array('neq',6),array('gt',3),'and');&nbsp;</pre>得到的查询条件是：(`id` != 6) AND (`id` &gt; 3)<br />最后一个可以是AND、 OR或者 XOR运算符，如果不写，默认是AND运算。<br />区间查询的条件可以支持普通查询的所有表达式，也就是说类似LIKE、GT和EXP这样的表达式都可以支持。另外区间查询还可以支持更多的条件，只要是针对一个字段的条件都可以写到一起，例如：
+<pre class="code" lang="php">$map['name']&nbsp;&nbsp;=&nbsp;array(array('like','%a%'),&nbsp;array('like','%b%'),&nbsp;array('like','%c%'),&nbsp;'ThinkPHP','or');&nbsp;</pre>
+最后的查询条件是：
+<pre class="code" lang="php">(`name`&nbsp;LIKE&nbsp;'%a%')&nbsp;OR&nbsp;(`name`&nbsp;LIKE&nbsp;'%b%')&nbsp;OR&nbsp;(`name`&nbsp;LIKE&nbsp;'%c%')&nbsp;OR&nbsp;(`name`&nbsp;=&nbsp;'ThinkPHP')</pre></div><div id="100" class="book-content"><h3>组合查询</h3>如果你需要在查询的时候同时偶尔使用字符串却又不希望丢失数组方式的灵活的话，可以考虑使用组合查询。<br />组合查询的主体还是采用数组方式查询，只是加入了一些特殊的查询支持，包括字符串模式查询（_string）、复合查询（_complex）、请求字符串查询（_query），混合查询中的特殊查询每次查询只能定义一个，由于采用数组的索引方式，索引相同的特殊查询会被覆盖。<br /><b>一、字符串模式查询</b>（采用_string 作为查询条件）<br />数组条件还可以和字符串条件混合使用，例如：
+<pre class="code" lang="php">$User&nbsp;=&nbsp;M("User");&nbsp;//&nbsp;实例化User对象
+$map['id']&nbsp;=&nbsp;array('neq',1);
+$map['name']&nbsp;=&nbsp;'ok';
+$map['_string']&nbsp;=&nbsp;'status=1&nbsp;AND&nbsp;score&gt;10';
+$User-&gt;where($map)-&gt;select();&nbsp;</pre>最后得到的查询条件就成了：<br />( `id` != 1 ) AND ( `name` = 'ok' ) AND ( status=1 AND score&gt;10 )<br /><b>二、请求字符串查询方式</b><br />请求字符串查询是一种类似于URL传参的方式，可以支持简单的条件相等判断。
+<pre class="code" lang="php">$map['id']&nbsp;=&nbsp;array('gt','100');
+$map['_query']&nbsp;=&nbsp;'status=1&score=100&_logic=or';</pre>
+得到的查询条件是：`id`&gt;100 AND (`status` = '1' OR `score` = '100')<br /><b>三、复合查询</b><br />复合查询相当于封装了一个新的查询条件，然后并入原来的查询条件之中，所以可以完成比较复杂的查询条件组装。<br />例如： 
+<pre class="code" lang="php">$where['name']&nbsp;&nbsp;=&nbsp;array('like',&nbsp;'%thinkphp%');
+$where['title']&nbsp;&nbsp;=&nbsp;array('like','%thinkphp%');
+$where['_logic']&nbsp;=&nbsp;'or';
+$map['_complex']&nbsp;=&nbsp;$where;
+$map['id']&nbsp;&nbsp;=&nbsp;array('gt',1);</pre>查询条件是 
+( id &gt; 1) AND ( ( name like '%thinkphp%') OR ( title like '%thinkphp%') )<br />复合查询使用了_complex作为子查询条件来定义，配合之前的查询方式，可以非常灵活的制定更加复杂的查询条件。<br />很多查询方式可以相互转换，例如上面的查询条件可以改成：
+<pre class="code" lang="php">$where['id']&nbsp;=&nbsp;array('gt',1);
+$where['_string']&nbsp;=&nbsp;'&nbsp;(name&nbsp;like&nbsp;"%thinkphp%")&nbsp;&nbsp;OR&nbsp;(&nbsp;title&nbsp;like&nbsp;"%thinkphp")&nbsp;';</pre>最后生成的SQL语句是一致的。</div><div id="366" class="book-content"><h3>统计查询</h3>在应用中我们经常会用到一些统计数据，例如当前所有（或者满足某些条件）的用户数、所有用户的最大积分、用户的平均成绩等等，ThinkPHP为这些统计操作提供了一系列的内置方法，包括：
+<table border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <th>方法</th>
+    <th>说明</th>
+  </tr>
+  <tr>
+    <td>Count</td>
+    <td>统计数量，参数是要统计的字段名（可选）</td>
+  </tr>
+  <tr>
+    <td>Max</td>
+    <td>获取最大值，参数是要统计的字段名（必须）</td>
+  </tr>
+  <tr>
+    <td>Min</td>
+    <td>获取最小值，参数是要统计的字段名（必须）</td>
+  </tr>
+  <tr>
+    <td>Avg</td>
+    <td>获取平均值，参数是要统计的字段名（必须）</td>
+  </tr>
+  <tr>
+    <td>Sum</td>
+    <td>获取总分，参数是要统计的字段名（必须）</td>
+  </tr>
+</table>用法示例：
+<pre class="code" lang="php">$User&nbsp;=&nbsp;M("User");&nbsp;//&nbsp;实例化User对象</pre>获取用户数：
+<pre class="code" lang="php">$userCount&nbsp;=&nbsp;$User-&gt;count();</pre>或者根据字段统计：
+<pre class="code" lang="php">$userCount&nbsp;=&nbsp;$User-&gt;count("id");</pre>获取用户的最大积分：
+<pre class="code" lang="php">$maxScore&nbsp;=&nbsp;$User-&gt;max('score');</pre>获取积分大于0的用户的最小积分：
+<pre class="code" lang="php">$minScore&nbsp;=&nbsp;$User-&gt;where('score&gt;0')-&gt;min('score');</pre>获取用户的平均积分：
+<pre class="code" lang="php">$avgScore&nbsp;=&nbsp;$User-&gt;avg('score');</pre>统计用户的总成绩：
+<pre class="code" lang="php">$sumScore&nbsp;=&nbsp;$User-&gt;sum('score');</pre>并且所有的统计查询均支持连贯操作的使用。</div><div id="101" class="book-content"><h3>定位查询</h3>ThinkPHP支持定位查询，但是要求当前模型必须继承高级模型类才能使用，可以使用getN方法直接返回查询结果中的某个位置的记录。例如： 
+ 获取符合条件的第3条记录：
+<pre class="code" lang="php">$User-&gt;where('score&gt;0')-&gt;order('score&nbsp;desc')-&gt;getN(2);</pre>
+ 获取符合条件的最后第二条记录：
+<pre class="code" lang="php">$User-&gt;&nbsp;where('score&gt;80')-&gt;order('score&nbsp;desc')-&gt;getN(-2);</pre>
+ 获取第一条记录：
+<pre class="code" lang="php">$User-&gt;where('score&gt;80')-&gt;order('score&nbsp;desc')-&gt;first();</pre>
+ 获取最后一条记录：
+<pre class="code" lang="php">$User-&gt;where('score&gt;80')-&gt;order('score&nbsp;desc')-&gt;last();</pre></div><div id="368" class="book-content"><h3>SQL查询</h3>
+ThinkPHP内置的ORM和ActiveRecord模式实现了方便的数据存取操作，而且新版增加的连贯操作功能更是让这个数据操作更加清晰，但是ThinkPHP仍然保留了原生的SQL查询和执行操作支持，为了满足复杂查询的需要和一些特殊的数据操作，SQL查询的返回值因为是直接返回的Db类的查询结果，没有做任何的处理。主要包括下面两个方法：<br /><b>1、query方法</b><br /><table border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <th colspan="2">query&nbsp;&nbsp;执行SQL查询操作</th>
+  </tr>
+  <tr>
+    <td>用法</td>
+    <td>query($sql,$parse=false)</td>
+  </tr>
+  <tr>
+    <td>参数</td>
+    <td>query（必须）：要查询的SQL语句
+    parse（可选）：是否需要解析SQL</td>
+  </tr>
+  <tr>
+    <td>返回值</td>
+    <td><p>如果数据非法或者查询错误则返回false</p>
+    <p>否则返回查询结果数据集（同select方法）</p></td>
+  </tr>
+</table>
+使用示例： 
+<pre class="code" lang="php">$Model&nbsp;=&nbsp;new&nbsp;Model()&nbsp;//&nbsp;实例化一个model对象&nbsp;没有对应任何数据表
+$Model-&gt;query("select&nbsp;*&nbsp;from&nbsp;think_user&nbsp;where&nbsp;status=1");</pre>如果你当前采用了分布式数据库，并且设置了读写分离的话，query方法始终是在读服务器执行，因此query方法对应的都是读操作，而不管你的SQL语句是什么。</div><div id="369" class="book-content"><b>2、execute方法</b><br /><table border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <th colspan="2">execute用于更新和写入数据的sql操作</th>
+  </tr>
+  <tr>
+    <td>用法</td>
+    <td>execute($sql,$parse=false)</td>
+  </tr>
+  <tr>
+    <td>参数</td>
+    <td>query（必须）：要执行的SQL语句
+    parse（可选）：是否需要解析SQL</td>
+  </tr>
+  <tr>
+    <td>返回值</td>
+    <td>如果数据非法或者查询错误则返回false 
+    否则返回影响的记录数</td>
+  </tr>
+</table>使用示例： 
+<pre class="code" lang="php">$Model&nbsp;=&nbsp;new&nbsp;Model()&nbsp;//&nbsp;实例化一个model对象&nbsp;没有对应任何数据表
+$Model-&gt;execute("update&nbsp;think_user&nbsp;set&nbsp;name='thinkPHP'&nbsp;where&nbsp;status=1");</pre>如果你当前采用了分布式数据库，并且设置了读写分离的话，execute方法始终是在写服务器执行，因此execute方法对应的都是写操作，而不管你的SQL语句是什么。</div><div id="370" class="book-content"><b>3、其他技巧</b><br />自动获取当前表名<br />通常使用原生SQL需要手动加上当前要查询的表名，如果你的表名以后会变化的话，那么就需要修改每个原生SQL查询的sql语句了，针对这个情况，系统还提供了一个小的技巧来帮助解决这个问题。<br />例如：
+<pre class="code" lang="php">$model&nbsp;=&nbsp;M("User");
+$model-&gt;query('select&nbsp;*&nbsp;from&nbsp;__TABLE__&nbsp;where&nbsp;status&gt;1');</pre>我们这里使用了__TABLE__ 这样一个字符串，系统在解析的时候会自动替换成当前模型对应的表名，这样就可以做到即使模型对应的表名有所变化，仍然不用修改原生的sql语句。<br />支持连贯操作和SQL解析<br />新版对query和execute两个原生SQL操作方法增加第二个参数支持， 表示是否需要解析SQL （默认为false 表示直接执行sql ），如果设为true 则会解析SQL中的特殊字符串 （需要配合连贯操作）。<br />例如，支持 如下写法：
+<pre class="code" lang="php">
+$model-&gt;table("think_user")
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;where(array("name"=&gt;"thinkphp"))
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;field("id,name,email")
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;query('select&nbsp;%FIELD%&nbsp;from&nbsp;%TABLE%&nbsp;%WHERE%',true);</pre>其中query方法中的%FIELD%、%TABLE%和%WHERE%字符串会自动替换为同名的连贯操作方法的解析结果SQL，支持的替换字符串包括：
+<table border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <th>替换字符串</th>
+    <th>对应连贯操作方法</th>
+  </tr>
+  <tr>
+    <td>%FIELD%</td>
+    <td>field</td>
+  </tr>
+  <tr>
+    <td>%TABLE%</td>
+    <td>table</td>
+  </tr>
+  <tr>
+    <td>%DISTINCT%</td>
+    <td>distinct</td>
+  </tr>
+  <tr>
+    <td>%WHERE%</td>
+    <td>where</td>
+  </tr>
+  <tr>
+    <td>%JOIN%</td>
+    <td>join</td>
+  </tr>
+  <tr>
+    <td>%GROUP%</td>
+    <td>group</td>
+  </tr>
+  <tr>
+    <td>%HAVING%</td>
+    <td>having</td>
+  </tr>
+  <tr>
+    <td>%ORDER%</td>
+    <td>order</td>
+  </tr>
+  <tr>
+    <td>%LIMIT%</td>
+    <td>limit</td>
+  </tr>
+  <tr>
+    <td>%UNION%</td>
+    <td>union</td>
+  </tr>
+</table></div><div id="372" class="book-content"><h3>动态查询</h3>借助PHP5语言的特性，ThinkPHP实现了动态查询，包括下面几种：
+<table border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <th>方法名</th>
+    <th>说明</th>
+    <th>举例</th>
+  </tr>
+  <tr>
+    <td>getBy</td>
+    <td>根据某个字段的值查询数据</td>
+    <td>例如，getByName,getByEmail</td>
+  </tr>
+  <tr>
+    <td>getFieldBy</td>
+    <td>根据某个字段查询并返回某个字段的值</td>
+    <td>例如，getFieldByName</td>
+  </tr>
+  <tr>
+    <td>top</td>
+    <td>获取前多少条记录（需要高级模型支持）</td>
+    <td>例如，top8，top12</td>
+  </tr>
+</table></div><div id="374" class="book-content"><b>一、getBy动态查询</b><br />该查询方式针对数据表的字段进行查询。例如，User对象拥有id,name,email,address 等属性，那么我们就可以使用下面的查询方法来直接根据某个属性来查询符合条件的记录。 
+<pre class="code" lang="php">$user&nbsp;=&nbsp;$User-&gt;getByName('liu21st');
+$user&nbsp;=&nbsp;$User-&gt;getByEmail('liu21st@gmail.com');
+$user&nbsp;=&nbsp;$User-&gt;getByAddress('中国深圳');</pre>暂时不支持多数据字段的动态查询方法，请使用find方法和select方法进行查询。</div><div id="375" class="book-content"><b>二、getFieldBy动态查询</b><br />针对某个字段查询并返回某个字段的值，例如
+<pre class="code" lang="php">$user&nbsp;=&nbsp;$User-&gt;getFieldByName('liu21st','id');</pre>表示根据用户的name获取用户的id值。</div><div id="376" class="book-content"><b>三、top动态查询</b><br />ThinkPHP还提供了另外一种动态查询方式，就是获取符合条件的前N条记录（和定位查询一样，也要求当前模型类必须继承高级模型类后才能使用）。例如，我们需要获取当前用户中积分大于0，积分最高的前5位用户 ：
+<pre class="code" lang="php">$User-&gt;&nbsp;where('score&gt;80')-&gt;order('score&nbsp;desc')-&gt;top5();</pre>要获取积分的前8位可以改成：
+<pre class="code" lang="php">$User-&gt;&nbsp;where('score&gt;80')-&gt;order('score&nbsp;desc')-&gt;top8();</pre></div><div id="102" class="book-content"><h3>子查询</h3>新版新增了子查询支持，有两种使用方式：<br /><b>1、使用select方法</b><br />当select方法的参数为false的时候，表示不进行查询只是返回构建SQL，例如： 
+<pre class="code" lang="php">//&nbsp;首先构造子查询SQL&nbsp;
+$subQuery&nbsp;=&nbsp;$model-&gt;field('id,name')-&gt;table('tablename')-&gt;group('field')-&gt;where($where)-&gt;order('status')-&gt;select(false);&nbsp;</pre><br /><b>2、使用buildSql方法</b><br /><pre class="code" lang="php">$subQuery&nbsp;=&nbsp;$model-&gt;field('id,name')-&gt;table('tablename')-&gt;group('field')-&gt;where($where)-&gt;order('status')-&gt;buildSql();&nbsp;</pre>
+调用buildSql方法后不会进行实际的查询操作，而只是生成该次查询的SQL语句（为了避免混淆，会在SQL两边加上括号），然后我们直接在后续的查询中直接调用。
+<pre class="code" lang="php">//&nbsp;利用子查询进行查询&nbsp;
+$model-&gt;table($subQuery.'&nbsp;a')-&gt;where()-&gt;order()-&gt;select()&nbsp;</pre>
+构造的子查询SQL可用于TP的连贯操作方法，例如table where等。</div></div></div><script type="text/javascript">remark();</script><div id="footer" class="book-footer"><p>&copy;2012 ThinkPHP文档中心 由<a target="_blank" href="http://www.thinkphp.cn">&nbsp;</a>强力驱动</p><script type="text/javascript" src="http://tajs.qq.com/stats?sId=8891584" charset="UTF-8"></script></div></body></html>
+<!-- Localized -->

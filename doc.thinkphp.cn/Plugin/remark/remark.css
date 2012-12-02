@@ -1,0 +1,101 @@
+.book-content,.book-add-content,.book-add{
+	margin-left: 37px;
+}
+.book-content.remarking{
+	background-color: #FAFAFA;
+	border-top: 1px dotted #CCC;
+	border-bottom: 1px dotted #CCC;
+}
+
+/* 评注按钮样式 */
+.book-content .book-remark{
+	width: 25px;
+	position: absolute;
+	left: -25px;
+	top: 0;
+	bottom: 0;
+	cursor: pointer;
+}
+.book-content .book-remark span{
+	background-image: url(images/remark-hover.png);
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 0px;
+	filter:alpha(opacity=20);
+	opacity: 0.2;
+	display: block;
+	line-height: 18px;
+	text-align: center;
+	font-size: 10px;
+}
+.book-content .book-remark span.num{
+	background-image: url(images/remark-active.png);
+	filter:alpha(opacity=100);
+	opacity: 1;
+}
+
+/* 评注弹出框 */
+.remark-dialog{
+	width: 500px;
+	height: 300px;
+	overflow: auto;
+	font-size: 12px;
+}
+.remark-dialog .remark-body{
+	padding: 5px 10px;
+}
+.remark-dialog dl{
+	padding: 0;
+	border-bottom: 1px dotted #CCC;
+	margin-bottom: 10px;
+}
+.remark-dialog dt{
+	margin: 0;
+	padding: 0 6px;
+	line-height: 16px;
+}
+.remark-dialog .date{
+	font-weight: normal;
+	color: #999;	
+}
+	
+.remark-dialog .name{
+	color: #4A8BF5;
+}
+.remark-dialog .content{
+	padding: 2px 6px;
+	line-height: 20px;	
+}
+.remark-dialog .remark-body p{
+	line-height: 35px;
+}
+.remark-dialog .remark-body p textarea{
+	width: 450px;
+	height: 100px;
+	border: 1px solid #CCC;
+	overflow: auto;
+	padding: 3px;
+	font-family: "微软雅黑";
+}
+.remark-dialog .remark-body p input{
+	padding: 4px 12px;
+	border: 1px solid #D8D8D8;
+	background: #F1F1F1;
+	border-radius: 2px 2px 2px 2px;
+	background: #f6f6f6; 
+	border-color: #C6C6C6;
+	font-family:"微软雅黑";
+	font-size: 14px;
+	font-weight: 700;	
+	margin-top:5px;
+}
+
+/* 评论列表样式 */
+.book-all-remark ul{
+	margin: 20px 10px;
+}
+.book-all-remark li span, .book-all-remark li i{
+	font-size: 12px;
+	color: #CCC;
+}

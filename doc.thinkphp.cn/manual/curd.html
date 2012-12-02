@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>CURD操作 - ThinkPHP完全开发手册 - 3.1</title><meta name="keywords" content="ThinkPHP,文档中心,在线手册,phpthink,类库参考,视频教程,book,3.0,api,开发框架,web框架,PHP开发框架,ThinkPHP手册"/><meta name="description" content="中文最佳实践框架  JUST THINK IT ThinkPHP 大道至简 开发由我|php快速开发|just think it|php开源框架|php网站开发|上海顶想|ORM|Framework|PHP企业开发"/><link href="../Public/favicon.ico" rel="shortcut icon"><link rel="stylesheet" type="text/css" href="../Public/css/layout.css" /><link rel="stylesheet" type="text/css" href="../Public/css/book.css" /><link rel="stylesheet" type="text/css" href="../Public/prettify/prettify.css" /><link rel="stylesheet" type="text/css" href="../Public/ThinkBox/ThinkBox.css" /><script type="text/javascript" src="../Public/js/jquery-1.7.1.min.js"></script><script type="text/javascript" src="../Public/js/common.js"></script><script type="text/javascript" src="../Public/prettify/prettify.js"></script><script type="text/javascript" src="../Public/ThinkBox/jquery.ThinkBox.js"></script><link rel="stylesheet" type="text/css" href="../Plugin/remark/remark.css" /><script type="text/javascript" src="../Plugin/remark/remark.js"></script></head><body><div id="header"><div id="innerHeader"><div class="book-top cf"><div class="book-logo fl"><a href="../manual.html" book="1">ThinkPHP完全开发手册</a><sup>3.1</sup></div><div class="right fr"><div class="user-current"></div></div></div></div></div><div id="sortList"><div class="inner"><div class="menu-title">目录Directory</div></div></div><div id="selector"><div class="inner"><div class="book-menu"><div class="list"><ul><li class=" child"><a class="title " href="preface.html" title="序言">序言</a></li><li class=" child"><a class="title " href="start.html" title="入门">第1章&nbsp;入门</a><ul><li><a class="" href="introduction.html">1.1&nbsp;简介</a></li><li><a class="" href="basic_concept.html">1.2&nbsp;基础概念</a></li><li><a class="" href="get_thinkphp.html">1.3&nbsp;获取ThinkPHP</a></li><li><a class="" href="environment.html">1.4&nbsp;环境要求</a></li><li><a class="" href="licence.html">1.5&nbsp;许可协议</a></li><li><a class="" href="directory.html">1.6&nbsp;目录结构</a></li><li><a class="" href="naming_conventions.html">1.7&nbsp;命名规范</a></li><li><a class="" href="mvc.html">1.8&nbsp;MVC分层</a></li><li><a class="" href="cbd.html">1.9&nbsp;CBD架构</a></li><li><a class="" href="features.html">1.10&nbsp;特性概述</a></li><li><a class="" href="system_process.html">1.11&nbsp;系统流程</a></li><li><a class="" href="development_process.html">1.12&nbsp;开发流程</a></li></ul></li><li class=" child"><a class="title " href="entry.html" title="入口">第2章&nbsp;入口</a><ul><li><a class="" href="entrance.html">2.1&nbsp;入口文件</a></li><li><a class="" href="app_directory.html">2.2&nbsp;项目目录</a></li><li><a class="" href="deploy_directory.html">2.3&nbsp;部署目录</a></li><li><a class="" href="app_compile.html">2.4&nbsp;项目编译</a></li><li><a class="" href="debug_mode.html">2.5&nbsp;调试模式</a></li></ul></li><li class=" child"><a class="title " href="config.html" title="配置">第3章&nbsp;配置</a><ul><li><a class="" href="config_type.html">3.1&nbsp;配置格式</a></li><li><a class="" href="convention_config.html">3.2&nbsp;惯例配置</a></li><li><a class="" href="app_config.html">3.3&nbsp;项目配置</a></li><li><a class="" href="debug_config.html">3.4&nbsp;调试配置</a></li><li><a class="" href="group_config.html">3.5&nbsp;分组配置</a></li><li><a class="" href="read_config.html">3.6&nbsp;读取配置</a></li><li><a class="" href="dynamic_config.html">3.7&nbsp;动态配置</a></li><li><a class="" href="extend_config.html">3.8&nbsp;扩展配置</a></li></ul></li><li class=" child"><a class="title " href="function_class.html" title="函数和类库">第4章&nbsp;函数和类库</a><ul><li><a class="" href="functions.html">4.1&nbsp;函数库</a></li><li><a class="" href="class.html">4.2&nbsp;类库</a></li></ul></li><li class=" child"><a class="title " href="controller.html" title="控制器">第5章&nbsp;控制器</a><ul><li><a class="" href="url_mode.html">5.1&nbsp;URL模式</a></li><li><a class="" href="module_action.html">5.2&nbsp;模块和操作</a></li><li><a class="" href="define_controller.html">5.3&nbsp;定义控制器</a></li><li><a class="" href="empty_action.html">5.4&nbsp;空操作</a></li><li><a class="" href="empty_module.html">5.5&nbsp;空模块</a></li><li><a class="" href="module_group.html">5.6&nbsp;模块分组</a></li><li><a class="" href="url_suffix.html">5.7&nbsp;URL伪静态</a></li><li><a class="" href="url_route.html">5.8&nbsp;URL路由</a></li><li><a class="" href="url_rewrite.html">5.9&nbsp;URL重写</a></li><li><a class="" href="url_build.html">5.10&nbsp;URL生成</a></li><li><a class="" href="url_case.html">5.11&nbsp;URL大小写</a></li><li><a class="" href="before_after.html">5.12&nbsp;前置和后置操作</a></li><li><a class="" href="cross_module.html">5.13&nbsp;跨模块调用</a></li><li><a class="" href="page_dispatch.html">5.14&nbsp;页面跳转</a></li><li><a class="" href="redirect.html">5.15&nbsp;重定向</a></li><li><a class="" href="get_system_var.html">5.16&nbsp;获取系统变量</a></li><li><a class="" href="request_method.html">5.17&nbsp;判断请求类型</a></li><li><a class="" href="get_url_params.html">5.18&nbsp;获取URL参数</a></li><li><a class="" href="ajax_return.html">5.19&nbsp;AJAX返回</a></li><li><a class="" href="action_param_bind.html">5.20&nbsp;Action参数绑定</a></li><li><a class="" href="multi_action_layer.html">5.21&nbsp;多层控制器支持</a></li></ul></li><li class="show child"><a class="title " href="model.html" title="模型">第6章&nbsp;模型</a><ul><li><a class="" href="model_define.html">6.1&nbsp;模型定义</a></li><li><a class="" href="model_instance.html">6.2&nbsp;模型实例化</a></li><li><a class="" href="field_define.html">6.3&nbsp;字段定义</a></li><li><a class="" href="primary_key.html">6.4&nbsp;数据主键</a></li><li><a class="" href="get_fields.html">6.5&nbsp;属性访问</a></li><li><a class="" href="cross_database.html">6.6&nbsp;跨库操作</a></li><li><a class="" href="connect_database.html">6.7&nbsp;连接数据库</a></li><li><a class="" href="switch_database.html">6.8&nbsp;切换数据库</a></li><li><a class="" href="distributed_database.html">6.9&nbsp;分布式数据库</a></li><li><a class="" href="create.html">6.10&nbsp;创建数据</a></li><li><a class="" href="field_map.html">6.11&nbsp;字段映射</a></li><li><a class="" href="continuous_operation.html">6.12&nbsp;连贯操作</a></li><li><a class="selected" href="curd.html">6.13&nbsp;CURD操作</a></li><li><a class="" href="active_record.html">6.14&nbsp;ActiveRecord</a></li><li><a class="" href="auto_validate.html">6.15&nbsp;自动验证</a></li><li><a class="" href="name_range.html">6.16&nbsp;命名范围</a></li><li><a class="" href="auto_operate.html">6.17&nbsp;自动完成</a></li><li><a class="" href="query.html">6.18&nbsp;查询语言</a></li><li><a class="" href="query_lock.html">6.19&nbsp;查询锁定</a></li><li><a class="" href="field_except.html">6.20&nbsp;字段排除</a></li><li><a class="" href="trans_support.html">6.21&nbsp;事务支持</a></li><li><a class="" href="adv_model.html">6.22&nbsp;高级模型</a></li><li><a class="" href="view_model.html">6.23&nbsp;视图模型</a></li><li><a class="" href="relation_model.html">6.24&nbsp;关联模型</a></li><li><a class="" href="mongo_model.html">6.25&nbsp;Mongo模型</a></li><li><a class="" href="dynamic_model.html">6.26&nbsp;动态模型</a></li><li><a class="" href="virtual_model.html">6.27&nbsp;虚拟模型</a></li><li><a class="" href="multi_model_layer.html">6.28&nbsp;多层模型支持</a></li></ul></li><li class=" child"><a class="title " href="view.html" title="视图">第7章&nbsp;视图</a><ul><li><a class="" href="template_define.html">7.1&nbsp;模板定义</a></li><li><a class="" href="template_assign.html">7.2&nbsp;模板赋值</a></li><li><a class="" href="template_output.html">7.3&nbsp;模板输出</a></li><li><a class="" href="template_replace.html">7.4&nbsp;模板替换</a></li><li><a class="" href="fetch_content.html">7.5&nbsp;获取内容</a></li><li><a class="" href="template_engine.html">7.6&nbsp;模板引擎</a></li><li><a class="" href="layout.html">7.7&nbsp;布局模板</a></li></ul></li><li class=" child"><a class="title " href="template.html" title="模板引擎">第8章&nbsp;模板引擎</a><ul><li><a class="" href="var_output.html">8.1&nbsp;变量输出</a></li><li><a class="" href="system_var.html">8.2&nbsp;系统变量</a></li><li><a class="" href="use_function.html">8.3&nbsp;使用函数</a></li><li><a class="" href="default_val.html">8.4&nbsp;默认值输出</a></li><li><a class="" href="use_operate.html">8.5&nbsp;使用运算符</a></li><li><a class="" href="buildin_tag.html">8.6&nbsp;内置标签</a></li><li><a class="" href="include_file.html">8.7&nbsp;包含文件</a></li><li><a class="" href="load_file.html">8.8&nbsp;导入文件</a></li><li><a class="" href="volist.html">8.9&nbsp;Volist标签</a></li><li><a class="" href="foreach.html">8.10&nbsp;Foreach标签</a></li><li><a class="" href="for.html">8.11&nbsp;For标签</a></li><li><a class="" href="switch.html">8.12&nbsp;Switch标签</a></li><li><a class="" href="compare.html">8.13&nbsp;比较标签</a></li><li><a class="" href="three_operators.html">8.14&nbsp;三元运算</a></li><li><a class="" href="range.html">8.15&nbsp;范围判断标签</a></li><li><a class="" href="present.html">8.16&nbsp;Present标签</a></li><li><a class="" href="empty.html">8.17&nbsp;Empty标签</a></li><li><a class="" href="defined.html">8.18&nbsp;Defined标签</a></li><li><a class="" href="define.html">8.19&nbsp;Define标签</a></li><li><a class="" href="assign.html">8.20&nbsp;Assign标签</a></li><li><a class="" href="if.html">8.21&nbsp;IF标签</a></li><li><a class="" href="tag_nest.html">8.22&nbsp;标签嵌套</a></li><li><a class="" href="use_php.html">8.23&nbsp;使用PHP代码</a></li><li><a class="" href="layout_template.html">8.24&nbsp;模板布局</a></li><li><a class="" href="extend_template.html">8.25&nbsp;模板继承</a></li><li><a class="" href="literal.html">8.26&nbsp;原样输出</a></li><li><a class="" href="comment.html">8.27&nbsp;模板注释</a></li><li><a class="" href="taglib.html">8.28&nbsp;引入标签库</a></li><li><a class="" href="modify_edlim.html">8.29&nbsp;修改定界符</a></li><li><a class="" href="js_confusion.html">8.30&nbsp;避免JS混淆</a></li></ul></li><li class=" child"><a class="title " href="log.html" title="日志">第9章&nbsp;日志</a><ul><li><a class="" href="log_level.html">9.1&nbsp;日志级别</a></li><li><a class="" href="log_type.html">9.2&nbsp;记录方式</a></li><li><a class="" href="log_record.html">9.3&nbsp;手动记录</a></li></ul></li><li class=" child"><a class="title " href="error.html" title="错误">第10章&nbsp;错误</a><ul><li><a class="" href="exception.html">10.1&nbsp;异常处理</a></li><li><a class="" href="exception_tmpl.html">10.2&nbsp;异常模板</a></li><li><a class="" href="exception_info.html">10.3&nbsp;异常显示</a></li></ul></li><li class=" child"><a class="title " href="debug.html" title="调试">第11章&nbsp;调试</a><ul><li><a class="" href="app_status.html">11.1&nbsp;运行状态</a></li><li><a class="" href="page_trace.html">11.2&nbsp;页面Trace</a></li><li><a class="" href="debug_mothod.html">11.3&nbsp;调试方法</a></li></ul></li><li class=" child"><a class="title " href="cache.html" title="缓存">第12章&nbsp;缓存</a><ul><li><a class="" href="cache_type.html">12.1&nbsp;缓存方式</a></li><li><a class="" href="dynamic_cache.html">12.2&nbsp;动态缓存</a></li><li><a class="" href="cache_queue.html">12.3&nbsp;缓存队列</a></li><li><a class="" href="express_cache.html">12.4&nbsp;快捷缓存</a></li><li><a class="" href="fast_save.html">12.5&nbsp;快速缓存</a></li><li><a class="" href="query_cache.html">12.6&nbsp;查询缓存</a></li><li><a class="" href="sql_cache.html">12.7&nbsp;SQL解析缓存</a></li><li><a class="" href="html_cache.html">12.8&nbsp;静态缓存</a></li></ul></li><li class=" child"><a class="title " href="extend.html" title="扩展">第13章&nbsp;扩展</a><ul><li><a class="" href="behavior_extend.html">13.1&nbsp;行为扩展</a></li><li><a class="" href="library_extend.html">13.2&nbsp;类库扩展</a></li><li><a class="" href="action_extend.html">13.3&nbsp;控制器扩展</a></li><li><a class="" href="model_extend.html">13.4&nbsp;模型扩展</a></li><li><a class="" href="driver_extend.html">13.5&nbsp;驱动扩展</a></li><li><a class="" href="widget_extend.html">13.6&nbsp;Widget扩展</a></li><li><a class="" href="mode_extend.html">13.7&nbsp;模式扩展</a></li><li><a class="" href="engine_extend.html">13.8&nbsp;引擎扩展</a></li></ul></li><li class=" child"><a class="title " href="safety.html" title="安全">第14章&nbsp;安全</a><ul><li><a class="" href="form_token.html">14.1&nbsp;表单令牌</a></li><li><a class="" href="field_type_validate.html">14.2&nbsp;字段类型验证</a></li><li><a class="" href="sql_injection.html">14.3&nbsp;防止SQL注入</a></li><li><a class="" href="input_filter.html">14.4&nbsp;输入过滤</a></li><li><a class="" href="upload_safe.html">14.5&nbsp;上传安全</a></li><li><a class="" href="prevent_xss.html">14.6&nbsp;防止XSS攻击</a></li><li><a class="" href="other_suggestion.html">14.7&nbsp;其他安全建议</a></li><li><a class="" href="dir_secure.html">14.8&nbsp;目录安全文件</a></li><li><a class="" href="protected_template.html">14.9&nbsp;保护模板文件</a></li></ul></li><li class=" child"><a class="title " href="performance.html" title="性能">第15章&nbsp;性能</a><ul><li><a class="" href="close_debug.html">15.1&nbsp;关闭调试模式</a></li><li><a class="" href="cache_on.html">15.2&nbsp;开启缓存</a></li><li><a class="" href="merge_fields.html">15.3&nbsp;合并字段缓存</a></li><li><a class="" href="sql_optimization.html">15.4&nbsp;优化SQL</a></li><li><a class="" href="replace_entrance.html">15.5&nbsp;替换入口</a></li><li><a class="" href="front_optimization.html">15.6&nbsp;前端优化</a></li></ul></li><li class=" child"><a class="title " href="deploy.html" title="部署">第16章&nbsp;部署</a><ul><li><a class="" href="path_info_support.html">16.1&nbsp;PATH_INFO支持</a></li><li><a class="" href="hidden_index.html">16.2&nbsp;隐藏index.php</a></li><li><a class="" href="sub_domain_deploy.html">16.3&nbsp;二级域名部署</a></li><li><a class="" href="error_page.html">16.4&nbsp;定制错误页面</a></li><li><a class="" href="set_zone.html">16.5&nbsp;设置时区</a></li></ul></li><li class=" child"><a class="title " href="sae.html" title="SAE支持">第17章&nbsp;SAE支持</a><ul><li><a class="" href="sae_intro.html">17.1&nbsp;SAE介绍</a></li><li><a class="" href="get_sae.html">17.2&nbsp;获取SAE</a></li><li><a class="" href="sae_develop.html">17.3&nbsp;SAE开发</a></li></ul></li><li class=" child"><a class="title " href="rest.html" title="REST支持">第18章&nbsp;REST支持</a><ul><li><a class="" href="rest_intro.html">18.1&nbsp;REST介绍</a></li><li><a class="" href="rest_mode.html">18.2&nbsp;REST模式</a></li><li><a class="" href="rest_config.html">18.3&nbsp;REST配置</a></li><li><a class="" href="rest_route.html">18.4&nbsp;REST路由</a></li><li><a class="" href="rest_method.html">18.5&nbsp;REST方法</a></li></ul></li><li class=" child"><a class="title " href="sundry.html" title="杂项">第19章&nbsp;杂项</a><ul><li><a class="" href="session.html">19.1&nbsp;Session支持</a></li><li><a class="" href="cookie.html">19.2&nbsp;Cookie支持</a></li><li><a class="" href="date.html">19.3&nbsp;日期和时间</a></li><li><a class="" href="wml.html">19.4&nbsp;WML开发</a></li><li><a class="" href="multi_lang.html">19.5&nbsp;多语言</a></li><li><a class="" href="data_page.html">19.6&nbsp;数据分页</a></li><li><a class="" href="upload.html">19.7&nbsp;文件上传</a></li><li><a class="" href="verify.html">19.8&nbsp;验证码</a></li><li><a class="" href="watermark.html">19.9&nbsp;图片添加水印</a></li><li><a class="" href="ip_location.html">19.10&nbsp;IP获取和定位</a></li></ul></li><li class=" child"><a class="title " href="appendix.html" title="附录">第20章&nbsp;附录</a><ul><li><a class="" href="constant_reference.html">20.1&nbsp;常量参考</a></li><li><a class="" href="config_reference.html">20.2&nbsp;配置参考</a></li><li><a class="" href="version_update.html">20.3&nbsp;关于升级</a></li><li><a class="" href="memorabilia.html">20.4&nbsp;大事记</a></li></ul></li><li class=" child"><a class="title " href="thanks.html" title="鸣谢">第21章&nbsp;鸣谢</a></li></ul></div></div></div></div><div id="tools"><div class="inner"><div class="book-tool"><div class="content cf"><div class="search fl"><form action="/manual/_search.html" method="post" class="cf"><label for="search-key">输入搜索关键字...</label><input id="search-key" class="text fl" type="text" name="keywords" /><input class="button fl" type="submit" value="&nbsp;" title="搜索" /></form></div><a class="next fr" href="javascript:void(0)" title="下一章"><i>&nbsp;</i></a><a class="prev fr" href="javascript:void(0)" title="上一章"><i>&nbsp;</i></a><a class="share fr" href="javascript:void(0)" title="分享">分享<i>&nbsp;</i></a></div></div></div></div><div id="gird"><div class="inner"><div class="book-title" menu="66"><h1>6.13&nbsp;CURD操作</h1></div><div id="94" class="book-content">ThinkPHP提供了灵活和方便的数据操作方法，对数据库操作的四个基本操作（CURD）：创建、更新、读取和删除的实现是最基本的，也是必须掌握的，在这基础之上才能熟悉更多实用的数据操作方法。CURD操作通常是可以和连贯操作配合完成的。下面来分析下各自的用法：<br />（下面的CURD操作我们均以M方法创建模型实例来说明，因为不涉及到具体的业务逻辑）</div><div id="342" class="book-content"><h3>创建（Create）</h3>
+在ThinkPHP中使用add方法新增数据到数据库（而并不是create方法）。
+<table border="0" cellspacing="1" cellpadding="0">
+	<tr>
+		<th colspan="2">add  写入（新增）数据到数据库 </th>
+	</tr>
+	<tr>
+		<td>用法 </td>
+		<td>add($data='',$options=array(),$replace=false)</td>
+	</tr>
+	<tr>
+		<td>参数 </td>
+		<td><p>data（可选）：要新增的数据，支持数组和对象，如果留空取当前数据对象 </p>
+			<p>options（可选）：操作表达式，通常由连贯操作完成，默认为空数组 </p>
+			<p>replace（可选）：是否允许写入时更新，默认为false（个别数据库支持）</p> </td>
+	</tr>
+	<tr>
+		<td>回调接口 </td>
+		<td><p>写入前 _before_insert(&amp;$data,$options)</p>
+			<p>写入成功 _after_insert($data,$options)</p></td>
+	</tr>
+	<tr>
+		<td>返回值 </td>
+		<td><p>如果数据非法或者查询错误则返回false</p>
+			<p>如果是自增主键 则返回主键值，否则返回1</p></td>
+	</tr>
+	<tr>
+		<td>相关方法 </td>
+		<td>通常和data、create方法配合使用 </td>
+	</tr>
+</table>使用示例如下：
+<pre class="code" lang="php">$User&nbsp;=&nbsp;M("User");&nbsp;//&nbsp;实例化User对象
+$data['name']&nbsp;=&nbsp;'ThinkPHP';
+$data['email']&nbsp;=&nbsp;'ThinkPHP@gmail.com';
+$User-&gt;add($data);</pre>或者使用data方法连贯操作
+<pre class="code" lang="php">$User-&gt;data($data)-&gt;add();</pre>如果在add之前已经创建数据对象的话（例如使用了create或者data方法），add方法就不需要再传入数据了。<br />使用create方法的例子：
+<pre class="code" lang="php">$User&nbsp;=&nbsp;M("User");&nbsp;//&nbsp;实例化User对象
+//&nbsp;根据表单提交的POST数据创建数据对象
+$User-&gt;create();
+$User-&gt;add();&nbsp;//&nbsp;根据条件保存修改的数据</pre>如果你的主键是自动增长类型，并且如果插入数据成功的话，Add方法的返回值就是最新插入的主键值，可以直接获取。 
+从2.1版开始恢复了批量插入数据的addAll方法（仅针对Mysql数据库），如：
+<pre class="code" lang="php">$User-&gt;addAll($data)</pre>同时在数据插入时允许更新操作:<pre class="code" lang="php">add($data='',$options=array(),$replace=false)</pre>其中add方法增加$replace参数(是否添加数据时允许覆盖)，true表示覆盖，默认为false</div><div id="345" class="book-content"><h3>读取（Read）</h3>
+在ThinkPHP中读取数据的方式很多，通常分为读取数据和读取数据集。<br />读取数据集使用select方法（新版已经废除原来的findall方法）：
+<table border="0" cellspacing="1" cellpadding="0">
+	<tr>
+		<th colspan="2">select  查询数据集 </th>
+	</tr>
+  <tr>
+    <td>用法</td>
+    <td>select($options=array())</td>
+  </tr>
+  <tr>
+    <td>参数</td>
+    <td>options（可选）：为数组的时候表示操作表达式，通常由连贯操作完成；如果是数字或者字符串，表示主键值。默认为空数组。</td>
+  </tr>
+  <tr>
+    <td>回调接口</td>
+    <td>查询成功&nbsp;_after_select(&amp;$resultSet,$options)</td>
+  </tr>
+  <tr>
+    <td>返回值</td>
+    <td><p>查询错误返回false</p>
+      <p>查询结果为空返回null</p>
+    <p>查询成功返回查询的结果集（二维索引数组）</p></td>
+  </tr>
+  <tr>
+    <td>相关方法</td>
+    <td>通常配合连贯操作where、field、order、limit、join等一起使用</td>
+  </tr>
+</table>使用示例：
+<pre class="code" lang="php">$User&nbsp;=&nbsp;M("User");&nbsp;//&nbsp;实例化User对象
+//&nbsp;查找status值为1的用户数据&nbsp;以创建时间排序&nbsp;返回10条数据
+$list&nbsp;=&nbsp;$User-&gt;where('status=1')-&gt;order('create_time')-&gt;limit(10)-&gt;select();</pre>Select方法配合连贯操作方法可以完成复杂的数据查询。而最复杂的连贯方法应该是where方法的使用，因为这部分涉及的内容较多，我们会在查询语言部分就如何进行组装查询条件进行详细的使用说明。基本的查询暂时不涉及关联查询部分，而是统一采用关联模型来进行数据操作，这一部分请参考关联模型部分。</div><div id="346" class="book-content">读取数据使用find方法：<table border="0" cellspacing="1" cellpadding="0">
+	<tr>
+		<th colspan="2">find 查询数据 </th>
+	</tr>
+  <tr>
+    <td>用法</td>
+    <td>find($options=array())</td>
+  </tr>
+  <tr>
+    <td>参数</td>
+    <td>options（可选）：为数组的时候表示操作表达式，通常由连贯操作完成；为数字或者字符串的时候表示主键值。默认为空数组。</td>
+  </tr>
+  <tr>
+    <td>回调接口</td>
+    <td>查询后&nbsp;_after_find(&amp;$result,$options)</td>
+  </tr>
+  <tr>
+    <td>返回值</td>
+    <td><p>如果查询错误返回false</p>
+      <p>如果查询结果为空返回null</p>
+    <p>如果查询成功返回查询的结果（索引数组）</p></td>
+  </tr>
+  <tr>
+    <td>相关方法</td>
+    <td>通常配合连贯操作where、field、order、join等一起使用</td>
+  </tr>
+</table>读取数据的操作其实和数据集的类似，select可用的所有连贯操作方法也都可以用于find方法，区别在于find方法最多只会返回一条记录，因此limit方法对于find查询操作是无效的。<br />下面是一些查询的例子：
+<pre class="code" lang="php">$User&nbsp;=&nbsp;M("User");&nbsp;//&nbsp;实例化User对象
+//&nbsp;查找status值为1name值为think的用户数据&nbsp;
+$User-&gt;where('status=1&nbsp;AND&nbsp;name="think"')-&gt;find();</pre>即使满足条件的数据不止一条，find方法也只会返回第一条记录。</div><div id="348" class="book-content">如果要读取某个字段的值，可以使用getField方法<table border="0" cellspacing="1" cellpadding="0">
+	<tr>
+		<th colspan="2">getField 查询某个字段的值 </th>
+	</tr>
+  <tr>
+    <td>用法</td>
+    <td>getField($field,$sepa=null)</td>
+  </tr>
+  <tr>
+    <td>参数</td>
+    <td><p>field（必须）：要获取的字段字符串（多个用逗号分隔）</p>
+    <p>sepa（可选）：字段数据间隔符号，如果是&nbsp;NULL返回数组为数组。默认为null。</p></td>
+  </tr>
+  <tr>
+    <td>回调接口</td>
+    <td>查询后&nbsp;_after_find(&amp;$result,$options)</td>
+  </tr>
+  <tr>
+    <td>返回值</td>
+    <td><p>如果查询结果为空返回null</p>
+      <p>如果field是一个字段则返回该字段的值</p>
+    <p>如果field是多个字段，返回数组。数组的索引是第一个字段的值，sepa为null则返回二维数组。</p></td>
+  </tr>
+  <tr>
+    <td>相关方法</td>
+    <td>通常配合连贯操作where、limit、order等一起使用</td>
+  </tr>
+</table>示例如下：
+<pre class="code" lang="php">$User&nbsp;=&nbsp;M("User");&nbsp;//&nbsp;实例化User对象
+//&nbsp;获取ID为3的用户的昵称&nbsp;
+$nickname&nbsp;=&nbsp;$User-&gt;where('id=3')-&gt;getField('nickname');</pre>当只有一个字段的时候，默认返回一个值。<br />如果需要返回数组，可以用：
+<pre class="code" lang="php">$this-&gt;getField('id',true);&nbsp;//&nbsp;获取id数组
+</pre>
+
+如果传入多个字段的话，默认返回一个关联数组：
+<pre class="code" lang="php">$User&nbsp;=&nbsp;M("User");&nbsp;//&nbsp;实例化User对象
+//&nbsp;获取所有用户的ID和昵称列表&nbsp;
+$list&nbsp;=&nbsp;$User-&gt;getField('id,nickname');</pre>
+返回的list是一个数组，键名是用户的id， 键值是用户的昵称nickname。<br />如果传入多个字段的名称，例如：
+<pre class="code" lang="php">$list&nbsp;=&nbsp;$User-&gt;getField('id,nickname,email');</pre>
+返回的是一个二维数组，类似select方法的返回结果，区别的是这个二维数组的键名是用户的id（准确的说是getField方法的第一个字段名）。<br />如果我们传入一个字符串分隔符：
+<pre class="code" lang="php">$list&nbsp;=&nbsp;$User-&gt;getField('id,nickname,email',':');</pre>
+那么返回的结果就是一个数组，键名是用户id，键值是 nickname:email的输出字符串。<br />getField方法的sepa参数还可以支持限制数量，例如：
+<pre class="code" lang="php">$this-&gt;getField('id,name',5);&nbsp;//&nbsp;限制返回5条记录
+$this-&gt;getField('id',3);&nbsp;//&nbsp;获取id数组&nbsp;限制3条记录
+</pre>
+可以配合使用order方法使用。</div><div id="350" class="book-content"><h3>更新（Update）</h3>
+在ThinkPHP中使用save方法更新数据库，并且也支持连贯操作的使用。
+<table border="0" cellspacing="1" cellpadding="0">
+	<tr>
+		<th colspan="2">save  更新数据到数据库 </th>
+	</tr>
+  <tr>
+    <td>用法</td>
+    <td width="450">save($data='',$options=array())</td>
+  </tr>
+  <tr>
+    <td>参数</td>
+    <td><p>data：要保存的数据，如果为空，则取当前的数据对象。</p>
+    <p>options：为数组的时候表示操作表达式，通常由连贯操作完成；为数字或者字符串的时候表示主键值。默认为空数组。</p></td>
+  </tr>
+  <tr>
+    <td>回调接口</td>
+    <td><p>更新前_before_update(&amp;$data,$options)</p>
+    <p>更新成功后&nbsp;_after_update($data,$options)</p></td>
+  </tr>
+  <tr>
+    <td>返回值</td>
+    <td><p>如果查询错误或者数据非法返回false</p>
+    <p>如果更新成功返回影响的记录数</p></td>
+  </tr>
+  <tr>
+    <td>相关方法</td>
+    <td>通常配合连贯操作where、field、order等一起使用</td>
+  </tr>
+</table>
+<pre class="code" lang="php">$User&nbsp;=&nbsp;M("User");&nbsp;//&nbsp;实例化User对象
+//&nbsp;要修改的数据对象属性赋值
+$data['name']&nbsp;=&nbsp;'ThinkPHP';
+$data['email']&nbsp;=&nbsp;'ThinkPHP@gmail.com';
+$User-&gt;where('id=5')-&gt;save($data);&nbsp;//&nbsp;根据条件保存修改的数据</pre>为了保证数据库的安全，避免出错更新整个数据表，如果没有任何更新条件，数据对象本身也不包含主键字段的话，save方法不会更新任何数据库的记录。<br />因此下面的代码不会更改数据库的任何记录
+<pre class="code" lang="php">$User-&gt;save($data);&nbsp;</pre>除非使用下面的方式：
+<pre class="code" lang="php">$User&nbsp;=&nbsp;M("User");&nbsp;//&nbsp;实例化User对象
+//&nbsp;要修改的数据对象属性赋值
+$data['id']&nbsp;=&nbsp;5;
+$data['name']&nbsp;=&nbsp;'ThinkPHP';
+$data['email']&nbsp;=&nbsp;'ThinkPHP@gmail.com';
+$User-&gt;save($data);&nbsp;//&nbsp;根据条件保存修改的数据</pre>如果id是数据表的主键的话，系统自动会把主键的值作为更新条件来更新其他字段的值。<br />还有一种方法是通过create或者data方法创建要更新的数据对象，然后进行保存操作，这样save方法的参数可以不需要传入。
+<pre class="code" lang="php">$User&nbsp;=&nbsp;M("User");&nbsp;//&nbsp;实例化User对象
+//&nbsp;要修改的数据对象属性赋值
+$data['name']&nbsp;=&nbsp;'ThinkPHP';
+$data['email']&nbsp;=&nbsp;'ThinkPHP@gmail.com';
+$User-&gt;where('id=5')-&gt;data($data)-&gt;save();&nbsp;//&nbsp;根据条件保存修改的数据</pre>使用create方法的例子：
+<pre class="code" lang="php">$User&nbsp;=&nbsp;M("User");&nbsp;//&nbsp;实例化User对象
+//&nbsp;根据表单提交的POST数据创建数据对象
+$User-&gt;create();
+$User-&gt;save();&nbsp;//&nbsp;根据条件保存修改的数据</pre></div><div id="351" class="book-content">上面的情况，表单中必须包含一个以主键为名称的隐藏域，才能完成保存操作。<br />如果只是更新个别字段的值，可以使用setField方法。
+<table border="0" cellspacing="1" cellpadding="0">
+	<tr>
+		<th colspan="2">setField  更新某个字段的值 </th>
+	</tr>
+  <tr>
+    <td>用法</td>
+    <td width="450">setField($field,$value='')</td>
+  </tr>
+  <tr>
+    <td>参数</td>
+    <td>options（可选）：为数组的时候表示操作表达式，通常由连贯操作完成；为数字或者字符串的时候表示主键值。默认为空数组。</td>
+  </tr>
+  <tr>
+    <td>返回值</td>
+    <td><p>如果查询错误返回false</p>
+    <p>如果更新成功返回影响的记录数</p></td>
+  </tr>
+  <tr>
+    <td>相关方法</td>
+    <td>必须配合连贯操作where一起使用</td>
+  </tr>
+</table>使用示例：
+<pre class="code" lang="php">$User&nbsp;=&nbsp;M("User");&nbsp;//&nbsp;实例化User对象
+//&nbsp;更改用户的name值
+$User-&gt;&nbsp;where('id=5')-&gt;setField('name','ThinkPHP');
+</pre>setField方法支持同时更新多个字段，只需要传入数组即可，例如：
+<pre class="code" lang="php">$User&nbsp;=&nbsp;M("User");&nbsp;//&nbsp;实例化User对象
+//&nbsp;更改用户的name和email的值
+$data&nbsp;=&nbsp;array('name'=&gt;'ThinkPHP','email'=&gt;'ThinkPHP@gmail.com');
+$User-&gt;&nbsp;where('id=5')-&gt;setField($data);</pre></div><div id="355" class="book-content">而对于统计字段（通常指的是数字类型）的更新，系统还提供了setInc和setDec方法。
+<table border="0" cellspacing="1" cellpadding="0">
+	<tr>
+		<th colspan="2">setInc /setDec  字段增长/字段减少 </th>
+	</tr>
+  <tr>
+    <td>用法</td>
+    <td><p>setInc($field,$step=1)字段值增长</p>
+    <p>setDec($field,$step=1)字段值减少</p></td>
+  </tr>
+  <tr>
+    <td>参数</td>
+    <td><p>field：要更新的字段名。</p>
+    <p>step：增长或者减少的数值，默认为1。</p></td>
+  </tr>
+  <tr>
+    <td>回调接口</td>
+    <td><p>如果查询错误返回false</p>
+    <p>如果更新成功返回影响的记录数</p></td>
+  </tr>
+  <tr>
+    <td>返回值</td>
+    <td><p>如果查询错误返回false</p>
+    <p>如果更新成功返回影响的记录数</p></td>
+  </tr>
+  <tr>
+    <td>相关方法</td>
+    <td>必须配合连贯操作where一起使用</td>
+  </tr>
+</table>
+<pre class="code" lang="php">
+$User&nbsp;=&nbsp;M("User");&nbsp;//&nbsp;实例化User对象
+$User-&gt;where('id=5')-&gt;setInc('score',3);&nbsp;//&nbsp;用户的积分加3
+$User-&gt;where('id=5')-&gt;setInc('score');&nbsp;//&nbsp;用户的积分加1
+$User-&gt;where('id=5')-&gt;setDec('score',5);&nbsp;//&nbsp;用户的积分减5
+$User-&gt;where('id=5')-&gt;setDec('score');&nbsp;//&nbsp;用户的积分减1
+</pre></div><div id="357" class="book-content"><h3>删除（Delete）</h3>
+在ThinkPHP中使用delete方法删除数据库中的记录。
+<table border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <td>用法</td>
+    <td width="450">delete($options=array())</td>
+  </tr>
+  <tr>
+    <td>参数</td>
+    <td>options：为数组的时候表示操作表达式，通常由连贯操作完成，如果没有传入任何删除条件，则取当前数据对象的主键作为条件；为数字或者字符串的时候表示主键值。默认为空数组。</td>
+  </tr>
+  <tr>
+    <td>回调接口</td>
+    <td>删除成功后&nbsp;_after_delete($data,$options)</td>
+  </tr>
+  <tr>
+    <td>返回值</td>
+    <td><p>如果查询错误返回false</p>
+    <p>如果删除成功返回影响的记录数</p></td>
+  </tr>
+  <tr>
+    <td>相关方法</td>
+    <td>通常配合连贯操作where、field、order等一起使用</td>
+  </tr>
+</table>示例如下：
+<pre class="code" lang="php">$User&nbsp;=&nbsp;M("User");&nbsp;//&nbsp;实例化User对象
+$User-&gt;where('id=5')-&gt;delete();&nbsp;//&nbsp;删除id为5的用户数据
+$User-&gt;where('status=0')-&gt;delete();&nbsp;//&nbsp;删除所有状态为0的用户数据</pre>delete方法可以用于删除单个或者多个数据，主要取决于删除条件，也就是where方法的参数，也可以用order和limit方法来限制要删除的个数，例如：
+<pre class="code" lang="php">//&nbsp;删除所有状态为0的5&nbsp;个用户数据&nbsp;按照创建时间排序
+$User-&gt;where('status=0')-&gt;order('create_time')-&gt;limit('5')-&gt;delete();&nbsp;</pre></div></div></div><script type="text/javascript">remark();</script><div id="footer" class="book-footer"><p>&copy;2012 ThinkPHP文档中心 由<a target="_blank" href="http://www.thinkphp.cn">&nbsp;</a>强力驱动</p><script type="text/javascript" src="http://tajs.qq.com/stats?sId=8891584" charset="UTF-8"></script></div></body></html>
+<!-- Localized -->
