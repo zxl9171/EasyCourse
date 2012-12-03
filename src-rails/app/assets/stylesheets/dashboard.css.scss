@@ -20,3 +20,14 @@ hr.full-line {
 a.action-btn {
   margin: 13px 0;
 }
+
+.file-thumbnail {
+  p {
+    text-align: center;
+
+    &.caption-action {
+      margin-top: -10px;
+      font-size: 10px;
+    }
+  }
+}
