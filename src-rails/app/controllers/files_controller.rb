@@ -2,7 +2,7 @@ require 'faker'
 
 class FilesController < ApplicationController
   def index
-    @files = 1.upto(6).map {|e| gen_file }
+    @files = 6.times.map { gen_file }
   end
 
   def show

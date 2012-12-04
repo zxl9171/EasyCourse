@@ -1,4 +1,8 @@
 Easycourse::Application.routes.draw do
+  get "sessions/login"
+
+  get "sessions/logout"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

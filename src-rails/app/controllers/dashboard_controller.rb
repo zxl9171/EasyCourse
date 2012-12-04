@@ -1,6 +1,11 @@
 # encoding: utf-8
 class DashboardController < ApplicationController
   def index
+    begin
+      redirect_to '/sessions/login'
+      return
+    end unless session[:uid]
+
     notif = {
       :avatar => '/assets/thumb_3f959077cac64c7b45793c743e22b7cc.jpg',
       :name => '小明',
