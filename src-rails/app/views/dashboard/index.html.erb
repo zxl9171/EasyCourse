@@ -2,56 +2,19 @@
   <div class="row">
     <div class="span12">
       <div class="well">
-        <header class="jumbotron subhead" id="overview">
-          <div class="row">
-            <div class="span12">
-              <h1>Dashboard</h1>
-            </div>
-          </div>
-          <hr class="double-line">
-        </header>
-
+        <%= render_header 'Dashboard' %>
+        <%= render_section_header '通知', '发布新的通知', 'plus' %>
         <div id="annoucement">
-          <div class="page-header">
-            <div class="row">
-              <div class="span1">
-                <h3>通知</h3>
-              </div>
-                <a class="btn pull-right action-btn" href="#"><i class="icon-plus"></i> 发布新的通知</a>
-            </div>
-          </div>
           <%= render :partial => "notif", :collection => @notifs %>
-          <div class="row">
-            <div class="span4">
-              <p>
-                <a href="">查看全部3条讨论</a>
-              </p>
-            </div>
-          </div>
+          <%= render_view_more '查看全部3条讨论', '/notifs' %>
         </div>
 
         <div id="file">
-          <div class="page-header">
-            <div class="row">
-              <div class="span1">
-                <h3>文件</h3>
-              </div>
-                <a class="btn pull-right action-btn" href="#"><i class="icon-plus"></i> 上传文件</a>
-            </div>
-          </div>
-
-
+          <%= render_section_header '文件', '上传文件', 'plus' %>
           <div class="row">
             <%= render :partial => "file", :collection => @files %>
           </div>
-
-          <div class="row">
-            <div class="span4">
-              <p>
-                <%= link_to '查看全部1个文件', '/files' %>
-              </p>
-            </div>
-          </div>
+          <%= render_view_more '查看全部1个文件', '/files' %>
         </div>
       </div>
     </div>
