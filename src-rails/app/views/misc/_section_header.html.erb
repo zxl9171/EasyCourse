@@ -3,6 +3,8 @@
     <div class="span2">
       <h3><%= section_header %></h3>
     </div>
-      <a class="btn pull-right action-btn" href="#"><i class="icon-<%= icon %>"></i> <%= action_tip %></a>
+    <% if action_tip then -%>
+      <a class="btn pull-right action-btn <%= options[:btn_classes] %>" href="#"><i class="icon-<%= icon %> <%= options[:icon_classes] %>"></i> <%= action_tip %></a>
+    <% end -%>
   </div>
 </div>

@@ -1827,7 +1827,7 @@ table th[class*="span"],
 .dropdown-menu > .active > a > [class*=" icon-"],
 .dropdown-submenu:hover > a > [class^="icon-"],
 .dropdown-submenu:hover > a > [class*=" icon-"] {
-  background-image: url("../img/glyphicons-halflings-white.png");
+  background-image: url("/assets/glyphicons-halflings-white.png");
 }
 .icon-glass {
   background-position: 0      0;
