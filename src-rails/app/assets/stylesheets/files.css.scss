@@ -1,3 +1,14 @@
 // Place all the styles related to the files controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.file-detail {
+  padding-top: 5px;
+  .detail-info {
+    font-size: 10px;
+  }
+}
+
+.front-date {
+  padding-top: 5px;
+}

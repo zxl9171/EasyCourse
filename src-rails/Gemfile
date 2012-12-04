@@ -42,3 +42,4 @@ gem 'rack-livereload'
 gem 'rb-fsevent'
 
 gem 'thin'
+gem 'faker'

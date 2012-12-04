@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="span2 front-date">
+    <%= time_ago_in_words file[:created_at] %>
+  </div>
+  <div class="span2">
+    <%= image_tag file[:url] %>
+  </div>
+  <div class="span7 file-detail">
+    <strong><%= file[:title] %></strong>
+    <!-- <br> -->
+    <div class="detail-info">
+        <%= time_ago_in_words file[:created_at] %> 由 <%= link_to file[:user_name], '/users/' + file[:user_name] %> 上传
+        <br>
+        <%= link_to '下载文件' %> 或 <%= link_to '参与讨论' %>
+    </div>
+  </div>
+</div>
