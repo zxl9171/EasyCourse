@@ -1,0 +1,10 @@
+<div class="comment row">
+  <div class="span1">
+    <%= image_tag comment[:user_avatar] %>
+  </div>
+  <div class="span10">
+    <strong><%= comment[:user_name] %></strong> <small><%= time_ago_in_words comment[:created_at] %></small>
+    <p><%= comment[:content] %></p>
+  </div>
+</div>
+<hr class="invisible">

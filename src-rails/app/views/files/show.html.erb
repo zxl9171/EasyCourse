@@ -4,7 +4,23 @@
       <div class="well">
 
         <%= render_header '文件' %>
-        <%= render_section_header '查看文件', '删除', 'remove', {btn_classes: 'btn-danger', icon_classes: 'icon-white'} %>
+        <%= render_section_header @file[:title], '删除', 'remove', {btn_classes: 'btn-danger', icon_classes: 'icon-white'} %>
+
+        <div class="row">
+          <div class="span1">
+            <%= image_tag @file[:user_avatar] %>
+          </div>
+          <div class="span10">
+            <strong><%= @file[:user_name] %></strong> <%= time_ago_in_words @file[:created_at] %>
+            <%= image_tag @file[:url] %>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="comments">
+          <%= render :partial => "comment", :collection => @comments %>
+        </div>
 
       </div>
     </div>

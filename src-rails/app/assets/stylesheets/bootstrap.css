@@ -660,6 +660,10 @@ hr {
 hr.double-line {
   border-style: double;
 }
+hr.invisible {
+  visibility: hidden;
+}
+
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
