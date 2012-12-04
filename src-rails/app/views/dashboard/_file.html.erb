@@ -1,5 +1,7 @@
 <div class="span2 file-thumbnail">
-  <img src="<%= file[:url] %>" alt="">
+  <%= link_to file_path(file[:id]) do %>
+    <img src="<%= file[:url] %>" alt="">
+  <% end -%>
   <p class="caption"><%= file[:title] %></p>
   <p class="caption-action">
     <a href="">下载文件</a>或<a href="">参与讨论</a>

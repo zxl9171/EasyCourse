@@ -11,6 +11,7 @@ class DashboardController < ApplicationController
     @notifs = [notif, notif]
 
     file = {
+      id: 3,
       title: "Snip20121203_2",
       url: "/assets/Snip20121203_2.png"
     }

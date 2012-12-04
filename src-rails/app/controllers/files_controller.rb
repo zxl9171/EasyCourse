@@ -5,6 +5,10 @@ class FilesController < ApplicationController
     @files = 1.upto(6).map {|e| gen_file }
   end
 
+  def show
+    @file = gen_file
+  end
+
 private
   def gen_file
     file = {
